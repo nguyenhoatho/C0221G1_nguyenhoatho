@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid black;
+}
+ .trai{
+    float: right;
+}
+.phai {
+    float: left;
+}
+.bang {
+    float: bottom;
+}
