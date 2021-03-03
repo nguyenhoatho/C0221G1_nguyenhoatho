@@ -1,5 +1,16 @@
 *{margin: 0;padding: 0}
-h1{
-    color : palevioletred;
+.sothich {
+    background-color: aliceblue;
+    text-align: center;
+
+}
+.sothich h1{
+    background: palevioletred;
+    color: ghostwhite;
+
+}
+body{
+    width: 520px;
+    height: 450px;
     text-align: center;
 }

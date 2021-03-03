@@ -1,22 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-
-    <h1>SỞ THÍCH CỦA BẠN</h1>
-<div>
-    <form action="/action_page.php">
-        <label for="name">HỌ VÀ TÊN:</label>
-        <input type="text" id="name" name="fname" value=""><br>
-        <label for="email">EMAIL</label>
-        <input type="text" id="email" name="email" value="">
-        <input type="submit" value="Submit"><br>
-        <label for="sothich">SỞ THÍCH</label>
-    </form>
-</div>
+ <div class="sothich">
+     <h1>SỞ THÍCH CỦA BẠN</h1>
+     <p>Họ Và Tên</p>
+     <input type="text">
+     <p>email</p>
+     <input type="email">
+        <div class="chec">
+            <label >Sở Thích</label>
+            <input type="checkbox">
+            <p>Thể Thao</p>
+            <input type="checkbox">
+            <p>Lướt web</p>
+            <input type="checkbox">
+            <p>du lịch</p>
+            <input type="checkbox">
+            <p>âm nhạc</p>
+            <input type="checkbox">
+            <p>chơi game</p>
+            <input type="checkbox">
+            <p>đọc sách</p>
+            <input type="checkbox">
+            <p>điện ảnh</p>
+        </div>
+     <button type="submit">Gửi Thông Tin</button>
+     <button type="submit">Nhập Lại</button>
+ </div>
 </body>
 </html>
