@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<SCRIPT>
+    let slary = prompt('moi ban nhap tien luowng cua ban');
+
+    function tinhthue(slary){
+        let tax=0;
+        if (slary >= 15000000){
+            tax = (slary /100)*20;
+        }
+        else if( slary >=7000000 & slary<15000000){
+            tax = (slary /100)*10;
+        }
+        else {
+            tax=(slary/100)*5;
+        }
+        return tax;
+
+
+    }
+    alert(tinhthue(slary));
+</SCRIPT>
+</body>
+</html>
