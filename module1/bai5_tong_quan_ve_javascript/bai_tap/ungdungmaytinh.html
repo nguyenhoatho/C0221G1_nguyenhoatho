@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+      <form action="">
+          <label>nhập số thứ nhất</label>
+          <input type="text" id="sothunhat">
+          <lable>nhập số thứ hai</lable>
+          <input type="text" id="sothuhai"><br>
+          <input type="submit" value="Addition(+)" onclick="summation()">
+          <input type="submit" value="Substraction(-)" onclick="substraction()">
+          <input type="submit" value="Multiplication(*)" onclick="Multiplication()">
+          <input type="submit" value="Division(/)" onclick="Division()">
+
+          
+      </form>
+  </div>
+  <script >
+      function summation(){
+         let numberFirt = Number(document.getElementById('sothunhat').value);
+         let  numberSecond= Number(document.getElementById('sothuhai').value);
+         let results = 0;
+          resutls = numberFirt + numberSecond;
+         document.write(resutls);
+      }
+      function substraction(){
+          let numberFirt = Number(document.getElementById('sothunhat').value);
+          let  numberSecond= Number(document.getElementById('sothuhai').value);
+          let results = 0;
+          resutls = numberFirt - numberSecond;
+          document.write(resutls);
+
+      }
+      function  Multiplication(){
+          let numberFirt = Number(document.getElementById('sothunhat').value);
+          let  numberSecond= Number(document.getElementById('sothuhai').value);
+          let results = 0;
+          resutls = numberFirt * numberSecond;
+          document.write(resutls);
+      }
+
+      function Division(){
+          let numberFirt = Number(document.getElementById('sothunhat').value);
+          let  numberSecond= Number(document.getElementById('sothuhai').value);
+          let results = 0;
+          resutls = numberFirt / numberSecond;
+          document.write(resutls);
+
+      }
+  </script>
+</body>
+</html>

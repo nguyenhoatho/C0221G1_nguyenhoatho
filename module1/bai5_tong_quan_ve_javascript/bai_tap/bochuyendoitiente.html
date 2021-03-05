@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div>
+     <form action="">
+         <label>nhập số tiến tương ứng</label>
+         <input type="text" id="menhgia"><br>
+         <label >đơn vị tiền tệ của bạn</label><br>
+         <select id="to">
+             <option value="vnd">VND</option>
+             <option value="usd">USD</option>
+         </select><br>
+         <label>dơn vị tiền bạn muốn đổi</label> <br>
+         <select id="from">
+             <option value="vnd">VND</option>
+             <option value="usd">USD</option>
+         </select>
+         <input type="summit" value="convert" onclick="currencyConverter()">
+     </form>
+ </div>
+ <script>
+     function currencyConverter() {
+         let denominations = Number(document.getElementById('menhgia').value);
+         let to = document.getElementById('to').value;
+         let from = document.getElementById('from').value;
+         let resutls =0 ;
+         if (to =='vnd' &  from =='usd'){
+             resutls = denominations /23000;
+             document.write(resutls)
+         }
+         else if ( to == 'usd' && from == 'vnd'){
+             resutls = denominations *23000;
+             document.write(resutls)
+         }
+         else {
+             document.write(denominations);
+         }
+
+     }
+ </script>
+</body>
+</html>

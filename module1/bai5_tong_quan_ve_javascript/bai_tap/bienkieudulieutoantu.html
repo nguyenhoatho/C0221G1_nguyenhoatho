@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div>
+      <form action="">
+          <label >nhập điểm toán</label>
+          <input type="text" id="diemtoan">
+          <label >nhập điểm hóa </label>
+          <input type="text" id="diemhoa">
+          <label >điểm sinh</label>
+          <input type="text" id="diemsinh">
+          <input type="text" id="diemtrungbinh">
+          <input type="submit" value="tính điểm trung bình" onclick="averageScore()">
+
+
+      </form>
+  </div>
+  <div>
+      <form action="">
+          <label >nhập nhiệt độ</label>
+          <input type="text" id="nhietdo"  >
+          <input type="submit" onclick="temperatureSwitch()">
+      </form>
+  </div>
+  <div>
+      <form action="">
+          <lable>nhập bán kính</lable>
+          <input type="text" id="bankinh">
+          <input type="submit" value="tính chu vi" onclick="circumference()">
+          <input type="submit" value="tính diện tích" onclick="theArea()">
+      </form>
+  </div>
+  <script>
+
+      function averageScore() {
+          let mathScore = Number(document.getElementById('diemtoan').value);
+          let chemiscalScore= Number(document.getElementById('diemhoa').value);
+          let biologicalScore = Number(document.getElementById('diemsinh').value);
+          let average =0
+          average = (mathScore + chemiscalScore + biologicalScore)/3;
+          document.write(average)
+
+
+      }
+      function temperatureSwitch(){
+          let temperatureC = Number(document.getElementById('nhietdo').value);
+          let temperatureF =0
+          temperatureF=  (temperatureC * 1.8 ) + 32;
+          document.writeln(temperatureF)
+
+      }
+      function circumference() {
+          const PI = 3.14;
+          let radius=Number(document.getElementById('bankinh').value);
+          let circum =0;
+          circum = radius*2*PI;
+           document.write(circum);
+      }
+      function theArea() {
+          const PI = 3.14;
+          let radius=Number(document.getElementById('bankinh').value);
+          let area =0;
+          area = radius*radius*PI;
+          document.write(area);
+      }
+
+
+
+
+
+          // let mathScore =Number(prompt('mời bạn nhập điểm toán'));
+          //
+          // let chemiscalScore =Number(prompt('mời bạn nhập điểm hóa));
+          // let biologicalScore =Number ( prompt('mời bạn nhập điểm sinh'));
+          // let  average =0;
+          // average = (mathScore + chemiscalScore + biologicalScore)/3;
+          // alert(average);
+  </script>
+</body>
+</html>
