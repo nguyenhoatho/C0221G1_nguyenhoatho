@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>luyện tập cấu trúc điều kiện một</label>
+    <select id="luachoncuaban" onchange="main1()">
+        <option value="1">bài 1</option>
+        <option value="2">bài 2</option>
+        <option value="3">bài 3</option>
+        <option value="4">bài 4</option>
+        <option value="5">bài 5</option>
+        <option value="6">bài 6</option>
+        <option value="7">bài 7</option>
+
+
+    </select>
+</form>
+<script>
+    function main1() {
+        let exercise = parseInt(document.getElementById("luachoncuaban").value);
+        switch (exercise) {
+            case 1:
+                exercise1();
+                break;
+            case 2:
+                exercise2();
+                break;
+            case 3:
+                exercise3();
+                break;
+            case 4:
+                exercise4();
+                break;
+            case 5:
+                exercise5();
+                break;
+            case 6:
+                exercise6();
+                break;
+            case 7:
+                exercise7();
+                break;
+            default:
+                alert("không có lựa chọn này");
+        }
+    }
+
+    function exercise1() {
+        let a = parseInt(prompt('hãy nhập số a'));
+        let b = parseInt(prompt('hãy nhập b'));
+        if (a % b == 0) {
+            alert('số a chia hết cho b');
+        } else {
+            alert("số a không chia hết cho b");
+        }
+    }
+
+    function exercise2() {
+        let yearOld = parseInt(prompt("nhập tuổi học sinh"));
+        if (yearOld > 0 && yearOld < 60) {
+            if (yearOld >= 15) {
+                alert("học sinh đủ điều kiện để nhập hocj vào lớp 10");
+
+            } else {
+                alert("chưa đủ tuổi vào lớp 10");
+            }
+        } else {
+            alert("quá già để nhập học hoặc chưa sanh");
+        }
+    }
+
+    function exercise3() {
+        let inputNumber = parseInt(prompt("nhập một số nguyên"));
+        if (inputNumber < 0) {
+            alert('số đó nhỏ hơn 0');
+        } else if (inputNumber > 0) {
+            alert('số đó lớn hơn không');
+        } else {
+            alert("số đó là số không");
+        }
+    }
+
+    function exercise4() {
+        let firstNumper = parseInt(prompt('hãy nhập ba số'));
+        let secondNumper = parseInt(prompt('hãy nhập ba số'));
+        let thrNumper = parseInt(prompt('hãy nhập ba số'));
+        if (firstNumper > secondNumper && firstNumper > thrNumper) {
+            alert('số lớn nhất là ' + firstNumper);
+        } else if (secondNumper > thrNumper) {
+            alert("số lớn nhất là" + secondNumper);
+        } else {
+            alert("số lớn nhất là" + thrNumper);
+        }
+    }
+
+    function exercise5() {
+        let baiKiemTra15 = parseInt(prompt('nhập điểm bài kiểm  tra 15 phút'));
+        let baiKiemTraGiuaKi = parseInt(prompt('nhập điểm bài  kiểm  tra giữa kì'));
+        let baiKiemTraCuoiKi = parseInt(prompt('nhập  điểm bài kiểm tra cuối kì'));
+        let diemTongKet = (baiKiemTra15 + (baiKiemTraGiuaKi * 2) + (baiKiemTraCuoiKi * 4)) / 7;
+        if (diemTongKet >= 0 && diemTongKet <= 10) {
+            if (diemTongKet >= 8) {
+                alert("hocj sinh gioi");
+            } else if (diemTongKet >= 6.5) {
+                alert("học sinh khá");
+            } else if (diemTongKet >= 5) {
+                alert("học sinh trung bình");
+            } else {
+                alert("học sinh yếu");
+            }
+        } else {
+            alert("nhập sai số");
+        }
+
+    }
+
+    function exercise6() {
+        let revenue = parseInt(prompt("nhập doanh thu "));
+        let commission = 0;
+        if (revenue > 0) {
+            if (revenue < 5000000) {
+                commission = commission + (revenue / 100) * 5;
+                alert(commission);
+            } else  {
+                commission = commission + (revenue / 100) * 10;
+                alert(commission);
+            }
+        }
+        else {
+            alert("nghỉ việc đi");
+        }
+    }
+
+    function exercise7() {
+        let minute = parseInt(prompt("nhập số phút bạn sử dụng"));
+        let tongTien=25000;
+        if (minute > 0) {
+            if (minute < 50) {
+               tongTien=tongTien+minute*600;
+               alert(tongTien)
+
+
+            } else if (minute <= 200) {
+                tongTien = tongTien+(50*600)+(minute-50)*400;
+                alert(tongTien)
+
+            } else
+            {
+                tongTien=tongTien+(50*600)+(150*400)+(minute-200)*200;
+                alert(tongTien)
+
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

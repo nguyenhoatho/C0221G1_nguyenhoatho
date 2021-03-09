@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <lable>nhập cân nặng</lable>
+    <br>
+    <input type="text" id="cannang"><br>
+    <label >nhập chiều cao</label><br>
+    <input type="text" id="chieucao"><br>
+    <input type="submit" value="tính chỉ só BIM" onclick="bimNumber()">
+</form>
+<script>
+    function bimNumber(){
+        let height = parseInt(document.getElementById("chieucao").value);
+        let  weight = parseInt(document.getElementById("cannang").value);
+        let bim = weight / ( height *height );
+        if (bim >18){
+            document.write("Underweight");
+            
+        }
+        else if (bim < 25) {
+            document.write("Normal");
+
+        }
+        else if (bim < 30) {
+            document.write("Overweight");
+        }
+        else {
+            document.write("Obese");
+        }
+    }
+
+</script>
+
+</body>
+</html>

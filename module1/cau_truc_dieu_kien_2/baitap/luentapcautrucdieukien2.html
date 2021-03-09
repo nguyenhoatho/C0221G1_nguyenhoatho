@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+    <label >lựa chọn cảu bạn là</label>
+    <select name="" id="luachon" onchange="main1()" >
+        <option value="1">bài 1</option>
+        <option value="2">bài 2</option>
+        <option value="3">bài 3</option>
+        <option value="4">bài 4</option>
+        <option value="5">bài 5</option>
+        <option value="6">bài 6</option>
+        <option value="7">bài 7</option>
+        <option value="8">bài 8</option>
+        <option value="9">bài 9</option>
+        <option value="10">bài 10</option>
+        <option value="11"> bài 11</option>
+        <option value="12">bài 12</option>
+    </select>
+</form>
+<script >
+    function main1(){
+        let luaChon =parseInt(document.getElementById("luachon").value);
+        switch (luaChon) {
+            case 1:
+                exercise1();
+                break;
+
+            case 2:
+                exercise2();
+                break;
+
+            case 3:
+                exercise3();
+                break;
+
+            case 4:
+                exercise4()
+                break;
+
+            case 5:
+                exercise5();
+                break;
+
+            case 6:
+                exercise6();
+                break;
+
+            case 7:
+                exercise7();
+                break;
+
+            case 8:
+                exercise8();
+                break;
+
+            case 9:
+                exercise9();
+                break;
+
+            case 10:
+                exercise10();
+                break;
+
+            case 11:
+                exercise11();
+                break;
+
+
+            case 12:
+                exercise12();
+                break;
+            default:
+                alert("quá rồi á bạn nha")
+        }
+
+
+   }
+   function exercise1(){
+       let c=parseInt(prompt("nhập nhiệt độ "));
+       let f=c*(9/5)+32;
+       alert (f);
+
+    }
+    function exercise2(){
+        let length = parseInt(prompt("độ dài m"));
+        let ft = length*3.2808;
+        alert(Number(ft));
+
+    }
+    function exercise3(){
+        let edgeA=parseInt(prompt("hãy nhập cạnh hinh  vuông"));
+        let area =edgeA*edgeA;
+        alert(area)
+
+    }
+    function exercise4(){
+        let edgeA =parseInt(prompt("hãy nhập cạnh b"));
+        let edgeB = parseInt(prompt("hãy nhập cạnh b"));
+        let area =edgeA*edgeB;
+        alert (area);
+
+    }
+    function exercise5(){
+        let edgeA =parseInt(prompt("hãy nhập cạnh b"));
+        let edgeB = parseInt(prompt("hãy nhập cạnh b"));
+        let area =(edgeA*edgeB)/2;
+        alert (area);
+
+
+    }
+    function exercise6(){
+        let valueA=parseInt(prompt("nhap gia tri a"));
+        let valueB =parseInt(prompt("nhap gia tri b"));
+        let slution =0;
+        if(valueA==0 ){
+            if(valueB ==0)
+            {
+                alert("phương trình có vô số nghiệm");
+            }
+            else {
+                alert("phương trình vô nghiệm")
+            }
+
+        }
+        else if(valueB != 0){
+            slution = -valueB/valueA;
+            alert("nghiệm cảu phương trình là"+ slution);
+
+        }
+
+
+
+    }
+    function exercise7(){
+        let valueA = parseInt(prompt("nhập giá trị a"));
+        let valueB = parseInt(prompt("nhap gia tri b"));
+        let valueC = parseInt(prompt("nhap gia tri c"));
+        let delta = (valueB*valueB)-4*(valueA*valueC);
+        if (delta==0){
+            alert("phuong trinh co mot nghiem duy nhat"+(-valueB/2*valueA));
+        }
+        else {
+            if (valueB>0){
+               let slution1 =(-valueB+Math.sqrt(delta))/(2*valueA);
+               let slution2 =(-valueB-Math.sqrt(delta))/(2*valueA);
+               alert("phuowng trinh co 2 nghiem la"+slution1+" " +slution2);
+
+            }
+            else {
+                alert("phuong trinh vo nghiem")
+            }
+        }
+
+
+    }
+    function exercise8(){
+        let yearOLd = parseInt(prompt("nhap so tuoi cau ban"));
+        if (yearOLd<120 && yearOLd>0){
+            alert("ban da nhap dung");
+        }else {
+            alert("ban da nhap sai");
+        }
+
+    }
+    function exercise9(){
+        let a = parseInt(prompt("nhap a"));
+        let b= parseInt(prompt("nhap b"));
+        let c = parseInt(prompt("nhap c"));
+        if ( a>0 && b>0 && c>0){
+            if(a+b >c && b+c >a && a+c>b) {
+                alert("la hinh tam giac")
+
+            }else {
+                alert("khong phai la tam giac")
+            }
+        }else {
+            alert("khong phai la tam gac")
+        }
+
+    }
+    function exercise11(){
+        let slary  = parseInt(prompt("nhap luong cua ban"))
+        let tax=0;
+        if (slary >= 15000000){
+            tax = (slary /100)*20;
+            alert(tax);
+        }
+        else if( slary >=7000000 & slary<15000000){
+            tax = (slary /100)*10;
+            alert(tax);
+        }
+        else {
+            tax=(slary/100)*5;
+            alert(tax);
+        }
+
+    }
+    function exercise10(){
+        let chiSoDien = parseInt(prompt("nhap chi so dien "));
+        let thanhTienChuaThue =0 ;
+        let thanhTien=0;
+        if (chiSoDien>0){
+            if(chiSoDien<=50){
+                thanhTienChuaThue =chiSoDien*1.678
+                thanhTien = thanhTienChuaThue +(thanhTienChuaThue/100*10);
+                alert(thanhTien)
+
+            }else if (chiSoDien <=100){
+                thanhTienChuaThue = 50*1.678+(100-50)*1.734
+                thanhTien =thanhTienChuaThue+(thanhTienChuaThue/100*10)
+                alert(thanhTien)
+            }
+
+
+
+        }else {
+            alert("khong dung dien");
+        }
+
+    }
+    function exercise12() {
+        let soTienVay = parseFloat(prompt("nhap so tien vay"));
+        let laiSuat   = parseFloat(prompt("nhap lai suat"));
+        let soThangTra = parseInt(prompt("so thang can tra"));
+        let soTienCanTra = soTienVay+(soTienVay*laiSuat);
+        if (soThangTra == 1){
+            alert(soTienCanTra);
+        }
+        else {
+            for (let i = 2; i <= soThangTra; i++) {
+                soTienCanTra = soTienCanTra + (soTienCanTra * laiSuat);
+
+            }
+            alert(soTienCanTra);
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

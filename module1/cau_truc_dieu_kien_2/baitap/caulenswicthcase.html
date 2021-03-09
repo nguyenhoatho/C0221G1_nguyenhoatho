@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+    <input type="text" id="month">
+    <input type="submit" value="số ngày trong tháng đó là" onclick="monthCalculation()">
+</form>
+<script>
+    function monthCalculation(){
+        let month = Number(document.getElementById("month").value);
+        switch (month){
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+                document.write("tháng này có 31 ngày");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.write("tháng này có 30 ngày");
+                break;
+            case 2:
+                document.write("tháng này có 28 ngày hoặc 29 ngày");
+                break;
+            default:
+                document.write("nhập sai tháng rồi thiếm ơi");
+
+
+        }
+    }
+
+</script>
+</body>
+</html>
