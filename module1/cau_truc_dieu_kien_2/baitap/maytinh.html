@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border: 5px black solid;
+            border-collapse: collapse;
+            width:400px; height:400px
+        }
+        tr,th{
+            margin-left: 5px;
+            width: 80px;height: 50px;
+        }
+        button{
+            width: 80px;height: 50px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4">
+            <input type="text" style="width: 364px;height: 50px" value="" id="display">
+        </td>
+    </tr>
+    <tr>
+        <td id="btn1"><button type="button" onclick="set('1')">1</button></td>
+        <td id="btn2"><button type="button" onclick="set('2')">2</button></td>
+        <td id="btn3"><button type="button" onclick="set('3')">3</button></td>
+        <td id="btnplus"><button type="button" onclick="set('+')">+</button></td>
+    </tr>
+    <tr>
+        <td id="btn4"><button type="button" onclick="set('4')">4</button></td>
+        <td id="btn5"><button type="button" onclick="set('5')">5</button></td>
+        <td id="btn6"><button type="button" onclick="set('6')">6</button></td>
+        <td id="btnsub"><button type="button" onclick="set('-')">-</button></td>
+    </tr>
+    <tr>
+        <td id="btn7"><button type="button" onclick="set('7')">7</button></td>
+        <td id="btn8"><button type="button" onclick="set('8')">8</button></td>
+        <td id="btn9"><button type="button" onclick="set('9')">9</button></td>
+        <td id="btnmulti"><button type="button" onclick="set('*')">x</button></td>
+    </tr>
+    <tr>
+        <td id="btnclear"><button type="button" onclick="ce()">C</button></td>
+        <td id="btn0"><button type="button" onclick="set('0')">0</button></td>
+        <td id="answer"><button type="button" onclick="answer()">=</button></td>
+        <td id="btndivi"><button type="button" onclick="set('/')">/</button></td>
+    </tr>
+</table>
+<script>
+    function set(op) {
+        document.getElementById('display').value+=op
+    }
+    function answer() {
+        let calcu = document.getElementById("display");
+        let calcu1 = calcu.value;
+        let result = eval(calcu1);
+        calcu.value = result;
+    }
+    function ce() {
+            let display = document.getElementById("display").value;
+        let length = display.length;
+        length--;
+        let a = display.substr(0, length);
+
+            document.getElementById("display").value = a;
+    }
+</script>
+</body>
+</html>
