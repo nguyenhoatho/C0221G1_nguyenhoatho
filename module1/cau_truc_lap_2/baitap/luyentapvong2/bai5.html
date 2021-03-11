@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTienVay = parseFloat(prompt("nhap so tien vay"));
+    let laiSuat   = parseFloat(prompt("nhap lai suat"));
+    let soThangTra = parseInt(prompt("so thang can tra"));
+    let soTienCanTra = soTienVay+(soTienVay*laiSuat);
+    if (soThangTra == 1){
+        alert(soTienCanTra);
+    }
+    else {
+        for (let i = 2; i <= soThangTra; i++) {
+            soTienCanTra = soTienCanTra + (soTienCanTra * laiSuat);
+
+        }
+        alert(soTienCanTra);
+    }
+
+
+</script>
+</body>
+</html>

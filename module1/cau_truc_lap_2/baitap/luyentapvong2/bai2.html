@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhap mot so nguyen duong"));
+    let total =1;
+    if(number>0){
+        let total =1;
+        for (let i=1 ; i<=number;i++){
+            total=total*i
+        }
+        document.write(total);
+
+    }else {
+        alert("nhap sai vui long nhap lai")
+        number = parseInt(prompt("nhap mot so nguyen duong"));
+
+    }
+</script>
+</body>
+</html>

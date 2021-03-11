@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temp1=0;
+    let temp2=1;
+    let temp3;
+    let total=1;
+
+    for (let i=1;i<=20;i++){
+
+        temp3=temp1+temp2;
+        total=total+temp3;
+        temp1=temp2;
+        temp2=temp3
+
+
+    }
+    document.write(total);
+</script>
+</body>
+</html>

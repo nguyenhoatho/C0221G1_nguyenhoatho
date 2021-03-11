@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numper = parseInt(prompt("in put number"));
+    let count =0;
+    for(let j=0;j<=numper;j++){
+    if (numper<2){
+        alert("khong phai la so nguyen to");
+    }
+    else {
+        for (let i=2 ;i <= Math.sqrt(numper);i++){
+            if(numper%i==0){
+                count +=1;
+            }
+
+        }
+        if(count==0){
+            alert("la so nguyen to");
+        }else{
+            alert("khong phai la so nguyen to");
+        }
+    }}
+
+</script>
+</body>
+</html>

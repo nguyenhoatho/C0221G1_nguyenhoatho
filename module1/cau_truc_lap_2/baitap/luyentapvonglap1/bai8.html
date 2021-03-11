@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+    <input type="button" onclick="playGame()" value="CHƠI GAME"   >
+</form>
+<script>
+    function playGame(){
+        let firstNumber = parseInt(prompt("input 1 "));
+        let secondNumber = parseInt(prompt("input 2"))
+        let numberSelect = parseInt(prompt("so ban chon la gi"));
+        if(secondNumber>firstNumber){
+            if (numberSelect>=firstNumber && numberSelect<=secondNumber){
+
+            let randomNumber = Math.floor(Math.random() * (secondNumber - firstNumber ) ) + firstNumber;
+            alert(randomNumber)
+            do {
+                if(numberSelect===randomNumber){
+                    alert("ban that may man");
+
+                }
+                else {
+                    alert("sai roi")
+                    numberSelect = parseInt(prompt("so ban chon la gi"));
+                }
+
+            }while (numberSelect>randomNumber || numberSelect<randomNumber)
+
+        }else {
+                alert("vui long nhap lai so pahi lon hon hoac bang so input1 va be hon hoac bang input2 ")
+            }
+
+
+        }
+        else {
+            alert("vui long nhap lai so dau tien lon hon so thu 2");
+        }
+
+
+    }
+</script>
+</body>
+</html>
