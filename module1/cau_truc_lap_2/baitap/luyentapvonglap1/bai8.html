@@ -17,18 +17,40 @@
             if (numberSelect>=firstNumber && numberSelect<=secondNumber){
 
             let randomNumber = Math.floor(Math.random() * (secondNumber - firstNumber ) ) + firstNumber;
-            alert(randomNumber)
-            for(let i= firstNumber;i<=randomNumber;i++){
-                if(numberSelect==i){
-                    alert("ban that may man")
+            let count = 1;
+            while (count<=3) {
+                if (numberSelect==randomNumber) {
+                    alert("ban da may man doan dung");
+                    break;
                 }
-                else {
-                    alert("ban hoi xui");
+                else
+                {
+                    alert("ban khong duoc may man lam");
 
-                    // numberSelect = parseInt(prompt("so ban chon la gi"));
+                 if(numberSelect<randomNumber){
+                     alert("ban phai nhap mot so lon hon");
+                     numberSelect = parseInt(prompt("so ban chon la gi"));
+                 } else {
+                     alert("ban phai nhap mot so nho hon");
+                     numberSelect = parseInt(prompt("so ban chon la gi"));
+                 }
+
+                 count++
+
                 }
-
             }
+            // alert(randomNumber)
+            // for(let i= firstNumber;i<=randomNumber;i++){
+            //     if(numberSelect==i){
+            //         alert("ban that may man")
+            //     }
+            //     else {
+            //         alert("ban hoi xui");
+            //
+            //         // numberSelect = parseInt(prompt("so ban chon la gi"));
+            //     }
+
+
             // do {
             //     if(numberSelect===randomNumber){
             //         alert("ban that may man");
