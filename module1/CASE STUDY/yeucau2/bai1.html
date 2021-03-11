@@ -9,12 +9,12 @@
 <SCRIPT>
     let slary = prompt('moi ban nhap tien luowng cua ban');
 
-    function tinhthue(slary){
+    function tinhThue(salary){
         let tax=0;
         if (slary >= 15000000){
             tax = (slary /100)*20;
         }
-        else if( slary >=7000000 & slary<15000000){
+        else if( slary >=7000000){
             tax = (slary /100)*10;
         }
         else {
@@ -24,7 +24,7 @@
 
 
     }
-    alert(tinhthue(slary));
+    alert(tinhThue(slary));
 </SCRIPT>
 </body>
 </html>

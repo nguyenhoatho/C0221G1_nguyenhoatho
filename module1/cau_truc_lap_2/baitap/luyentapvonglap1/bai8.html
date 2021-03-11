@@ -18,17 +18,28 @@
 
             let randomNumber = Math.floor(Math.random() * (secondNumber - firstNumber ) ) + firstNumber;
             alert(randomNumber)
-            do {
-                if(numberSelect===randomNumber){
-                    alert("ban that may man");
-
+            for(let i= firstNumber;i<=randomNumber;i++){
+                if(numberSelect==i){
+                    alert("ban that may man")
                 }
                 else {
-                    alert("sai roi")
-                    numberSelect = parseInt(prompt("so ban chon la gi"));
+                    alert("ban hoi xui");
+
+                    // numberSelect = parseInt(prompt("so ban chon la gi"));
                 }
 
-            }while (numberSelect>randomNumber || numberSelect<randomNumber)
+            }
+            // do {
+            //     if(numberSelect===randomNumber){
+            //         alert("ban that may man");
+            //
+            //     }
+            //     else {
+            //         alert("sai roi")
+            //         numberSelect = parseInt(prompt("so ban chon la gi"));
+            //     }
+            //
+            // }while (numberSelect>randomNumber && numberSelect<randomNumber)
 
         }else {
                 alert("vui long nhap lai so pahi lon hon hoac bang so input1 va be hon hoac bang input2 ")
