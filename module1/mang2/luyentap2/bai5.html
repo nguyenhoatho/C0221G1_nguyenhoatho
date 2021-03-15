@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1=prompt("nhap chuoi1")
+    let str2 =prompt("nhap chuoi 2")
+    let str1Arr=str1.split(" ");
+    let str2Arr =str2.split(" ");
+    let t= false;
+    if(str1Arr.length != str2Arr.length){
+        t=false
+    }else if (str2Arr.length == str1Arr.length){
+
+    for (let i=0;i<str1Arr.length;i++){
+        if (str1Arr[i]==str2Arr[i]){
+            t=true;
+        }
+
+    }}
+    if (t==true){
+        document.writeln("bang nhau")
+    }else {
+        document.writeln("khong bang nhua")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber1 = new Array();
+    let n = parseInt(prompt("moi nhap so luong phan tu trong mang"));
+    for (let i=0;i<n;i++) {
+        arrNumber1[i] = parseInt(prompt("nhap gia tri mang"));}
+    let arrNumber2= new Array();
+    let m = parseInt(prompt("moi nhap so luong phan tu trong mang"));
+
+
+
+
+    for (let j=0;j<m;j++) {
+        arrNumber2[j] = parseInt(prompt("nhap gia tri mang"));}
+    arrNumber3 = arrNumber1.concat(arrNumber2);
+    document.write(arrNumber3);
+</script>
+</body>
+</html>

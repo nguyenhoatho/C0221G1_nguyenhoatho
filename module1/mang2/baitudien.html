@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label >TỪ ĐIỂN TOÀN THƯ</label>
+    <input type="text" id="vocabulary" >
+    <input type="button" value="TRA TỪ ĐIỂN ANH VIỆT" onclick="anhViet()">
+
+<script>
+
+ function anhViet() {
+     let value=(document.getElementById('vocabulary').value);
+     let vietNam = ['cam',"chuối","đói","khát nước","nếu"];
+     let english = ["orange","banana","hungry","thirty","if"];
+
+     for (let i = 0; i < vietNam.length; i++) {
+         if (value == vietNam[i]) {
+             document.write(english[i])
+         }else if(value==english[i]){
+             document.write(vietNam[i])
+         }
+
+         // document.write(english[i]);
+         // document.write("<br>")
+         // document.write(vietNam[i])
+         // document.write("<br>")
+         // document.write(typeof (vietNam[i]))
+     }
+
+
+
+
+ }
+</script>
+</body>
+</html>

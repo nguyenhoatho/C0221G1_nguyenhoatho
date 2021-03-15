@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+
+<body >
+
+    <h2>CHỦ TỊCH TẬP ĐOÀN TRUNG NGUYÊN NÓI</h2>
+    <form name="trungnguyen">
+        <textarea name="txt" cols="40" rows="10" onkeydown="said();"></textarea>
+    </form>
+
+    <script>
+        function said(){
+            let textDisplay =['T','I','Ề','N',' ','N','H','I','Ề','U',' ','Đ','Ể',' ','L','À','M',' ','G','Ì',' ','<','3'];
+            //alert(textDisplay.length)
+            let n='';
+            let textInput=document.trungnguyen.txt.value;
+            let  lengthTextInput =textInput.length;
+            // alert(lengthTextInput);
+            if (lengthTextInput>0){
+                for (let i=0 ;i<(lengthTextInput);i++){
+                    n=n+textDisplay[i];
+                    if( i ==23){
+                        document.trungnguyen.txt.value='';
+                        n='';
+
+                    }
+
+
+                    }document.trungnguyen.txt.value = n;
+                        n="";
+                        setTimeout("said()", 1);
+
+
+                }
+
+
+
+
+        }
+
+
+    </script>
+</body>
+</html>

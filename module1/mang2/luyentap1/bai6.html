@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber =[1,4,5,8,9,10,15,447,25,89,14,23,78];
+    let inputNumber = parseInt(prompt("nhap mot so"));
+    let dem =0
+    for (let i=0;i<arrNumber.length;i++){
+        if (inputNumber==arrNumber[i]) {
+            document.write("V is in the array")
+            dem++
+        }
+
+    }
+    if(dem>=1){
+        document.write("V is in the array");
+
+    }else {
+        document.write("V is not in the array")
+    }
+</script>
+</body>
+</html>
