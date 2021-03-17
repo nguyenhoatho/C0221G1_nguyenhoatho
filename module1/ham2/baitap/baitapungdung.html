@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <lable>danh sach</lable>
+    <input type="text" id="tennhap">
+    <input type="button" value="ADD" onclick="addItem()">
+    <input type="button" value="SEARCH" onclick="search()">
+
+    <div id="hienthi"></div>
+</table>
+<script>
+    let items = new Array();
+    display(items);
+
+    function display(list) {
+        list.sort();
+        let tbl = '<table border="1px" cellpadding="0px" cellspacing="0px">';
+        for (let i = 0; i < list.length; i++) {
+            tbl = tbl + "<tr>"
+            tbl = tbl + "<td>" + list[i] + "</td>";
+            tbl = tbl + "<td>" + "<input type='button' value='Edit' onclick='editItem(" + i + ")'>" + "</td>";
+            tbl = tbl + "<td>" + "<input type='button' value='DELETE' onclick='deleteItem(" + i + ")'>" + "</td>";
+            tbl = tbl + "</tr>";
+
+        }
+        tbl = tbl + "</table>"
+        document.getElementById("hienthi").innerHTML = tbl;
+    }
+
+    function addItem() {
+        let item = document.getElementById("tennhap").value;
+        if (item != "") {
+            items.push(item);
+            item = document.getElementById("tennhap").value = '';
+
+        }
+        display(items);
+
+    }
+
+    function deleteItem(i) {
+        let alertItem = confirm("ban co muon xoa khong" + items[i]);
+        if (alertItem) {
+            items.splice(i, 1);
+        } else {
+            alert('khong xoa')
+        }
+
+        display(items);
+    }
+
+    function editItem(i) {
+        items[i] = prompt("ten can thay doi");
+        display(items);
+    }
+
+    function search() {
+       let arrSearch =[];
+       let stringName = document.getElementById('tennhap').value;
+       for(let i=0;i<items.length;i++){
+           if(items[i].includes(stringName)){
+               arrSearch.push(items[i]);
+           }
+       }
+       display(arrSearch);
+    }
+
+</script>
+</body>
+</html>

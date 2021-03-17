@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputFe=parseInt(prompt("nhap chieu dai don vi Feet"));
+    let inputMet=parseInt(prompt("nhap chieu dai bang met"));
+    function footToMeter(foot){
+        return  0.305 * foot;
+    }
+    function meterToFoot(meter){
+        return 3.279 * meter;
+    }
+    document.write(footToMeter(inputFe))
+    document.write("<br>")
+    document.write(meterToFoot(inputMet))
+</script>
+</body>
+</html>

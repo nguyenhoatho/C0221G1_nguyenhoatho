@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nameStar=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+    let constellation=[ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major'  ,'Leo'];
+    function check(nameStar,constellation){
+        let t=false;
+
+        let inputNameStar=prompt("nhap chom sao");
+        for(let i=0;i<nameStar.length;i++){
+            if(inputNameStar==nameStar[i]){
+                return constellation[i];
+
+            }
+            }
+        for(let i=0;i<nameStar.length;i++){
+            if(inputNameStar!=nameStar[i]){
+                return "khong tim thay";
+
+            }
+        }
+
+
+
+    }
+    document.write(check(nameStar,constellation));
+</script>
+
+</body>
+</html>

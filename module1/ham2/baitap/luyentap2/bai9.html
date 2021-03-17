@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1=['a','a',"b",'c','d'];
+      let  t=prompt("nhap");
+
+
+
+
+         function check(arr,char) {
+             let count = 0;
+             for (let j = 0; j < arr.length; j++) {
+
+                 if ( char != arr[j] ) {
+                     count = -1;
+
+
+
+                 }
+
+
+             }
+             for (let i = 0; i < arr.length; i++) {
+
+                 if ( char == arr[i] ) {
+                         count+=1;
+                 }
+
+             }
+             return count;
+
+
+
+
+         }
+         alert(check(arr1,t));
+
+</script>
+</body>
+</html>
