@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ class Temperature{
+     constructor(value=25) {
+         this._value=value;
+     }
+     f(){
+         return ((this._value*1.8)+32);
+     }
+     kevin(){
+         return this._value+273;
+     }
+ }
+ let temperature1= new Temperature();
+ document.write(temperature1.f()+"<br>");
+ document.write(temperature1.kevin());
+</script>
+</body>
+</html>

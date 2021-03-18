@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <canvas id="hienthi" width="500px" height="700px" style="border: 1px"></canvas>
+<script>
+    class Rectangle{
+        constructor(height, width,) {
+            this.height= height;
+            this.width=width;
+        }
+        getHeight(){
+           return this.height;
+
+        }
+        getWidth(){
+            return this.width;
+        }
+        setHeight(height){
+            this.height=height;
+        }
+        setWidth(width){
+            this.width=width;
+        }
+       perimeter(){
+            return ((this.height+this.width)*2)
+        }
+        acreage(){
+            return (this.height*this.width);
+        }
+        draw(){
+            let c = document.getElementById("hienthi");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle="red";
+            ctx.fillRect(100,100,this.height,this.width)
+
+
+        }
+
+    }
+    let Rectangle1 =new Rectangle(15,20);
+     document.write(Rectangle1.draw());
+
+</script>
+
+</body>
+</html>
