@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight=10) {
+            this.weight=weight;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        decrease(){
+            this.weight--;
+        }
+        isEmpty(weight){
+            if (this.weight>0){
+                return 1;
+            }else {
+                return 0;
+            }
+        }
+
+
+    }
+    class Human{
+        constructor(name,gender,weight) {
+            this.name=name;
+            this.gender=gender;
+            this.weight=weight;
+        }
+        speak(text){
+            return text;
+
+        }
+        checkWeightApple(apple){
+            alert(apple.getWeight());
+
+
+        }
+        getName(){
+            return this.name;
+
+        }
+        getWeight(){
+            return this.weight;
+        }
+        setWeight(weight){
+            this.weight =weight;
+        }
+        setName(name){
+            this.name=name;
+
+        }
+        eatApple(apple){
+            if(apple.weight>0){
+                this.weight++
+                apple.decrease();
+            }
+
+        }
+        isMale(gender){
+            if (gender==="nam"){
+                return 1;
+            }
+             else if (gender==="nữ"){
+                 return 0;
+            }else{
+                 return "bạn thuộc giới tính thứ 3";
+            }
+
+        }
+
+
+    }
+    let apple =new Apple();
+    human=new Human("tho","nữ",50)
+    document.write(human.isMale(human.gender)+"<br>");
+    human.eatApple(apple)
+    document.write(human.getWeight()+"<br>")
+    document.write(apple.getWeight())
+
+
+
+
+
+
+</script>
+</body>
+</html>
