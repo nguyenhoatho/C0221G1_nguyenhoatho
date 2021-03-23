@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str =prompt("nhap mot chuoi");
+    str= str.split("");
+    let arrNumber=["không","một","hai","ba","bốn","năm","sáu","bảy","tám","chín"];
+    let result="";
+    for(let i=0;i<str.length;i++){
+         result+=arrNumber[parseInt(str[i])]+" ";
+    }
+    document.write(result)
+
+</script>
+</body>
+</html>

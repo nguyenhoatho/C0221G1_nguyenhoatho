@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayOne = [7,2,5,3,5,3,5,3,7] ;
+    let arrayTwo = [7,2,5,4,6,3,5,3] ;
+    let arrayThree = [];
+
+    for(let i = 0 ; i< arrayOne.length; i++){
+        if(arrayOne.indexOf(arrayTwo[i]) === -1) {
+            arrayThree.push(arrayTwo[i])
+             }else if (arrayTwo.indexOf(arrayOne[i]) === -1){
+                 arrayThree.push(arrayOne[i])
+             }
+
+
+    }
+    alert(arrayThree)
+
+
+</script>
+
+</body>
+</html>

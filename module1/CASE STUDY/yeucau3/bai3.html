@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerators = [5, 2, 5];
+    let denominators = [6, 3, 4];
+    result=[];
+    for(let i=0;i<numerators.length;i++){
+        result.push(numerators[i]/denominators[i]);
+    }
+    result.sort();
+    // document.write(result)
+    max=result[0]
+    let index;
+    for (let j=0;j<result.length;j++){
+        if(max<result[j]){
+           max=result[j];
+           index=j;
+        }
+    }
+    document.write(max+"<br>");
+    document.write(index);
+
+</script>
+</body>
+</html>

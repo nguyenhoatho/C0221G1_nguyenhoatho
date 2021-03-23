@@ -16,7 +16,7 @@
         decrease(){
             this.weight--;
         }
-        isEmpty(weight){
+        isEmpty(){
             if (this.weight>0){
                 return 1;
             }else {
@@ -57,16 +57,16 @@
         }
         eatApple(apple){
             if(apple.weight>0){
-                this.weight++
+                this.setWeight();
                 apple.decrease();
             }
 
         }
-        isMale(gender){
-            if (gender==="nam"){
+        isMale(){
+            if (this.gender==="nam"){
                 return 1;
             }
-             else if (gender==="nữ"){
+             else if (this.gender==="nữ"){
                  return 0;
             }else{
                  return "bạn thuộc giới tính thứ 3";
@@ -77,11 +77,11 @@
 
     }
     let apple =new Apple();
-    human=new Human("tho","nữ",50)
-    document.write(human.isMale(human.gender)+"<br>");
-    human.eatApple(apple)
-    document.write(human.getWeight()+"<br>")
-    document.write(apple.getWeight())
+    let adam=new Human("Tho","nam",50);
+    let eva = new Human("ban nu nao do","nu",46);
+
+
+
 
 
 

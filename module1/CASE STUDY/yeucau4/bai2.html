@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str=prompt("nhap mot chuoi");
+    let arr=str.split("");
+    let ar1=[];
+    for(let i=0;i<arr.length;i++){
+        if(ar1.indexOf(arr[i]) == -1){
+            ar1.push(arr[i]);
+        }
+
+    }
+   document.write(ar1.length)
+
+</script>
+</body>
+</html>
