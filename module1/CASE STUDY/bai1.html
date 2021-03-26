@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = creatArr();
+    alert(sumArray(arr));
+    function creatArr() {
+        let m = parseInt(prompt("Nhập m"));
+        let n = parseInt(prompt('Nhập n'));
+        let arr = new Array(m);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = new Array(n);
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = parseInt(prompt("Nhập giá trị"));
+            }
+        }
+        return arr;
+    }
+    function sumArray(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] % 2 == 0) {
+                    sum += arr[i][j];
+                }
+            }
+        }
+        return sum;
+</script>
+</body>
+</html>

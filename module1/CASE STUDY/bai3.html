@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=creatArr();
+    function creatArr() {
+        let m = parseInt(prompt("Nhập m"));
+        let n = parseInt(prompt('Nhập n'));
+        let arr = new Array(m);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = new Array(n);
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = parseInt(prompt("Nhập giá trị"));
+            }
+        }
+        return arr;
+    }
+    function timSNT(arr) {
+        let count=0;
+        let result='';
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++){
+                if (isPrime(arr[i][j])){
+                    result+=arr[i][j]+' ';
+                    count+=1;
+                }
+            }
+        }
+        return document.write('Các số nguyên tố là: '+result+' Tổng số số nguyên tố là: '+count);
+    }
+    function isPrime(number) {
+        if(number<2){
+            return false;
+        }
+        for (let j = 2; j <= Math.sqrt(number); j++) {
+            if (number % j == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    // let arr=[
+    //     [1,2,3],
+    //     [4,5,6],
+    //     [7,8,9]
+    // ];
+    timSNT(arr);
+</script>
+</body>
+</html>
