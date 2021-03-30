@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DienThoai{
+        constructor(maDienThoai,ten,hang,gia) {
+            this.maDienThoai=maDienThoai;
+            this.ten=ten;
+            this.hang=hang;
+            this.gia=gia;
+            this.danhSach=[];
+        }
+        getMa(){
+            return this.maDienThoai;
+        }
+        getTen(){
+            return this.ten;
+        }
+        getHang(){
+            return this.hang;
+        }
+        getGia(){
+            return this.gia;
+        }
+        setMa(ma){
+            this.maDienThoai=ma;
+        }
+        setTen(ten){
+            this.ten=ten;
+        }
+        setHang(hang){
+            this.hang=hang;
+        }
+        setGia(gia){
+            this.gia=gia;
+        }
+        toString(){
+            return "ma:"+this.maDienThoai+"<br>"+"ten:"+this.ten+"<br>"+"hang:"+this.hang+"<br>"+"gia:"+this.gia;
+        }
+        themDienThoai(ma,ten,hang,gia){
+            this.danhSach=[this.maDienThoai=ma,this.ten=ten;]
+
+        }
+
+    }
+    let dienThoai=new DienThoai("abc","C2","nokia",45000);
+    document.write(dienThoai.toString())
+
+</script>
+</body>
+</html>
