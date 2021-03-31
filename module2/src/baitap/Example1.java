@@ -7,25 +7,29 @@ public class Example1 {
         String tens = "";
         String hundred;
         String units = "";
+        String result = "";
 
         int hundredsDigit = inputNumber / 100;
         int tensDigits = (inputNumber - hundredsDigit * 100) / 10;
         int unitDigits = (inputNumber - hundredsDigit * 100 - tensDigits * 10);
+        if (inputNumber == 0) {
+            System.out.println("zero");
+        }
         switch (hundredsDigit) {
             case 1:
-                hundred = "one hundred and";
+                hundred = "one hundred ";
                 break;
             case 2:
-                hundred = "two hundred and";
+                hundred = "two hundred ";
                 break;
             case 3:
-                hundred = "three hundred and";
+                hundred = "three hundred";
                 break;
             case 4:
-                hundred = "four hundred and";
+                hundred = "four hundred";
                 break;
             case 5:
-                hundred = "five hundred and";
+                hundred = "five hundred ";
                 break;
             case 6:
                 hundred = "six hundred and";
@@ -44,6 +48,8 @@ public class Example1 {
 
 
         }
+
+
         if (tensDigits > 1) {
             switch (tensDigits) {
                 case 2:
@@ -74,78 +80,7 @@ public class Example1 {
                 default:
                     tens = "";
             }
-                    switch(unitDigits){
-                        case 1:
-                            units = "one";
-                            break;
-                        case 2:
-                            units = "two";
-                            break;
-                        case 3:
-                            units = "three";
-                            break;
-                        case 4:
-                            units = "four";
-                            break;
-                        case 5:
-                            units = "five";
-                            break;
-                        case 6:
-                            units = "six";
-                            break;
-                        case 7:
-                            units = "seven";
-                            break;
-                        case 8:
-                            units = "eight";
-                            break;
-                        case 9:
-                            units = "nine";
-                            break;
-                        default:
-                            units = "";
-                    }
-            }
-        else if( tensDigits>0)
-        {
-         switch (unitDigits){
-             case 0:
-                 tens="ten";
-                 break;
-             case 1:
-                 tens="eleven";
-                 break;
-             case 2:
-                 tens="twelve";
-                 break;
-             case 3:
-                 tens="thirteen";
-                 break;
-             case 4:
-                 tens="fourteen";
-                 break;
-             case 5:
-                 tens="fifteen";
-                 break;
-             case 6:
-                 tens="sixteen";
-                 break;
-             case 7:
-                 tens="seventeen";
-                 break;
-             case 8:
-                 tens="eighteen";
-                 break;
-             case 9:
-                 tens="nineteen";
-                 break;
-             default:
-                 tens="";
-
-
-         }
-        }else {
-            switch(unitDigits){
+            switch (unitDigits) {
                 case 1:
                     units = "one";
                     break;
@@ -176,12 +111,166 @@ public class Example1 {
                 default:
                     units = "";
             }
+            result = hundred + " and " + tens + " " + units;
+        } else if (tensDigits > 0 && hundredsDigit > 0) {
+            switch (unitDigits) {
+                case 0:
+                    tens = "ten";
+                    break;
+                case 1:
+                    tens = "eleven";
+                    break;
+                case 2:
+                    tens = "twelve";
+                    break;
+                case 3:
+                    tens = "thirteen";
+                    break;
+                case 4:
+                    tens = "fourteen";
+                    break;
+                case 5:
+                    tens = "fifteen";
+                    break;
+                case 6:
+                    tens = "sixteen";
+                    break;
+                case 7:
+                    tens = "seventeen";
+                    break;
+                case 8:
+                    tens = "eighteen";
+                    break;
+                case 9:
+                    tens = "nineteen";
+                    break;
+                default:
+                    tens = "";
+
+            }
+            result = hundred + " and " + tens;
+
+        } else if (unitDigits > 0 && tensDigits == 0 && hundredsDigit > 0) {
+
+            switch (unitDigits) {
+
+                case 1:
+                    units = " one";
+                    break;
+                case 2:
+                    units = "  two";
+                    break;
+                case 3:
+                    units = "  three";
+                    break;
+                case 4:
+                    units = " four";
+                    break;
+                case 5:
+                    units = " five";
+                    break;
+                case 6:
+                    units = "  six";
+                    break;
+                case 7:
+                    units = " seven";
+                    break;
+                case 8:
+                    units = "eight";
+                    break;
+                case 9:
+                    units = "nine";
+                    break;
+                default:
+                    units = "";
+            }
+
+
+            result = hundred + " and " + units;
+
+
+        } else if (unitDigits == 0 && tensDigits == 0) {
+            result = hundred;
+        } else if (hundredsDigit == 0 && tensDigits == 0) {
+            switch (unitDigits) {
+
+                case 1:
+                    units = " one";
+                    break;
+                case 2:
+                    units = "  two";
+                    break;
+                case 3:
+                    units = "  three";
+                    break;
+                case 4:
+                    units = " four";
+                    break;
+                case 5:
+                    units = " five";
+                    break;
+                case 6:
+                    units = "  six";
+                    break;
+                case 7:
+                    units = " seven";
+                    break;
+                case 8:
+                    units = "eight";
+                    break;
+                case 9:
+                    units = "nine";
+                    break;
+                default:
+                    units = "";
+            }
+            result = units;
+
+        } else if (hundredsDigit == 0 && tensDigits == 1) {
+
+            switch (unitDigits) {
+                case 0:
+                    tens = "ten";
+                    break;
+                case 1:
+                    tens = "eleven";
+                    break;
+                case 2:
+                    tens = "twelve";
+                    break;
+                case 3:
+                    tens = "thirteen";
+                    break;
+                case 4:
+                    tens = "fourteen";
+                    break;
+                case 5:
+                    tens = "fifteen";
+                    break;
+                case 6:
+                    tens = "sixteen";
+                    break;
+                case 7:
+                    tens = "seventeen";
+                    break;
+                case 8:
+                    tens = "eighteen";
+                    break;
+                case 9:
+                    tens = "nineteen";
+                    break;
+                default:
+                    tens = "";
+
+            }
+            result=tens;
+
+
 
         }
-
-        System.out.println(hundred+" "+tens+" "+units);
-        }
+        System.out.println(result);
     }
+}
 
 
 
