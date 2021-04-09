@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/access_motifier_static_method.iml" filepath="$PROJECT_DIR$/access_motifier_static_method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/baitap.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module2.iml" filepath="$PROJECT_DIR$/module2.iml" />
     </modules>
   </component>
 </project>

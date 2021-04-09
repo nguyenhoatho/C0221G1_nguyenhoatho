@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeff502b-47f8-4ddc-8123-05990fcb8677" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buoi2/src/examplearray/DiagonalArr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buoi2/src/examplearray/ExampleString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buoi2/src/examplearray/SearchMAx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buoi2/src/examplearray/SearchMin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buoi2/src/examplearray/SumRowArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/C0221G1_nguyenhoatho.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap2/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kethua/src/baitap/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kethua/src/baitap/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/buoi2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi2/out/production/buoi2/examplearray/AddArr.class" beforeDir="false" afterPath="$PROJECT_DIR$/buoi2/out/production/buoi2/examplearray/AddArr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi2/src/examplearray/AddArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi2/src/examplearray/AddArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/buoi1/baitap/CurrencyConversion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/buoi1/baitap/DisplayHello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/buoi1/baitap/Example2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baitap/CurrencyConversion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baitap/DisplayHello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/baitap/Example2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiOOP/src/baitap/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/Fan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiOOP/src/baitap/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaiOOP/src/baitap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buoi1introjava/src/baitap/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi1introjava/src/baitap/CurrencyConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buoi1introjava/src/baitap/DisplayHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi1introjava/src/baitap/DisplayHello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buoi1introjava/src/baitap/Example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi1introjava/src/baitap/Example2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/TestCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/TestCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/MoveablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Point3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Point3d.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1qjuEwWGsxSKwGYqqDjb0kI2eY7" />
+  <component name="ProjectId" id="1qpajKW1MQAnHcIJLJqcQ6WPe8p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,11 +57,55 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/bai_abtract_interface/baitap1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="baitap.baitap1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/bai_abtract_interface/baitap1" />
+      <recent name="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="baitap1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baitap.baitap1.Test" />
+      <module name="bai_abtract_interface" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baitap.baitap1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baitap1.Test" />
+      <module name="bai_abtract_interface" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baitap1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -62,21 +117,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eeff502b-47f8-4ddc-8123-05990fcb8677" name="Default Changelist" comment="" />
-      <created>1617605213801</created>
+      <changelist id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="" />
+      <created>1617779122261</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617605213801</updated>
-      <workItem from="1617605214952" duration="14000" />
-      <workItem from="1617605276833" duration="157000" />
-      <workItem from="1617605452210" duration="78000" />
-      <workItem from="1617605552177" duration="71000" />
-      <workItem from="1617609478362" duration="26000" />
-      <workItem from="1617611225815" duration="102000" />
+      <updated>1617779122261</updated>
+      <workItem from="1617779124058" duration="10161000" />
+      <workItem from="1617806949620" duration="1040000" />
+      <workItem from="1617852552469" duration="9236000" />
     </task>
     <servers />
   </component>

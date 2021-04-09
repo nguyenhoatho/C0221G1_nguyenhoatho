@@ -1,15 +1,14 @@
-package baitap;
+package baitap1;
 
-public class Circle {
+public class Circle{
     private float radius;
 
-    public Circle() {
+    public Circle(double v, String indigo, boolean b) {
     }
 
     public Circle(float radius) {
         this.radius = radius;
     }
-
     public float getRadius() {
         return radius;
     }

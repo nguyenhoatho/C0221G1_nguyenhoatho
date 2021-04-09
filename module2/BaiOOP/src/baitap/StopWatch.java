@@ -1,4 +1,4 @@
-package baitap;
+package baitap1;
 
 public class StopWatch {
     private long startTime;

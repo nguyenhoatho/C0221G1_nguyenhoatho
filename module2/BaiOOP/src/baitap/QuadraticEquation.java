@@ -1,4 +1,4 @@
-package baitap;
+package baitap1;
 
 public class QuadraticEquation {
     private int a;
