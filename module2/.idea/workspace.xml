@@ -2,39 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Resizeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap2/Colorable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kethua/src/baitap/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kethua/src/baitap/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/danhsach.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/baitap/baitap2/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/baitap/baitap2/TestLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/thuchanh/thuchanh1/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/thuchanh/thuchanh1/MylistClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/thuchanh/thuchanh2/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/danhsach/src/thuchanh/thuchanh2/TestMyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/mang2/luyentap2/bai6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/mang2/luyentap2/bai6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiOOP/src/baitap/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/Fan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiOOP/src/baitap/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/QuadraticEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaiOOP/src/baitap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaiOOP/src/baitap/StopWatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi1introjava/src/baitap/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi1introjava/src/baitap/CurrencyConversion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi1introjava/src/baitap/DisplayHello.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi1introjava/src/baitap/DisplayHello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buoi1introjava/src/baitap/Example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/buoi1introjava/src/baitap/Example2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/TestCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/out/production/kethua/baitap/TestCycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Cylinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/MoveablePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kethua/src/baitap/Point3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/kethua/src/baitap/Point3d.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,6 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowDuplicates.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/bai_abtract_interface/baitap1" />
@@ -66,6 +59,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -79,7 +75,33 @@
       <recent name="baitap1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="Application.Practice">
+    <configuration name="MylistClassTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuchanh.thuchanh1.MylistClassTest" />
+      <module name="danhsach" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuchanh.thuchanh1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.example1.Practice" />
+      <module name="java_colection_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.example1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baitap.baitap1.Test" />
       <module name="bai_abtract_interface" />
@@ -106,19 +128,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuchanh.thuchanh2.TestMyLinkedList" />
+      <module name="danhsach" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuchanh.thuchanh2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice" />
+        <item itemvalue="Application.TestMyLinkedList" />
+        <item itemvalue="Application.MylistClassTest" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test" />
       </list>
@@ -135,6 +175,14 @@
       <workItem from="1617779124058" duration="10161000" />
       <workItem from="1617806949620" duration="1040000" />
       <workItem from="1617852552469" duration="9236000" />
+      <workItem from="1617951269184" duration="3940000" />
+      <workItem from="1618022763589" duration="58000" />
+      <workItem from="1618022987728" duration="2984000" />
+      <workItem from="1618044772192" duration="1635000" />
+      <workItem from="1618126906694" duration="3088000" />
+      <workItem from="1618198813548" duration="12723000" />
+      <workItem from="1618231316752" duration="1610000" />
+      <workItem from="1618233302439" duration="1908000" />
     </task>
     <servers />
   </component>
