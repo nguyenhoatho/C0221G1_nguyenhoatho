@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Practice {
     static ArrayList<Product> products=new ArrayList<Product>();
+
     public static void menu(){
         System.out.println("Please choose the function");
         String choose=new Scanner(System.in).nextLine();
@@ -39,9 +40,20 @@ public class Practice {
     }
 
     private static void searchOfName() {
+        System.out.println("please input name search");
+        String name=new Scanner(System.in).nextLine();
+        for (Product product:products){
+            if (product.getName().equals(name)){
+                System.out.println(product);
+            }
+        }
     }
 
     private static void deleteOfId() {
+        System.out.println("please input id delete");
+        int idOfDelete=new Scanner(System.in).nextInt();
+        products.removeIf(product -> product.getId() == idOfDelete);
+
 
     }
 
@@ -58,31 +70,23 @@ public class Practice {
             boolean condition = product.getId() == idInput;
             if(condition){
                 System.out.println("please input Id");
-                product.setId(new Scanner(System.in).nextInt());
+                int idEdit=new Scanner(System.in).nextInt();
+                product.setId(idEdit);
                 System.out.println("please input Name");
-                product.setName(new Scanner(System.in).nextLine());
+                String nameEdit=new Scanner(System.in).nextLine();
+                product.setName(nameEdit);
                 System.out.println("please  input Price");
-                product.setPrice(new Scanner(System.in).nextDouble());
+                double priceEdit=new Scanner(System.in).nextDouble();
+                product.setPrice(priceEdit);
             }
             }
-        for (Product product:products){
-            boolean condition = product.getId() == idInput;
-            if (condition==false){
-                System.out.println("not found ID");
-                break;
             }
-        }
-
-            }
-
-
-
     private static void addProduct() {
         Product product =new Product();
         System.out.println("please input Id");
         int id=new Scanner(System.in).nextInt();
         System.out.println("please input Name");
-        String name=new Scanner(System.in).nextLine();
+        String name=new Scanner(System.in).next();
         System.out.println("please  input Price");
         double price=new Scanner(System.in).nextDouble();
         product.setId(id);
