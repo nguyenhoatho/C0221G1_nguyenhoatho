@@ -1,13 +1,15 @@
 package example.example1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
-public class Practice {
-    static ArrayList<Product> products=new ArrayList<Product>();
+public class ProductManagerProductManager {
+    static ArrayList<Product> listProducts =new ArrayList<Product>();
 
     public static void menu(){
         System.out.println("Please choose the function");
+        System.out.println("1.add"+"\n"+"2.edit"+"\n"+"3.delete by id"+"\n"+"4.display"+"\n"+"5 search by name"+"\n"+"6.sort by price");
         String choose=new Scanner(System.in).nextLine();
 
 
@@ -31,18 +33,21 @@ public class Practice {
                 sortOfPrice();
                 break;
             default:
-                break;
+                System.exit(0);
 
         }
     }
 
     private static void sortOfPrice() {
+        Collections.sort(listProducts);
+        Collections.sort(listProducts, new PriceComparatorOfProduct());
+//        listProducts.sort(Comparator.comparing(Product::getPrice));
     }
 
     private static void searchOfName() {
         System.out.println("please input name search");
         String name=new Scanner(System.in).nextLine();
-        for (Product product:products){
+        for (Product product: listProducts){
             if (product.getName().equals(name)){
                 System.out.println(product);
             }
@@ -52,13 +57,13 @@ public class Practice {
     private static void deleteOfId() {
         System.out.println("please input id delete");
         int idOfDelete=new Scanner(System.in).nextInt();
-        products.removeIf(product -> product.getId() == idOfDelete);
+        listProducts.removeIf(product -> product.getId() == idOfDelete);
 
 
     }
 
     private static void displayProduct() {
-        for (Product array:products){
+        for (Product array: listProducts){
             System.out.println(array);
         }
     }
@@ -66,7 +71,7 @@ public class Practice {
     private static void editOfId() {
         System.out.println("please input Id can Search");
         int idInput=new Scanner(System.in).nextInt();
-        for(Product product:products){
+        for(Product product: listProducts){
             boolean condition = product.getId() == idInput;
             if(condition){
                 System.out.println("please input Id");
@@ -79,27 +84,27 @@ public class Practice {
                 double priceEdit=new Scanner(System.in).nextDouble();
                 product.setPrice(priceEdit);
             }
-            }
-            }
+        }
+    }
     private static void addProduct() {
         Product product =new Product();
         System.out.println("please input Id");
-        int id=new Scanner(System.in).nextInt();
+        int id=Integer.parseInt(new Scanner(System.in).next());
         System.out.println("please input Name");
         String name=new Scanner(System.in).next();
         System.out.println("please  input Price");
-        double price=new Scanner(System.in).nextDouble();
+        double price=Double.parseDouble(new Scanner(System.in).next());
         product.setId(id);
         product.setName(name);
         product.setPrice(price);
-        products.add(product);
+        listProducts.add(product);
 
     }
 
     public static void main(String[] args) {
-        while (true) {
-            menu();
-        }
+       do {
+           menu();
+       }while (true);
 
     }
 }

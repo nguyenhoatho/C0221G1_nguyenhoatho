@@ -1,6 +1,6 @@
 package example.example1;
 
-public class Product {
+public class Product implements Comparable<Product> {
     private int id;
     private String name;
     private double price;
@@ -44,6 +44,8 @@ public class Product {
         return this.id+"\t"+this.name+"\t"+this.price;
     }
 
-
-
+    @Override
+    public int compareTo(Product o) {
+        return this.name.compareTo(o.getName());
+    }
 }

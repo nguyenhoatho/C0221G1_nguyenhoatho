@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/baitap.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" />
       <module fileurl="file://$PROJECT_DIR$/danhsach/danhsach.iml" filepath="$PROJECT_DIR$/danhsach/danhsach.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" filepath="$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map_tree/map_tree.iml" filepath="$PROJECT_DIR$/map_tree/map_tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/module2.iml" filepath="$PROJECT_DIR$/module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack_queue/stack_queue.iml" filepath="$PROJECT_DIR$/stack_queue/stack_queue.iml" />
     </modules>
