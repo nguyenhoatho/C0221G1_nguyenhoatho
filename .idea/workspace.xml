@@ -2,28 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12baa574-311a-464d-9328-f941f6de98f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module2/BaiOOP/src/baitap/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/BaiOOP/src/baitap/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/BaiOOP/src/baitap/StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/buoi2/src/examplearray/DiagonalArr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/buoi2/src/examplearray/ExampleString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/buoi2/src/examplearray/SearchMAx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/buoi2/src/examplearray/SearchMin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2/buoi2/src/examplearray/SumRowArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/C0221G1_nguyenhoatho.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/buoi2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/buoi2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/buoi2/out/production/buoi2/examplearray/AddArr.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/buoi2/out/production/buoi2/examplearray/AddArr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/buoi2/src/examplearray/AddArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/buoi2/src/examplearray/AddArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/out/production/buoi1/baitap/CurrencyConversion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/out/production/buoi1/baitap/DisplayHello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/out/production/buoi1/baitap/Example2.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/Sort/Sort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/Sort/src/example/example1/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/case_study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/src/controllers/MainControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/src/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/src/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/src/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/src/models/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/case_study/src/models/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io/io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io/src/io/SerializeFileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io/src/model/DanhBa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io/src/test/TestDanhBa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io_file_product/io_file_product.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io_file_product/src/io/SerializeFileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io_file_product/src/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/io_file_product/src/test/TestProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/search_algorithm/search_algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2/search_algorithm/src/example/example1/RecursiveSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/java_colection_framework/src/example/example1/PriceComparatorOfProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/java_colection_framework/src/example/example1/PriceComparatorOfProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/java_colection_framework/src/example/example1/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/java_colection_framework/src/example/example1/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/java_colection_framework/src/example/example1/ProductManagerProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/java_colection_framework/src/example/example1/ProductManagerProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/map_tree/src/example/example1/StringCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/map_tree/src/example/example1/StringCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/java_colection_framework/example/example1/PriceComparatorOfProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/java_colection_framework/example/example1/PriceComparatorOfProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/java_colection_framework/example/example1/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/java_colection_framework/example/example1/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/java_colection_framework/example/example1/ProductManagerProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/java_colection_framework/example/example1/ProductManagerProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/map_tree/example/example1/StringCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/map_tree/example/example1/StringCount.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617605121715</updated>
       <workItem from="1617605124344" duration="90000" />
+      <workItem from="1618844890858" duration="16000" />
     </task>
     <servers />
   </component>

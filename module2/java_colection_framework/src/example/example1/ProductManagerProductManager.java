@@ -1,11 +1,11 @@
 package example.example1;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class ProductManagerProductManager {
     static ArrayList<Product> listProducts =new ArrayList<Product>();
+    private static java.lang.Object Collections;
 
     public static void menu(){
         System.out.println("Please choose the function");
@@ -39,7 +39,6 @@ public class ProductManagerProductManager {
     }
 
     private static void sortOfPrice() {
-        Collections.sort(listProducts);
         Collections.sort(listProducts, new PriceComparatorOfProduct());
 //        listProducts.sort(Comparator.comparing(Product::getPrice));
     }
@@ -97,14 +96,14 @@ public class ProductManagerProductManager {
         product.setId(id);
         product.setName(name);
         product.setPrice(price);
-        listProducts.add(product);
+        listProducts.add(new Product(id,name,price));
 
     }
 
     public static void main(String[] args) {
-       do {
-           menu();
-       }while (true);
+        do {
+            menu();
+        }while (true);
 
     }
 }

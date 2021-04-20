@@ -1,5 +1,4 @@
 package example.example1;
-
 public class Product implements Comparable<Product> {
     private int id;
     private String name;

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/baitap.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case_study/case_study.iml" filepath="$PROJECT_DIR$/case_study/case_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/danhsach/danhsach.iml" filepath="$PROJECT_DIR$/danhsach/danhsach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io_file_product/io_file_product.iml" filepath="$PROJECT_DIR$/io_file_product/io_file_product.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" filepath="$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/map_tree/map_tree.iml" filepath="$PROJECT_DIR$/map_tree/map_tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/module2.iml" filepath="$PROJECT_DIR$/module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search_algorithm/search_algorithm.iml" filepath="$PROJECT_DIR$/search_algorithm/search_algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sort_algorithms/sort_algorithms.iml" filepath="$PROJECT_DIR$/sort_algorithms/sort_algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack_queue/stack_queue.iml" filepath="$PROJECT_DIR$/stack_queue/stack_queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoo/zoo.iml" filepath="$PROJECT_DIR$/zoo/zoo.iml" />
     </modules>
   </component>
 </project>

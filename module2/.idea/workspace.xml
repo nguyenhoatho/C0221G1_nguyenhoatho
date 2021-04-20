@@ -2,15 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/PriceComparatorOfProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map_tree/map_tree.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map_tree/src/example/example1/StringCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sort/Sort.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sort/src/example/example1/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/case_study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/controllers/MainControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/models/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/models/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/repository/funcWriteAndReadFileCsv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/src/io/SerializeFileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/src/model/DanhBa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/src/test/TestDanhBa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_file_product/io_file_product.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_file_product/src/io/SerializeFileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_file_product/src/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_file_product/src/test/TestProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-reflect-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-reflect.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-jdk8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-stdlib.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-test-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kotlin-test.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_algorithm/search_algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_algorithm/src/example/example1/RecursiveSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort_algorithms/sort_algorithms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort_algorithms/src/example/example_1/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zoo/src/models/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zoo/zoo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_colection_framework/src/example/example1/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/ProductManagerProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_colection_framework/src/example/example1/PriceComparatorOfProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/PriceComparatorOfProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java_colection_framework/src/example/example1/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_colection_framework/src/example/example1/ProductManagerProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/ProductManagerProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_tree/src/example/example1/StringCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_tree/src/example/example1/StringCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/PriceComparatorOfProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/PriceComparatorOfProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/ProductManagerProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/ProductManagerProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/map_tree/example/example1/StringCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/map_tree/example/example1/StringCount.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +84,23 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_282/src.zip!/java/lang/Integer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyListTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyList.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Square.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Circle.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1qpajKW1MQAnHcIJLJqcQ6WPe8p" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -54,7 +108,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/bai_abtract_interface/baitap1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,10 +117,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+      <recent name="example.example1" />
       <recent name="baitap.baitap1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -77,13 +133,13 @@
       <recent name="baitap1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringCount">
-    <configuration name="CheckBracket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.example2.CheckBracket" />
-      <module name="stack_queue" />
+  <component name="RunManager" selected="Application.ProductManagerProductManager">
+    <configuration name="Animal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="models.Animal" />
+      <module name="zoo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.example2.*" />
+          <option name="PATTERN" value="models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.example1.Palindrome" />
-      <module name="stack_queue" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.example_1.InsertionSort" />
+      <module name="sort_algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.example1.*" />
+          <option name="PATTERN" value="example.example_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,6 +161,8 @@
       </method>
     </configuration>
     <configuration name="ProductManagerProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="example.example1.ProductManagerProductManager" />
       <module name="java_colection_framework" />
       <extension name="coverage">
@@ -117,12 +175,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.example1.StringCount" />
-      <module name="map_tree" />
+    <configuration name="TestDanhBa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestDanhBa" />
+      <module name="io" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.example1.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +188,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thuchanh.thuchanh2.TestMyLinkedList" />
-      <module name="danhsach" />
+    <configuration name="TestProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestProduct" />
+      <module name="io_file_product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thuchanh.thuchanh2.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,30 +201,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Animal" />
+      <item itemvalue="Application.InsertionSort" />
+      <item itemvalue="Application.ProductManagerProductManager" />
+      <item itemvalue="Application.TestDanhBa" />
+      <item itemvalue="Application.TestProduct" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringCount" />
         <item itemvalue="Application.ProductManagerProductManager" />
-        <item itemvalue="Application.CheckBracket" />
-        <item itemvalue="Application.Palindrome" />
-        <item itemvalue="Application.TestMyLinkedList" />
+        <item itemvalue="Application.Animal" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.TestProduct" />
+        <item itemvalue="Application.TestDanhBa" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="" />
@@ -192,27 +247,89 @@
       <workItem from="1618320900396" duration="2174000" />
       <workItem from="1618366868554" duration="12275000" />
       <workItem from="1618411847492" duration="1563000" />
-      <workItem from="1618457500579" duration="9491000" />
+      <workItem from="1618457500579" duration="10098000" />
+      <workItem from="1618493006899" duration="1180000" />
+      <workItem from="1618495582684" duration="4064000" />
+      <workItem from="1618500101902" duration="390000" />
+      <workItem from="1618536550235" duration="6180000" />
+      <workItem from="1618566880397" duration="601000" />
+      <workItem from="1618623428593" duration="4149000" />
+      <workItem from="1618646698034" duration="1525000" />
+      <workItem from="1618648297465" duration="1165000" />
+      <workItem from="1618649494918" duration="64000" />
+      <workItem from="1618649588818" duration="9048000" />
+      <workItem from="1618708745505" duration="6749000" />
+      <workItem from="1618755209725" duration="2464000" />
+      <workItem from="1618817030678" duration="599000" />
+      <workItem from="1618843264295" duration="1008000" />
+      <workItem from="1618844911374" duration="1055000" />
+      <workItem from="1618888857719" duration="307000" />
+      <workItem from="1618889459504" duration="305000" />
+      <workItem from="1618890511657" duration="275000" />
+      <workItem from="1618890816333" duration="295000" />
+      <workItem from="1618900288741" duration="161000" />
+      <workItem from="1618900480746" duration="54000" />
+      <workItem from="1618900830759" duration="55000" />
+      <workItem from="1618901702446" duration="488000" />
+      <workItem from="1618902241562" duration="624000" />
+      <workItem from="1618903170598" duration="658000" />
+      <workItem from="1618906794678" duration="99000" />
+      <workItem from="1618906932368" duration="861000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="746" y="357" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1618907262954">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="746" y="357" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.27.1920.985@0.27.1920.985" timestamp="1618907262954" />
+    <state x="801" y="411" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1618906847936">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="801" y="411" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.985@0.27.1920.985" timestamp="1618906847936" />
+    <state x="743" y="277" width="424" height="491" key="FileChooserDialogImpl" timestamp="1618906856449">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="743" y="277" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1618906856449" />
+    <state x="616" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1618906933579">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="616" y="347" key="com.intellij.ide.util.TipDialog/0.27.1920.985@0.27.1920.985" timestamp="1618906933579" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/module2$Practice.ic" NAME="Practice Coverage Results" MODIFIED="1618240970224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>example.example1.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/module2$ProductManagerProductManager.ic" NAME="ProductManagerProductManager Coverage Results" MODIFIED="1618902656522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>example.example1.*</FILTER>
     </SUITE>
   </component>
