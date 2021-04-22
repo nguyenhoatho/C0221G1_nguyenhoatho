@@ -31,4 +31,12 @@ public abstract class Animal {
     public Animal() {
     }
 
+    @Override
+    public String toString() {
+        return "Animal" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", description='" + description ;
+    }
+
 }

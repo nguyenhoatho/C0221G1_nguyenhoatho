@@ -5,8 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/bai_abtract_interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai_abtract_interface/baitap.iml" filepath="$PROJECT_DIR$/bai_abtract_interface/baitap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/case_study/case_study.iml" filepath="$PROJECT_DIR$/case_study/case_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/casestudy/casestudy.iml" filepath="$PROJECT_DIR$/casestudy/casestudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/danhsach/danhsach.iml" filepath="$PROJECT_DIR$/danhsach/danhsach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/io_file_product/io_file_product.iml" filepath="$PROJECT_DIR$/io_file_product/io_file_product.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" filepath="$PROJECT_DIR$/java_colection_framework/java_colection_framework.iml" />

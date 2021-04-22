@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module2" default="all">
+  
+  
+  <property file="module2.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+    <include name="*.ane"/>
+    <include name="*.klib"/>
+    <include name="*.swc"/>
+    <include name="*.war"/>
+    <include name="*.zip"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.11" value="${jdk.home.11}/bin"/>
+  <path id="jdk.classpath.11">
+    <fileset dir="${jdk.home.11}">
+      <include name="../jbr!/java.base"/>
+      <include name="../jbr!/java.compiler"/>
+      <include name="../jbr!/java.datatransfer"/>
+      <include name="../jbr!/java.desktop"/>
+      <include name="../jbr!/java.instrument"/>
+      <include name="../jbr!/java.logging"/>
+      <include name="../jbr!/java.management"/>
+      <include name="../jbr!/java.management.rmi"/>
+      <include name="../jbr!/java.naming"/>
+      <include name="../jbr!/java.net.http"/>
+      <include name="../jbr!/java.prefs"/>
+      <include name="../jbr!/java.rmi"/>
+      <include name="../jbr!/java.scripting"/>
+      <include name="../jbr!/java.se"/>
+      <include name="../jbr!/java.security.jgss"/>
+      <include name="../jbr!/java.security.sasl"/>
+      <include name="../jbr!/java.smartcardio"/>
+      <include name="../jbr!/java.sql"/>
+      <include name="../jbr!/java.sql.rowset"/>
+      <include name="../jbr!/java.transaction.xa"/>
+      <include name="../jbr!/java.xml"/>
+      <include name="../jbr!/java.xml.crypto"/>
+      <include name="../jbr!/javafx.base"/>
+      <include name="../jbr!/javafx.controls"/>
+      <include name="../jbr!/javafx.fxml"/>
+      <include name="../jbr!/javafx.graphics"/>
+      <include name="../jbr!/javafx.media"/>
+      <include name="../jbr!/javafx.swing"/>
+      <include name="../jbr!/javafx.web"/>
+      <include name="../jbr!/jdk.accessibility"/>
+      <include name="../jbr!/jdk.aot"/>
+      <include name="../jbr!/jdk.attach"/>
+      <include name="../jbr!/jdk.charsets"/>
+      <include name="../jbr!/jdk.compiler"/>
+      <include name="../jbr!/jdk.crypto.cryptoki"/>
+      <include name="../jbr!/jdk.crypto.ec"/>
+      <include name="../jbr!/jdk.dynalink"/>
+      <include name="../jbr!/jdk.hotspot.agent"/>
+      <include name="../jbr!/jdk.httpserver"/>
+      <include name="../jbr!/jdk.internal.ed"/>
+      <include name="../jbr!/jdk.internal.jvmstat"/>
+      <include name="../jbr!/jdk.internal.le"/>
+      <include name="../jbr!/jdk.internal.vm.ci"/>
+      <include name="../jbr!/jdk.internal.vm.compiler"/>
+      <include name="../jbr!/jdk.internal.vm.compiler.management"/>
+      <include name="../jbr!/jdk.jdi"/>
+      <include name="../jbr!/jdk.jdwp.agent"/>
+      <include name="../jbr!/jdk.jfr"/>
+      <include name="../jbr!/jdk.jsobject"/>
+      <include name="../jbr!/jdk.localedata"/>
+      <include name="../jbr!/jdk.management"/>
+      <include name="../jbr!/jdk.management.agent"/>
+      <include name="../jbr!/jdk.management.jfr"/>
+      <include name="../jbr!/jdk.naming.dns"/>
+      <include name="../jbr!/jdk.naming.rmi"/>
+      <include name="../jbr!/jdk.net"/>
+      <include name="../jbr!/jdk.pack"/>
+      <include name="../jbr!/jdk.scripting.nashorn"/>
+      <include name="../jbr!/jdk.scripting.nashorn.shell"/>
+      <include name="../jbr!/jdk.sctp"/>
+      <include name="../jbr!/jdk.security.auth"/>
+      <include name="../jbr!/jdk.security.jgss"/>
+      <include name="../jbr!/jdk.unsupported"/>
+      <include name="../jbr!/jdk.xml.dom"/>
+      <include name="../jbr!/jdk.zipfs"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.11}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.11}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.11"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.kotlinjavaruntime.classpath">
+    <pathelement location="${basedir}/lib/kotlin-reflect.jar"/>
+    <pathelement location="${basedir}/lib/kotlin-stdlib-jdk7.jar"/>
+    <pathelement location="${basedir}/lib/kotlin-stdlib-jdk8.jar"/>
+    <pathelement location="${basedir}/lib/kotlin-stdlib.jar"/>
+    <pathelement location="${basedir}/lib/kotlin-test.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <fileset dir="${javac2.home}">
+      <include name="javac2.jar"/>
+      <include name="jdom.jar"/>
+      <include name="asm-all*.jar"/>
+      <include name="forms-*.jar"/>
+    </fileset>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module bai_abtract_interface -->
+  
+  <dirname property="module.bai_abtract_interface.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.bai_abtract_interface" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.bai_abtract_interface" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.bai_abtract_interface" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.bai_abtract_interface" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="bai_abtract_interface.output.dir" value="${module.bai_abtract_interface.basedir}/out/production/bai_abtract_interface"/>
+  <property name="bai_abtract_interface.testoutput.dir" value="${module.bai_abtract_interface.basedir}/out/test/bai_abtract_interface"/>
+  
+  <path id="bai_abtract_interface.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="bai_abtract_interface.module.production.classpath">
+    <path refid="${module.jdk.classpath.bai_abtract_interface}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="bai_abtract_interface.runtime.production.module.classpath">
+    <pathelement location="${bai_abtract_interface.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="bai_abtract_interface.module.classpath">
+    <path refid="${module.jdk.classpath.bai_abtract_interface}"/>
+    <pathelement location="${bai_abtract_interface.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="bai_abtract_interface.runtime.module.classpath">
+    <pathelement location="${bai_abtract_interface.testoutput.dir}"/>
+    <pathelement location="${bai_abtract_interface.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.bai_abtract_interface">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.bai_abtract_interface">
+    <patternset refid="excluded.from.module.bai_abtract_interface"/>
+  </patternset>
+  
+  
+  <target name="compile.module.bai_abtract_interface" depends="compile.module.bai_abtract_interface.production,compile.module.bai_abtract_interface.tests" description="Compile module bai_abtract_interface"/>
+  
+  <target name="compile.module.bai_abtract_interface.production" depends="register.custom.compilers" description="Compile module bai_abtract_interface; production classes"/>
+  
+  <target name="compile.module.bai_abtract_interface.tests" depends="register.custom.compilers,compile.module.bai_abtract_interface.production" description="compile module bai_abtract_interface; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.bai_abtract_interface" description="cleanup module">
+    <delete dir="${bai_abtract_interface.output.dir}"/>
+    <delete dir="${bai_abtract_interface.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module baitap -->
+  
+  <dirname property="module.baitap.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.baitap" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.baitap" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.baitap" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.baitap" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="baitap.output.dir" value="${module.baitap.basedir}/out/production/baitap"/>
+  <property name="baitap.testoutput.dir" value="${module.baitap.basedir}/out/test/baitap"/>
+  
+  <path id="baitap.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="baitap.module.production.classpath">
+    <path refid="${module.jdk.classpath.baitap}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="baitap.runtime.production.module.classpath">
+    <pathelement location="${baitap.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="baitap.module.classpath">
+    <path refid="${module.jdk.classpath.baitap}"/>
+    <pathelement location="${baitap.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="baitap.runtime.module.classpath">
+    <pathelement location="${baitap.testoutput.dir}"/>
+    <pathelement location="${baitap.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.baitap">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.baitap">
+    <patternset refid="excluded.from.module.baitap"/>
+  </patternset>
+  
+  <path id="baitap.module.sourcepath">
+    <dirset dir="${module.baitap.basedir}/bai_abtract_interface">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.baitap" depends="compile.module.baitap.production,compile.module.baitap.tests" description="Compile module baitap"/>
+  
+  <target name="compile.module.baitap.production" depends="register.custom.compilers" description="Compile module baitap; production classes">
+    <mkdir dir="${baitap.output.dir}"/>
+    <javac2 destdir="${baitap.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.baitap}/javac">
+      <compilerarg line="${compiler.args.baitap}"/>
+      <bootclasspath refid="baitap.module.bootclasspath"/>
+      <classpath refid="baitap.module.production.classpath"/>
+      <src refid="baitap.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.baitap"/>
+    </javac2>
+    
+    <copy todir="${baitap.output.dir}">
+      <fileset dir="${module.baitap.basedir}/bai_abtract_interface/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.baitap.tests" depends="register.custom.compilers,compile.module.baitap.production" description="compile module baitap; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.baitap" description="cleanup module">
+    <delete dir="${baitap.output.dir}"/>
+    <delete dir="${baitap.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module case_study -->
+  
+  <dirname property="module.case_study.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.case_study" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.case_study" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.case_study" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.case_study" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="case_study.output.dir" value="${module.case_study.basedir}/out/production/case_study"/>
+  <property name="case_study.testoutput.dir" value="${module.case_study.basedir}/out/test/case_study"/>
+  
+  <path id="case_study.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="case_study.module.production.classpath">
+    <path refid="${module.jdk.classpath.case_study}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="case_study.runtime.production.module.classpath">
+    <pathelement location="${case_study.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="case_study.module.classpath">
+    <path refid="${module.jdk.classpath.case_study}"/>
+    <pathelement location="${case_study.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="case_study.runtime.module.classpath">
+    <pathelement location="${case_study.testoutput.dir}"/>
+    <pathelement location="${case_study.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.case_study">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.case_study">
+    <patternset refid="excluded.from.module.case_study"/>
+  </patternset>
+  
+  <path id="case_study.module.sourcepath">
+    <dirset dir="${module.case_study.basedir}/case_study">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.case_study" depends="compile.module.case_study.production,compile.module.case_study.tests" description="Compile module case_study"/>
+  
+  <target name="compile.module.case_study.production" depends="register.custom.compilers" description="Compile module case_study; production classes">
+    <mkdir dir="${case_study.output.dir}"/>
+    <javac2 destdir="${case_study.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.case_study}/javac">
+      <compilerarg line="${compiler.args.case_study}"/>
+      <bootclasspath refid="case_study.module.bootclasspath"/>
+      <classpath refid="case_study.module.production.classpath"/>
+      <src refid="case_study.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.case_study"/>
+    </javac2>
+    
+    <copy todir="${case_study.output.dir}">
+      <fileset dir="${module.case_study.basedir}/case_study/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.case_study.tests" depends="register.custom.compilers,compile.module.case_study.production" description="compile module case_study; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.case_study" description="cleanup module">
+    <delete dir="${case_study.output.dir}"/>
+    <delete dir="${case_study.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module danhsach -->
+  
+  <dirname property="module.danhsach.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.danhsach" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.danhsach" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.danhsach" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.danhsach" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="danhsach.output.dir" value="${module.danhsach.basedir}/out/production/danhsach"/>
+  <property name="danhsach.testoutput.dir" value="${module.danhsach.basedir}/out/test/danhsach"/>
+  
+  <path id="danhsach.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="danhsach.module.production.classpath">
+    <path refid="${module.jdk.classpath.danhsach}"/>
+  </path>
+  
+  <path id="danhsach.runtime.production.module.classpath">
+    <pathelement location="${danhsach.output.dir}"/>
+  </path>
+  
+  <path id="danhsach.module.classpath">
+    <path refid="${module.jdk.classpath.danhsach}"/>
+    <pathelement location="${danhsach.output.dir}"/>
+  </path>
+  
+  <path id="danhsach.runtime.module.classpath">
+    <pathelement location="${danhsach.testoutput.dir}"/>
+    <pathelement location="${danhsach.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.danhsach">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.danhsach">
+    <patternset refid="excluded.from.module.danhsach"/>
+  </patternset>
+  
+  <path id="danhsach.module.sourcepath">
+    <dirset dir="${module.danhsach.basedir}/danhsach">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.danhsach" depends="compile.module.danhsach.production,compile.module.danhsach.tests" description="Compile module danhsach"/>
+  
+  <target name="compile.module.danhsach.production" depends="register.custom.compilers" description="Compile module danhsach; production classes">
+    <mkdir dir="${danhsach.output.dir}"/>
+    <javac2 destdir="${danhsach.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.danhsach}/javac">
+      <compilerarg line="${compiler.args.danhsach}"/>
+      <bootclasspath refid="danhsach.module.bootclasspath"/>
+      <classpath refid="danhsach.module.production.classpath"/>
+      <src refid="danhsach.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.danhsach"/>
+    </javac2>
+    
+    <copy todir="${danhsach.output.dir}">
+      <fileset dir="${module.danhsach.basedir}/danhsach/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.danhsach.tests" depends="register.custom.compilers,compile.module.danhsach.production" description="compile module danhsach; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.danhsach" description="cleanup module">
+    <delete dir="${danhsach.output.dir}"/>
+    <delete dir="${danhsach.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module io -->
+  
+  <dirname property="module.io.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.io" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.io" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.io" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.io" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="io.output.dir" value="${module.io.basedir}/out/production/io"/>
+  <property name="io.testoutput.dir" value="${module.io.basedir}/out/test/io"/>
+  
+  <path id="io.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="io.module.production.classpath">
+    <path refid="${module.jdk.classpath.io}"/>
+  </path>
+  
+  <path id="io.runtime.production.module.classpath">
+    <pathelement location="${io.output.dir}"/>
+  </path>
+  
+  <path id="io.module.classpath">
+    <path refid="${module.jdk.classpath.io}"/>
+    <pathelement location="${io.output.dir}"/>
+  </path>
+  
+  <path id="io.runtime.module.classpath">
+    <pathelement location="${io.testoutput.dir}"/>
+    <pathelement location="${io.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.io">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.io">
+    <patternset refid="excluded.from.module.io"/>
+  </patternset>
+  
+  <path id="io.module.sourcepath">
+    <dirset dir="${module.io.basedir}/io">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.io" depends="compile.module.io.production,compile.module.io.tests" description="Compile module io"/>
+  
+  <target name="compile.module.io.production" depends="register.custom.compilers" description="Compile module io; production classes">
+    <mkdir dir="${io.output.dir}"/>
+    <javac2 destdir="${io.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.io}/javac">
+      <compilerarg line="${compiler.args.io}"/>
+      <bootclasspath refid="io.module.bootclasspath"/>
+      <classpath refid="io.module.production.classpath"/>
+      <src refid="io.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.io"/>
+    </javac2>
+    
+    <copy todir="${io.output.dir}">
+      <fileset dir="${module.io.basedir}/io/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.io.tests" depends="register.custom.compilers,compile.module.io.production" description="compile module io; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.io" description="cleanup module">
+    <delete dir="${io.output.dir}"/>
+    <delete dir="${io.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module java_colection_framework -->
+  
+  <dirname property="module.java_colection_framework.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.java_colection_framework" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.java_colection_framework" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.java_colection_framework" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.java_colection_framework" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="java_colection_framework.output.dir" value="${module.java_colection_framework.basedir}/out/production/java_colection_framework"/>
+  <property name="java_colection_framework.testoutput.dir" value="${module.java_colection_framework.basedir}/out/test/java_colection_framework"/>
+  
+  <path id="java_colection_framework.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="java_colection_framework.module.production.classpath">
+    <path refid="${module.jdk.classpath.java_colection_framework}"/>
+  </path>
+  
+  <path id="java_colection_framework.runtime.production.module.classpath">
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  <path id="java_colection_framework.module.classpath">
+    <path refid="${module.jdk.classpath.java_colection_framework}"/>
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  <path id="java_colection_framework.runtime.module.classpath">
+    <pathelement location="${java_colection_framework.testoutput.dir}"/>
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.java_colection_framework">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.java_colection_framework">
+    <patternset refid="excluded.from.module.java_colection_framework"/>
+  </patternset>
+  
+  <path id="java_colection_framework.module.sourcepath">
+    <dirset dir="${module.java_colection_framework.basedir}/java_colection_framework">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.java_colection_framework" depends="compile.module.java_colection_framework.production,compile.module.java_colection_framework.tests" description="Compile module java_colection_framework"/>
+  
+  <target name="compile.module.java_colection_framework.production" depends="register.custom.compilers" description="Compile module java_colection_framework; production classes">
+    <mkdir dir="${java_colection_framework.output.dir}"/>
+    <javac2 destdir="${java_colection_framework.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.java_colection_framework}/javac">
+      <compilerarg line="${compiler.args.java_colection_framework}"/>
+      <bootclasspath refid="java_colection_framework.module.bootclasspath"/>
+      <classpath refid="java_colection_framework.module.production.classpath"/>
+      <src refid="java_colection_framework.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.java_colection_framework"/>
+    </javac2>
+    
+    <copy todir="${java_colection_framework.output.dir}">
+      <fileset dir="${module.java_colection_framework.basedir}/java_colection_framework/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.java_colection_framework.tests" depends="register.custom.compilers,compile.module.java_colection_framework.production" description="compile module java_colection_framework; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.java_colection_framework" description="cleanup module">
+    <delete dir="${java_colection_framework.output.dir}"/>
+    <delete dir="${java_colection_framework.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module map_tree -->
+  
+  <dirname property="module.map_tree.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.map_tree" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.map_tree" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.map_tree" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.map_tree" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="map_tree.output.dir" value="${module.map_tree.basedir}/out/production/map_tree"/>
+  <property name="map_tree.testoutput.dir" value="${module.map_tree.basedir}/out/test/map_tree"/>
+  
+  <path id="map_tree.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="map_tree.module.production.classpath">
+    <path refid="${module.jdk.classpath.map_tree}"/>
+  </path>
+  
+  <path id="map_tree.runtime.production.module.classpath">
+    <pathelement location="${map_tree.output.dir}"/>
+  </path>
+  
+  <path id="map_tree.module.classpath">
+    <path refid="${module.jdk.classpath.map_tree}"/>
+    <pathelement location="${map_tree.output.dir}"/>
+  </path>
+  
+  <path id="map_tree.runtime.module.classpath">
+    <pathelement location="${map_tree.testoutput.dir}"/>
+    <pathelement location="${map_tree.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.map_tree">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.map_tree">
+    <patternset refid="excluded.from.module.map_tree"/>
+  </patternset>
+  
+  <path id="map_tree.module.sourcepath">
+    <dirset dir="${module.map_tree.basedir}/map_tree">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.map_tree" depends="compile.module.map_tree.production,compile.module.map_tree.tests" description="Compile module map_tree"/>
+  
+  <target name="compile.module.map_tree.production" depends="register.custom.compilers" description="Compile module map_tree; production classes">
+    <mkdir dir="${map_tree.output.dir}"/>
+    <javac2 destdir="${map_tree.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.map_tree}/javac">
+      <compilerarg line="${compiler.args.map_tree}"/>
+      <bootclasspath refid="map_tree.module.bootclasspath"/>
+      <classpath refid="map_tree.module.production.classpath"/>
+      <src refid="map_tree.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.map_tree"/>
+    </javac2>
+    
+    <copy todir="${map_tree.output.dir}">
+      <fileset dir="${module.map_tree.basedir}/map_tree/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.map_tree.tests" depends="register.custom.compilers,compile.module.map_tree.production" description="compile module map_tree; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.map_tree" description="cleanup module">
+    <delete dir="${map_tree.output.dir}"/>
+    <delete dir="${map_tree.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module module2 -->
+  
+  <dirname property="module.module2.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.module2" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.module2" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.module2" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.module2" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="module2.output.dir" value="${module.module2.basedir}/out/production/module2"/>
+  <property name="module2.testoutput.dir" value="${module.module2.basedir}/out/test/module2"/>
+  
+  <path id="module2.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="module2.module.production.classpath">
+    <path refid="${module.jdk.classpath.module2}"/>
+  </path>
+  
+  <path id="module2.runtime.production.module.classpath">
+    <pathelement location="${module2.output.dir}"/>
+  </path>
+  
+  <path id="module2.module.classpath">
+    <path refid="${module.jdk.classpath.module2}"/>
+    <pathelement location="${module2.output.dir}"/>
+  </path>
+  
+  <path id="module2.runtime.module.classpath">
+    <pathelement location="${module2.testoutput.dir}"/>
+    <pathelement location="${module2.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.module2">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.module2">
+    <patternset refid="excluded.from.module.module2"/>
+  </patternset>
+  
+  <path id="module2.module.sourcepath">
+    <dirset dir="${module.module2.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.module2" depends="compile.module.module2.production,compile.module.module2.tests" description="Compile module module2"/>
+  
+  <target name="compile.module.module2.production" depends="register.custom.compilers" description="Compile module module2; production classes">
+    <mkdir dir="${module2.output.dir}"/>
+    <javac2 destdir="${module2.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.module2}/javac">
+      <compilerarg line="${compiler.args.module2}"/>
+      <bootclasspath refid="module2.module.bootclasspath"/>
+      <classpath refid="module2.module.production.classpath"/>
+      <src refid="module2.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.module2"/>
+    </javac2>
+    
+    <copy todir="${module2.output.dir}">
+      <fileset dir="${module.module2.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.module2.tests" depends="register.custom.compilers,compile.module.module2.production" description="compile module module2; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.module2" description="cleanup module">
+    <delete dir="${module2.output.dir}"/>
+    <delete dir="${module2.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module search_algorithm -->
+  
+  <dirname property="module.search_algorithm.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.search_algorithm" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.search_algorithm" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.search_algorithm" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.search_algorithm" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="search_algorithm.output.dir" value="${module.search_algorithm.basedir}/out/production/search_algorithm"/>
+  <property name="search_algorithm.testoutput.dir" value="${module.search_algorithm.basedir}/out/test/search_algorithm"/>
+  
+  <path id="search_algorithm.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="search_algorithm.module.production.classpath">
+    <path refid="${module.jdk.classpath.search_algorithm}"/>
+  </path>
+  
+  <path id="search_algorithm.runtime.production.module.classpath">
+    <pathelement location="${search_algorithm.output.dir}"/>
+  </path>
+  
+  <path id="search_algorithm.module.classpath">
+    <path refid="${module.jdk.classpath.search_algorithm}"/>
+    <pathelement location="${search_algorithm.output.dir}"/>
+  </path>
+  
+  <path id="search_algorithm.runtime.module.classpath">
+    <pathelement location="${search_algorithm.testoutput.dir}"/>
+    <pathelement location="${search_algorithm.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.search_algorithm">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.search_algorithm">
+    <patternset refid="excluded.from.module.search_algorithm"/>
+  </patternset>
+  
+  <path id="search_algorithm.module.sourcepath">
+    <dirset dir="${module.search_algorithm.basedir}/search_algorithm">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.search_algorithm" depends="compile.module.search_algorithm.production,compile.module.search_algorithm.tests" description="Compile module search_algorithm"/>
+  
+  <target name="compile.module.search_algorithm.production" depends="register.custom.compilers" description="Compile module search_algorithm; production classes">
+    <mkdir dir="${search_algorithm.output.dir}"/>
+    <javac2 destdir="${search_algorithm.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.search_algorithm}/javac">
+      <compilerarg line="${compiler.args.search_algorithm}"/>
+      <bootclasspath refid="search_algorithm.module.bootclasspath"/>
+      <classpath refid="search_algorithm.module.production.classpath"/>
+      <src refid="search_algorithm.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.search_algorithm"/>
+    </javac2>
+    
+    <copy todir="${search_algorithm.output.dir}">
+      <fileset dir="${module.search_algorithm.basedir}/search_algorithm/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.search_algorithm.tests" depends="register.custom.compilers,compile.module.search_algorithm.production" description="compile module search_algorithm; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.search_algorithm" description="cleanup module">
+    <delete dir="${search_algorithm.output.dir}"/>
+    <delete dir="${search_algorithm.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module Sort -->
+  
+  <dirname property="module.sort.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.sort" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.sort" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.sort" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.sort" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="sort.output.dir" value="${module.sort.basedir}/out/production/Sort"/>
+  <property name="sort.testoutput.dir" value="${module.sort.basedir}/out/test/Sort"/>
+  
+  <path id="sort.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="sort.module.production.classpath">
+    <path refid="${module.jdk.classpath.sort}"/>
+  </path>
+  
+  <path id="sort.runtime.production.module.classpath">
+    <pathelement location="${sort.output.dir}"/>
+  </path>
+  
+  <path id="sort.module.classpath">
+    <path refid="${module.jdk.classpath.sort}"/>
+    <pathelement location="${sort.output.dir}"/>
+  </path>
+  
+  <path id="sort.runtime.module.classpath">
+    <pathelement location="${sort.testoutput.dir}"/>
+    <pathelement location="${sort.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.sort">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.sort">
+    <patternset refid="excluded.from.module.sort"/>
+  </patternset>
+  
+  <path id="sort.module.sourcepath">
+    <dirset dir="${module.sort.basedir}/Sort">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.sort" depends="compile.module.sort.production,compile.module.sort.tests" description="Compile module Sort"/>
+  
+  <target name="compile.module.sort.production" depends="register.custom.compilers" description="Compile module Sort; production classes">
+    <mkdir dir="${sort.output.dir}"/>
+    <javac2 destdir="${sort.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.sort}/javac">
+      <compilerarg line="${compiler.args.sort}"/>
+      <bootclasspath refid="sort.module.bootclasspath"/>
+      <classpath refid="sort.module.production.classpath"/>
+      <src refid="sort.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.sort"/>
+    </javac2>
+    
+    <copy todir="${sort.output.dir}">
+      <fileset dir="${module.sort.basedir}/Sort/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.sort.tests" depends="register.custom.compilers,compile.module.sort.production" description="compile module Sort; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.sort" description="cleanup module">
+    <delete dir="${sort.output.dir}"/>
+    <delete dir="${sort.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module sort_algorithms -->
+  
+  <dirname property="module.sort_algorithms.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.sort_algorithms" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.sort_algorithms" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.sort_algorithms" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.sort_algorithms" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="sort_algorithms.output.dir" value="${module.sort_algorithms.basedir}/out/production/sort_algorithms"/>
+  <property name="sort_algorithms.testoutput.dir" value="${module.sort_algorithms.basedir}/out/test/sort_algorithms"/>
+  
+  <path id="sort_algorithms.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="sort_algorithms.module.production.classpath">
+    <path refid="${module.jdk.classpath.sort_algorithms}"/>
+  </path>
+  
+  <path id="sort_algorithms.runtime.production.module.classpath">
+    <pathelement location="${sort_algorithms.output.dir}"/>
+  </path>
+  
+  <path id="sort_algorithms.module.classpath">
+    <path refid="${module.jdk.classpath.sort_algorithms}"/>
+    <pathelement location="${sort_algorithms.output.dir}"/>
+  </path>
+  
+  <path id="sort_algorithms.runtime.module.classpath">
+    <pathelement location="${sort_algorithms.testoutput.dir}"/>
+    <pathelement location="${sort_algorithms.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.sort_algorithms">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.sort_algorithms">
+    <patternset refid="excluded.from.module.sort_algorithms"/>
+  </patternset>
+  
+  <path id="sort_algorithms.module.sourcepath">
+    <dirset dir="${module.sort_algorithms.basedir}/sort_algorithms">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.sort_algorithms" depends="compile.module.sort_algorithms.production,compile.module.sort_algorithms.tests" description="Compile module sort_algorithms"/>
+  
+  <target name="compile.module.sort_algorithms.production" depends="register.custom.compilers" description="Compile module sort_algorithms; production classes">
+    <mkdir dir="${sort_algorithms.output.dir}"/>
+    <javac2 destdir="${sort_algorithms.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.sort_algorithms}/javac">
+      <compilerarg line="${compiler.args.sort_algorithms}"/>
+      <bootclasspath refid="sort_algorithms.module.bootclasspath"/>
+      <classpath refid="sort_algorithms.module.production.classpath"/>
+      <src refid="sort_algorithms.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.sort_algorithms"/>
+    </javac2>
+    
+    <copy todir="${sort_algorithms.output.dir}">
+      <fileset dir="${module.sort_algorithms.basedir}/sort_algorithms/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.sort_algorithms.tests" depends="register.custom.compilers,compile.module.sort_algorithms.production" description="compile module sort_algorithms; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.sort_algorithms" description="cleanup module">
+    <delete dir="${sort_algorithms.output.dir}"/>
+    <delete dir="${sort_algorithms.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module stack_queue -->
+  
+  <dirname property="module.stack_queue.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.stack_queue" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.stack_queue" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.stack_queue" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.stack_queue" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="stack_queue.output.dir" value="${module.stack_queue.basedir}/out/production/stack_queue"/>
+  <property name="stack_queue.testoutput.dir" value="${module.stack_queue.basedir}/out/test/stack_queue"/>
+  
+  <path id="stack_queue.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="stack_queue.module.production.classpath">
+    <path refid="${module.jdk.classpath.stack_queue}"/>
+  </path>
+  
+  <path id="stack_queue.runtime.production.module.classpath">
+    <pathelement location="${stack_queue.output.dir}"/>
+  </path>
+  
+  <path id="stack_queue.module.classpath">
+    <path refid="${module.jdk.classpath.stack_queue}"/>
+    <pathelement location="${stack_queue.output.dir}"/>
+  </path>
+  
+  <path id="stack_queue.runtime.module.classpath">
+    <pathelement location="${stack_queue.testoutput.dir}"/>
+    <pathelement location="${stack_queue.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.stack_queue">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.stack_queue">
+    <patternset refid="excluded.from.module.stack_queue"/>
+  </patternset>
+  
+  <path id="stack_queue.module.sourcepath">
+    <dirset dir="${module.stack_queue.basedir}/stack_queue">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.stack_queue" depends="compile.module.stack_queue.production,compile.module.stack_queue.tests" description="Compile module stack_queue"/>
+  
+  <target name="compile.module.stack_queue.production" depends="register.custom.compilers" description="Compile module stack_queue; production classes">
+    <mkdir dir="${stack_queue.output.dir}"/>
+    <javac2 destdir="${stack_queue.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.stack_queue}/javac">
+      <compilerarg line="${compiler.args.stack_queue}"/>
+      <bootclasspath refid="stack_queue.module.bootclasspath"/>
+      <classpath refid="stack_queue.module.production.classpath"/>
+      <src refid="stack_queue.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.stack_queue"/>
+    </javac2>
+    
+    <copy todir="${stack_queue.output.dir}">
+      <fileset dir="${module.stack_queue.basedir}/stack_queue/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.stack_queue.tests" depends="register.custom.compilers,compile.module.stack_queue.production" description="compile module stack_queue; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.stack_queue" description="cleanup module">
+    <delete dir="${stack_queue.output.dir}"/>
+    <delete dir="${stack_queue.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module zoo -->
+  
+  <dirname property="module.zoo.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.zoo" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.zoo" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.zoo" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.zoo" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="zoo.output.dir" value="${module.zoo.basedir}/out/production/zoo"/>
+  <property name="zoo.testoutput.dir" value="${module.zoo.basedir}/out/test/zoo"/>
+  
+  <path id="zoo.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="zoo.module.production.classpath">
+    <path refid="${module.jdk.classpath.zoo}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="zoo.runtime.production.module.classpath">
+    <pathelement location="${zoo.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="zoo.module.classpath">
+    <path refid="${module.jdk.classpath.zoo}"/>
+    <pathelement location="${zoo.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  <path id="zoo.runtime.module.classpath">
+    <pathelement location="${zoo.testoutput.dir}"/>
+    <pathelement location="${zoo.output.dir}"/>
+    <path refid="library.kotlinjavaruntime.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.zoo">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.zoo">
+    <patternset refid="excluded.from.module.zoo"/>
+  </patternset>
+  
+  <path id="zoo.module.sourcepath">
+    <dirset dir="${module.zoo.basedir}/zoo">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.zoo" depends="compile.module.zoo.production,compile.module.zoo.tests" description="Compile module zoo"/>
+  
+  <target name="compile.module.zoo.production" depends="register.custom.compilers" description="Compile module zoo; production classes">
+    <mkdir dir="${zoo.output.dir}"/>
+    <javac2 destdir="${zoo.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.zoo}/javac">
+      <compilerarg line="${compiler.args.zoo}"/>
+      <bootclasspath refid="zoo.module.bootclasspath"/>
+      <classpath refid="zoo.module.production.classpath"/>
+      <src refid="zoo.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.zoo"/>
+    </javac2>
+    
+    <copy todir="${zoo.output.dir}">
+      <fileset dir="${module.zoo.basedir}/zoo/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.zoo.tests" depends="register.custom.compilers,compile.module.zoo.production" description="compile module zoo; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.zoo" description="cleanup module">
+    <delete dir="${zoo.output.dir}"/>
+    <delete dir="${zoo.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module io_file_product -->
+  
+  <dirname property="module.io_file_product.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.io_file_product" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.io_file_product" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.io_file_product" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.io_file_product" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="io_file_product.output.dir" value="${module.io_file_product.basedir}/out/production/io_file_product"/>
+  <property name="io_file_product.testoutput.dir" value="${module.io_file_product.basedir}/out/test/io_file_product"/>
+  
+  <path id="io_file_product.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="io_file_product.module.production.classpath">
+    <path refid="${module.jdk.classpath.io_file_product}"/>
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  <path id="io_file_product.runtime.production.module.classpath">
+    <pathelement location="${io_file_product.output.dir}"/>
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  <path id="io_file_product.module.classpath">
+    <path refid="${module.jdk.classpath.io_file_product}"/>
+    <pathelement location="${io_file_product.output.dir}"/>
+    <pathelement location="${java_colection_framework.testoutput.dir}"/>
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  <path id="io_file_product.runtime.module.classpath">
+    <pathelement location="${io_file_product.testoutput.dir}"/>
+    <pathelement location="${io_file_product.output.dir}"/>
+    <pathelement location="${java_colection_framework.testoutput.dir}"/>
+    <pathelement location="${java_colection_framework.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.io_file_product">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.io_file_product">
+    <patternset refid="excluded.from.module.io_file_product"/>
+  </patternset>
+  
+  <path id="io_file_product.module.sourcepath">
+    <dirset dir="${module.io_file_product.basedir}/io_file_product">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.io_file_product" depends="compile.module.io_file_product.production,compile.module.io_file_product.tests" description="Compile module io_file_product"/>
+  
+  <target name="compile.module.io_file_product.production" depends="register.custom.compilers,compile.module.java_colection_framework" description="Compile module io_file_product; production classes">
+    <mkdir dir="${io_file_product.output.dir}"/>
+    <javac2 destdir="${io_file_product.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.io_file_product}/javac">
+      <compilerarg line="${compiler.args.io_file_product}"/>
+      <bootclasspath refid="io_file_product.module.bootclasspath"/>
+      <classpath refid="io_file_product.module.production.classpath"/>
+      <src refid="io_file_product.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.io_file_product"/>
+    </javac2>
+    
+    <copy todir="${io_file_product.output.dir}">
+      <fileset dir="${module.io_file_product.basedir}/io_file_product/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.io_file_product.tests" depends="register.custom.compilers,compile.module.io_file_product.production" description="compile module io_file_product; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.io_file_product" description="cleanup module">
+    <delete dir="${io_file_product.output.dir}"/>
+    <delete dir="${io_file_product.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.bai_abtract_interface, clean.module.baitap, clean.module.case_study, clean.module.danhsach, clean.module.io, clean.module.java_colection_framework, clean.module.map_tree, clean.module.module2, clean.module.search_algorithm, clean.module.sort, clean.module.sort_algorithms, clean.module.stack_queue, clean.module.zoo, clean.module.io_file_product" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.bai_abtract_interface, compile.module.baitap, compile.module.case_study, compile.module.danhsach, compile.module.io, compile.module.java_colection_framework, compile.module.map_tree, compile.module.module2, compile.module.search_algorithm, compile.module.sort, compile.module.sort_algorithms, compile.module.stack_queue, compile.module.zoo, compile.module.io_file_product" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>
