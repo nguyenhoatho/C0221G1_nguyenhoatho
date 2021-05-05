@@ -5,43 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_csv_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_csv_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/controllers/MainControllers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/data/House.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/models/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/models/House.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/models/Room.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/models/Services.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/models/Villa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/repository/funcWriteAndReadFileCsv.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_abtract_interface/case_study/service/room/RoomService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exception/exception.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exception/src/example/example1/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map_tree/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search_algorithm/src/example/example1/RecursiveSearch1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudy/caseStudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/data/hosuse.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/data/house.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/data/room.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/data/villa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/io/WriteAndReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/models/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/models/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/services/HouseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/services/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/services/VillaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/ultils/CustomerValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/ultils/ServiceValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/src/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_text/io_text.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_text/src/Io.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_text/src/IoTextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_text/src/filemgoi.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io_text/src/filemoi.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking_management/parking_management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking_management/src/models/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking_management/src/models/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking_management/src/models/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking_management/src/models/Persons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking_management/src/models/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex/regex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex/src/example/example1/Example1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex/src/example/example2/Example2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex/src/example/example3/Example3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/san_pham.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/src/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/src/data/listproduct.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/src/data/listproduct.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/src/io/SerializeFileFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/src/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/san_pham/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/case_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/casestudy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/controllers/MainControllers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/models/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/models/House.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/models/Room.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/models/Services.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/models/Villa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/repository/funcWriteAndReadFileCsv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_colection_framework/src/example/example1/ProductManagerProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_colection_framework/src/example/example1/ProductManagerProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_tree/map_tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/map_tree/map_tree.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_tree/src/example/example1/StringCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/map_tree/src/main/java/example/example1/StringCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/littered.txt" beforeDir="false" afterPath="$PROJECT_DIR$/littered.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sort/example/example1/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sort/example/example1/Sort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Circle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Rectangle.class" afterDir="false" />
@@ -51,13 +61,15 @@
       <change beforePath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Square.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap1/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap2/Colorable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bai_abtract_interface/baitap/baitap2/Colorable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/controllers/MainControllers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/controllers/MainControllers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/models/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/models/House.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/models/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/models/Services.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/models/Villa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/case_study/repository/funcWriteAndReadFileCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/case_study/repository/funcWriteAndReadFileCsv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/controllers/MainControllers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/data/House.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Services.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/models/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/repository/funcWriteAndReadFileCsv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/case_study/service/room/RoomService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap1/MyListTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap2/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/danhsach/baitap/baitap2/MyLinkedList$Node.class" afterDir="false" />
@@ -74,14 +86,16 @@
       <change beforePath="$PROJECT_DIR$/out/production/io_file_product/io/SerializeFileFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/io_file_product/io/SerializeFileFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/io_file_product/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/io_file_product/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/io_file_product/test/TestProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/io_file_product/test/TestProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/map_tree/example/example1/StringCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/map_tree/example/example1/StringCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/PriceComparatorOfProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/PriceComparatorOfProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/ProductManagerProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_colection_framework/example/example1/ProductManagerProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/map_tree/example/example1/StringCount.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/search_algorithm/example/example1/RecursiveSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/search_algorithm/example/example1/RecursiveSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/search_algorithm/example/example1/RecursiveSearch1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/search_algorithm/example/example1/RecursiveSearch1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sort_algorithms/example/example_1/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sort_algorithms/example/example_1/InsertionSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/stack_queue/example/example1/Palindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stack_queue/example/example1/Palindrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/stack_queue/example/example2/CheckBracket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stack_queue/example/example2/CheckBracket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/zoo/models/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zoo/models/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zoo/src/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/zoo/src/models/Animal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,11 +128,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_282/src.zip!/java/lang/Integer.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyList.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Circle.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyListTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Circle.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_282/src.zip!/java/lang/Integer.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Square.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/danhsach/src/baitap/baitap1/MyList.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1qpajKW1MQAnHcIJLJqcQ6WPe8p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -160,27 +174,33 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="io" />
       <recent name="models" />
       <recent name="example.example1" />
       <recent name="baitap.baitap1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/casestudy/src/models" />
+      <recent name="$PROJECT_DIR$/casestudy/src/service/house" />
+      <recent name="$PROJECT_DIR$/casestudy/src/repository" />
+      <recent name="$PROJECT_DIR$/casestudy/src/controllers" />
       <recent name="$PROJECT_DIR$/bai_abtract_interface" />
-      <recent name="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/bai_abtract_interface/baitap1" />
-      <recent name="$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/casestudy/src/data" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="baitap1" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Triangle">
-    <configuration type="Application" factoryName="Application" temporary="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="java_colection_framework" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Example1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.example1.Example1" />
+      <module name="regex" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="example.example1.*" />
@@ -191,12 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mian" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controllers.Mian" />
-      <module name="case_study" />
+    <configuration name="Example2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.example2.Example2" />
+      <module name="regex" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="controllers.*" />
+          <option name="PATTERN" value="example.example2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,12 +224,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductManagerProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.example1.ProductManagerProductManager" />
-      <module name="java_colection_framework" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Main" />
+      <module name="casestudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.example1.*" />
+          <option name="PATTERN" value="view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,12 +237,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecursiveSearch1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.example1.RecursiveSearch1" />
-      <module name="search_algorithm" />
+    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.View" />
+      <module name="san_pham" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.example1.*" />
+          <option name="PATTERN" value="view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,12 +250,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Triangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.example1.Triangle" />
-      <module name="exception" />
+    <configuration name="mainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="views.mainView" />
+      <module name="quan_ly_phuong _tien _giao_thong" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.example1.*" />
+          <option name="PATTERN" value="views.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -255,17 +275,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ProductManagerProductManager" />
-      <item itemvalue="Application.RecursiveSearch1" />
-      <item itemvalue="Application.Mian" />
-      <item itemvalue="Application.Triangle" />
+      <item itemvalue="Application.View" />
+      <item itemvalue="Application.mainView" />
+      <item itemvalue="Application.Example1" />
+      <item itemvalue="Application.Example2" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Triangle" />
-        <item itemvalue="Application.Mian" />
-        <item itemvalue="Application.RecursiveSearch1" />
-        <item itemvalue="Application.ProductManagerProductManager" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.View" />
+        <item itemvalue="Application.mainView" />
+        <item itemvalue="Application.Example2" />
+        <item itemvalue="Application.Example1" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +357,43 @@
       <workItem from="1618980187367" duration="5341000" />
       <workItem from="1618988735700" duration="15039000" />
       <workItem from="1619061973325" duration="1692000" />
-      <workItem from="1619073442738" duration="9913000" />
+      <workItem from="1619073442738" duration="10536000" />
+      <workItem from="1619146863597" duration="919000" />
+      <workItem from="1619148366921" duration="46000" />
+      <workItem from="1619148526326" duration="27000" />
+      <workItem from="1619148609891" duration="93000" />
+      <workItem from="1619148748983" duration="197000" />
+      <workItem from="1619149028620" duration="73000" />
+      <workItem from="1619149412444" duration="9953000" />
+      <workItem from="1619185985634" duration="1219000" />
+      <workItem from="1619272684185" duration="2251000" />
+      <workItem from="1619403817806" duration="13238000" />
+      <workItem from="1619440670240" duration="1880000" />
+      <workItem from="1619446489551" duration="3000000" />
+      <workItem from="1619486985426" duration="847000" />
+      <workItem from="1619494991954" duration="2166000" />
+      <workItem from="1619497287241" duration="13505000" />
+      <workItem from="1619535347648" duration="1194000" />
+      <workItem from="1619573272249" duration="6908000" />
+      <workItem from="1619597040059" duration="323000" />
+      <workItem from="1619597393206" duration="1093000" />
+      <workItem from="1619598535850" duration="885000" />
+      <workItem from="1619619926343" duration="949000" />
+      <workItem from="1619666933037" duration="1392000" />
+      <workItem from="1619678516547" duration="1604000" />
+      <workItem from="1619772845456" duration="1446000" />
+      <workItem from="1619877741615" duration="4070000" />
+      <workItem from="1619964842663" duration="61000" />
+      <workItem from="1619968142633" duration="1848000" />
+      <workItem from="1620004938610" duration="10571000" />
+      <workItem from="1620015674737" duration="2322000" />
+      <workItem from="1620019701174" duration="5254000" />
+      <workItem from="1620027544581" duration="5502000" />
+      <workItem from="1620033429978" duration="960000" />
+      <workItem from="1620048042479" duration="7238000" />
+      <workItem from="1620111651134" duration="3634000" />
+      <workItem from="1620136007751" duration="12476000" />
+      <workItem from="1620179322534" duration="8636000" />
     </task>
     <servers />
   </component>
@@ -364,13 +422,38 @@
           <properties class="java.io.FileNotFoundException" package="java.io" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.InvalidClassException" package="java.io" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.NotSerializableException" package="java.io" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bai_abtract_interface/src/baitap/baitap1/Test.java</url>
           <line>7</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/casestudy/src/services/HouseService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/module2$ProductManagerProductManager.ic" NAME="ProductManagerProductManager Coverage Results" MODIFIED="1618902656522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
