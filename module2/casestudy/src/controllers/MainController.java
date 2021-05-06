@@ -1,25 +1,22 @@
 package controllers;
 
-import services.HouseService;
-import services.RoomService;
-import services.VillaService;
+
+import models.Cabinet;
 
 import java.util.Scanner;
 
 public class MainController {
-    public static String VILLA = "villa";
-    public static String HOUSE = "house";
-    public static String ROOM = "room";
 
     public static void displayMainMenu() {
         System.out.println(
-                "        1.Add New Services\n" +
+                "               1.Add New Services\n" +
                         "        2. Show Services\n" +
                         "        3. Add New Customer\n" +
                         "        4. Show Information of Customer\n" +
                         "        5. Add New Booking\n" +
                         "        6. Show Information of Employee\n" +
-                        "        7. Exit");
+                                "7.show queue of customer"+
+                        "        8. Exit");
         System.out.println("invite you to choose the function you want");
         int choose = new Scanner(System.in).nextInt();
         switch (choose) {
@@ -41,14 +38,24 @@ public class MainController {
             case 6:
                 showInforOfEmployee();
                 break;
-            case 7:
+            case 9:
                 System.exit(0);
+            case 7:
+                showQueueCustomer();
+                break;
+            case 8:
+                Cabinet.searchId();
+                break;
         }
+    }
+
+    private static void showQueueCustomer() {
+        CustomerController.showQueueCustomer();
     }
 
     private static void addNewServices() {
         System.out.println(
-                "1. Add New Villa\n" +
+                "            1. Add New Villa\n" +
                         "    2. Add New House\n" +
                         "    3. Add New Room\n" +
                         "    4. Back to menu\n" +
@@ -56,13 +63,13 @@ public class MainController {
         int choose = Integer.parseInt(new Scanner(System.in).nextLine());
         switch (choose) {
             case 1:
-                VillaService.addVilla();
+                VillaController.addNewVilla();
                 break;
             case 2:
-                HouseService.addHouse();
+                HouseController.addNewHouse();
                 break;
             case 3:
-                RoomService.addRoom();
+                RoomController.addNewRoom();
                 break;
             case 4:
                 displayMainMenu();
@@ -72,16 +79,35 @@ public class MainController {
     }
 
 
-    private static void showInforOfEmployee() {
+    public static void showInforOfEmployee() {
+        EmployeeController.showEmployee();
     }
 
     private static void addNewBooking() {
+        System.out.println("    1. Booking Villa\n" +
+                "    2. Booking House\n" +
+                "    3. Booking Room");
+        int choose=new Scanner(System.in).nextInt();
+        switch (choose){
+            case 1:
+                VillaController.showAllVillaDe();
+                break;
+            case 2:
+                HouseController.showAllHouseDe();
+                break;
+            case 3:
+                RoomController.showAllRoom();
+                break;
+        }
     }
 
     private static void showInforCustomer() {
+        CustomerController.showAllCustomer();
     }
 
     private static void addNewCustomer() {
+        CustomerController.addNewCustomer();
+
     }
 
     private static void showServices() {
@@ -96,22 +122,22 @@ public class MainController {
         int choose = new Scanner(System.in).nextInt();
         switch (choose) {
             case 1:
-                VillaService.showAllVilla();
+                VillaController.showAllVilla();
                 break;
             case 2:
-                HouseService.showAllHouse();
+                HouseController.showAllHouse();
                 break;
             case 3:
-                RoomService.showAllRoom();
+                RoomController.showAllRoom();
                 break;
             case 4:
-                VillaService.showNameVilla();
+                VillaController.showAllVillaDe();
                 break;
             case 5:
-                HouseService.showNotDe();
+                HouseController.showAllHouseDe();
                 break;
             case 6:
-                RoomService.showAllNameVilla();
+                RoomController.showAllRoomDe();
 
                 break;
             case 7:

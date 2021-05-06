@@ -42,7 +42,7 @@ public class House extends Service {
 
     @Override
     public String toString() {
-        return  super.toString()+roomType +","+ convenient + "," + numberOfFloor ;
+        return  super.toString()+","+roomType +","+ convenient + "," + numberOfFloor ;
     }
 
     @Override

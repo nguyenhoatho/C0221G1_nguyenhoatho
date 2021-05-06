@@ -2,6 +2,15 @@ package ultils;
 
 public class ServiceValidate {
     private static String regex = "";
+    public static boolean validateId(String id){
+        regex="^SV(VL|HO|RO)-[\\d]{4}$";
+        if (id.matches(regex)){
+            return true;
+        }else {
+            System.out.println("nhap lai ");
+            return  false;
+        }
+    }
 
     public static boolean validateName(String serviceName){
         regex = "^((\\p{Lu})(\\p{Ll}*))( (\\p{Lu})(\\p{Ll}*))*$";

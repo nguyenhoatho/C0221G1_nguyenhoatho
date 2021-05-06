@@ -22,7 +22,7 @@ public class Room extends Service {
 
     @Override
     public String toString() {
-        return super.toString()+freeService;
+        return super.toString()+","+freeService;
     }
 
     @Override

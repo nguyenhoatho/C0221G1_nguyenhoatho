@@ -50,6 +50,10 @@ public class Employee {
 
     @Override
     public String toString() {
+        return  idEmployee + "," + nameEmployee + "," + age +","+ address ;
+    }
+
+    public String showInfor() {
         return "Employee{" +
                 "\t idEmployee='" + idEmployee +
                 "\t nameEmployee='" + nameEmployee +
