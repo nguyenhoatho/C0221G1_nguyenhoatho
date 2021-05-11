@@ -16,12 +16,13 @@ public class SerializeFileFactory {
             objectOutputStream.writeObject(productArrayList);
             objectOutputStream.close();
             fileOutputStream.close();
-
+            return true;
         }catch (Exception exception){
             exception.printStackTrace();
 
         }
-        return false;
+        return  false;
+
     }
     public static ArrayList<Product>readFile(String path){
         ArrayList<Product>productArrayList=new ArrayList<Product>();

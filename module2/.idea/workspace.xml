@@ -5,75 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/casestudy/src/controllers/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/controllers/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/controllers/HouseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/controllers/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/controllers/VillaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/data/customer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/data/employee.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/io/IoCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/io/IoEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/io/IoHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/io/IoRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/io/IoVilla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/src/models/Cabinet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/ControllerOto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/ControllerXeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/ControllerXeTai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/oto.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/xemay.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/xetai.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/io/IoOto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/io/IoXeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/io/IoXetai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/models/BoCongAn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/models/Oto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/models/XeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/models/Xetai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/regex/Regex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/views/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/bocongan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/exception/NameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/io/WriteReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/quan_ly_hoc_sinh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/controllers/HocSinhController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/data/hocsinh.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/io/Io.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/model/HocSinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/model/HocSinhKhoiA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/model/HocSinhKhoiB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/model/HocSinhKhoiC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quan_ly_hoc_sinh/src/view/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stack_queue/src/example/example3/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/controller/MenuChinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/controller/ThucHienChucNang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/data/contacts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/exception/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/exception/GenderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/exception/NameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/io/DocGhiFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/models/DanhBa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/regex/Regex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/src/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thicuoimodule/thicuoimodule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/data/hosuse.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/data/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/data/house.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/data/room" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/data/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/data/room.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/data/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/data/villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/io/WriteAndReadFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/models/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/models/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/models/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/models/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/models/Villa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/services/HouseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/services/RoomService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/services/VillaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy/src/ultils/ServiceValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy/src/ultils/ServiceValidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/data/hosuse.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/data/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/data/house.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/data/room" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/data/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/data/room.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/data/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/data/villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/io/WriteAndReadFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/models/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/models/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/models/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/models/House.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/models/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/models/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/models/Villa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/services/HouseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/services/RoomService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/services/VillaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/casestudy/ultils/ServiceValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/casestudy/ultils/ServiceValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_management/parking_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/quan_ly_bai_do_xe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_management/src/models/Area.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_management/src/models/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_management/src/models/Container.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_management/src/models/Persons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking_management/src/models/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/controller/ControllerOto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/controller/ControllerXeMay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/controller/ControllerXeTai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/data/oto.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/data/xemay.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/data/xetai.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/regex/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/quan_ly_bai_do_xe/regex/Regex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/regex/example/example1/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/regex/example/example1/Example1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/san_pham/data/listproduct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/san_pham/data/listproduct.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/san_pham/io/SerializeFileFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/san_pham/io/SerializeFileFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/ControllerOto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/ControllerXeMay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/ControllerXeTai.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/oto.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/xemay.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/data/xetai.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/regex/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/quan_ly_bai_do_xe/src/regex/Regex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regex/src/example/example1/Example1.java" beforeDir="false" afterPath="$PROJECT_DIR$/regex/src/example/example1/Example1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/san_pham/src/data/listproduct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/san_pham/src/data/listproduct.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/san_pham/src/io/SerializeFileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/san_pham/src/io/SerializeFileFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,10 +133,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="exception" />
+      <recent name="regex" />
       <recent name="io" />
       <recent name="models" />
       <recent name="example.example1" />
-      <recent name="baitap.baitap1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/casestudy/src/models" />
@@ -176,6 +158,32 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.example3.A" />
+      <module name="stack_queue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.example3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.example1.Example1" />
+      <module name="regex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.example1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="views.Main" />
       <module name="quan_ly_bai_do_xe" />
@@ -191,7 +199,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Main" />
-      <module name="casestudy" />
+      <module name="thicuoimodule" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
@@ -202,38 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.MainController" />
-      <module name="quan_ly_bai_do_xe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.View" />
-      <module name="san_pham" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.main" />
+      <module name="quan_ly_hoc_sinh" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="views.mainView" />
-      <module name="quan_ly_phuong _tien _giao_thong" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="views.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -253,19 +235,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.View" />
-      <item itemvalue="Application.mainView" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.MainController" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.Example1" />
+      <item itemvalue="Application.A" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.A" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.MainController" />
-        <item itemvalue="Application.View" />
-        <item itemvalue="Application.mainView" />
+        <item itemvalue="Application.Example1" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -376,6 +358,14 @@
       <workItem from="1620263059597" duration="11594000" />
       <workItem from="1620287902427" duration="1122000" />
       <workItem from="1620289119641" duration="3940000" />
+      <workItem from="1620461468176" duration="8036000" />
+      <workItem from="1620479490320" duration="4892000" />
+      <workItem from="1620525786882" duration="8367000" />
+      <workItem from="1620547052816" duration="4167000" />
+      <workItem from="1620606652716" duration="596000" />
+      <workItem from="1620611705894" duration="9808000" />
+      <workItem from="1620623365389" duration="2688000" />
+      <workItem from="1620629578785" duration="1977000" />
     </task>
     <servers />
   </component>

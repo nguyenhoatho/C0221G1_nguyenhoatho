@@ -29,6 +29,7 @@ public class MainController {
     }
 
     private static void xoaPhuongTien() {
+        Service.xoaPhuongTien();
     }
 
     private static void hienThiPhuongTien() {
@@ -38,13 +39,13 @@ public class MainController {
         int chon=new Scanner(System.in).nextInt();
         switch (chon){
             case 1:
-                ControllerXeTai.hienThiXetai();
+               Service.hienThiXeTai();
                 break;
             case 2:
-                ControllerOto.hienThiXeOto();
+              Service.hienThiXeOto();
                 break;
             case 3:
-                ControllerXeMay.hienThiXeMay();
+               Service.hienThiXeMay();
                 break;
         }
     }
@@ -56,16 +57,17 @@ public class MainController {
         int chon=new Scanner(System.in).nextInt();
         switch (chon){
             case 1:
-                ControllerXeTai.themXeTai();
+                Service.themMoiXeTai();
                 break;
             case 2:
-                ControllerOto.addOto();
+                Service.themMoiOto();
                 break;
             case 3:
-                ControllerXeMay.themXeMay();
+                Service.themMoiXeMay();
                 break;
 
         }
+
 
     }
 }

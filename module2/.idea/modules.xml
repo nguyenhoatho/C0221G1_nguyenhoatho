@@ -16,11 +16,13 @@
       <module fileurl="file://$PROJECT_DIR$/map_tree/map_tree.iml" filepath="$PROJECT_DIR$/map_tree/map_tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/module2.iml" filepath="$PROJECT_DIR$/module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/quan_ly_bai_do_xe/quan_ly_bai_do_xe.iml" filepath="$PROJECT_DIR$/quan_ly_bai_do_xe/quan_ly_bai_do_xe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quan_ly_hoc_sinh/quan_ly_hoc_sinh.iml" filepath="$PROJECT_DIR$/quan_ly_hoc_sinh/quan_ly_hoc_sinh.iml" />
       <module fileurl="file://$PROJECT_DIR$/regex/regex.iml" filepath="$PROJECT_DIR$/regex/regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/san_pham/san_pham.iml" filepath="$PROJECT_DIR$/san_pham/san_pham.iml" />
       <module fileurl="file://$PROJECT_DIR$/search_algorithm/search_algorithm.iml" filepath="$PROJECT_DIR$/search_algorithm/search_algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/sort_algorithms/sort_algorithms.iml" filepath="$PROJECT_DIR$/sort_algorithms/sort_algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack_queue/stack_queue.iml" filepath="$PROJECT_DIR$/stack_queue/stack_queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thicuoimodule/thicuoimodule.iml" filepath="$PROJECT_DIR$/thicuoimodule/thicuoimodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/zoo/zoo.iml" filepath="$PROJECT_DIR$/zoo/zoo.iml" />
     </modules>
   </component>
