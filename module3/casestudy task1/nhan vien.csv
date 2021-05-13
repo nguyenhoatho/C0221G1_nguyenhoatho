@@ -1,0 +1,4 @@
+id_nhan_vien,ho_ten,id_vi_tri,id_trinh_do,id_bo_phan,ngay_sinh,so_cmnd,luong,so_dt,email,dia_chi
+1,"nguyen thi be",1,1,1,7/5/1999,2485321,125250,01225478,ndfgjdfjg,"quang nam"
+2,"nguyen vang",2,2,2,20/11/1998,5450522,54566,123568,gdfgdfg,"quang tri"
+3,"tran kim vu",3,3,3,1/11/199,54578254,555558,12224,gdfgd,NULL
