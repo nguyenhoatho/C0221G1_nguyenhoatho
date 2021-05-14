@@ -1,6 +1,0 @@
-id_khach_hang,id_loai_khach,ho_ten,ngay_sinh,so_cmnd,so_dt,email,dia_chi
-1,1,"Tran van oi",4/8/1995,154521,545,nguyen@gmail.com,"quang nam"
-2,2,"Hoang tieu bao",4/4/1985,556301,4553232,nguyen@THOsdvsd,hue
-3,3,"Kim vam lo",7/8/1975,3215,0543236,nguyenR@gm,"quang tri"
-4,4,"phan van vanh",8/9/2000,5452,0545216,nguyen,"nghe an"
-NULL,NULL,NULL,NULL,NULL,NULL,,NULL
