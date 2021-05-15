@@ -74,7 +74,7 @@ where credit between 3 and 5;
 SET SQL_SAFE_UPDATES = 0;
 update student
 set class_id=2
-where student_name ="Hung";
+where student_name like "Hung";
 select *from student;
 -- Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần
 select student.student_name,`subject`.sub_name,mark.mark
