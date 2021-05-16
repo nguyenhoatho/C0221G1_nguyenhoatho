@@ -33,13 +33,11 @@ values(1,"May Giat",3),
  from order_detail join `order` on order_detail.oid= `order`.oid 
  join product on order_detail.pid = product.pid
  join customer on `order`.cid = customer.cid;
- 
- 
- 
- 
+  
 select customer.cname
-from customers as c
-where c.cid not in (select o.cid from `order` as o);
+from customer as c
+where c.cid not in 
+(select o.cid from `order` as o);
  
 select `order`.oid,`order`.odate,sum(order_detail.odQTY*product.pprice) as tong_tien
 from order_detail join `order` on order_detail.oid = `order`.oid 
