@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c0c90a-13eb-418b-b269-f803f74f3952" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../baitapmodule3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baitapmodule3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baitapmodule3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baitapmodule3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baitapmodule3/relational database/example.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../baitapmodule3/relational database/example.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_csv_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_csv_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy/caseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/caseStudy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map_tree/map_tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/map_tree/map_tree.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quan_ly_hoc_sinh/data/hocsinh.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/quan_ly_hoc_sinh/data/hocsinh.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/regex/example/example1/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/regex/example/example1/Example1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/san_pham/data/listproduct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/san_pham/data/listproduct.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/stack_queue/example/example3/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stack_queue/example/example3/A.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,6 +307,7 @@
       <workItem from="1620629578785" duration="1977000" />
       <workItem from="1620877049441" duration="432000" />
       <workItem from="1620881109049" duration="15000" />
+      <workItem from="1621083976850" duration="73000" />
     </task>
     <servers />
   </component>
