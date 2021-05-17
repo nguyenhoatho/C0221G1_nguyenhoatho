@@ -25,7 +25,7 @@ as kh left join loai_khach as lk on kh.id_loai_khach = lk.id_loai_khach
                     left join dich_vu as dv on hd.id_dich_vu = dv.id_dich_vu
                     left join hop_dong_chi_tiet as hdct on hd.id_hop_dong = hdct.id_hop_dong
                     left join dich_vu_di_kem as dvdk on hdct.id_dich_vu_di_kem = dvdk.id_dich_vu_di_kem
-group by kh.id_khach_hang,hd.id_hop_dong;
+group by kh.id_khach_hang,hd.id_hop_dong,tong_tien;
 -- 6.	Hiển thị IDDichVu, TenDichVu, DienTich, ChiPhiThue, TenLoaiDichVu của tất cả các loại Dịch vụ chưa từng được
 --  Khách hàng thực hiện đặt từ quý 1 của năm 2019 (Quý 1 là tháng 1, 2, 3).
 
