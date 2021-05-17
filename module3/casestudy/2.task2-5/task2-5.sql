@@ -6,7 +6,7 @@ where ho_ten like "h%" or ho_ten like "t%" or ho_ten like "k%"
 and length(ho_ten)<=15;
 -- task3
 select *from furama.khach_hang
-where ((year(curdate())-year(ngay_sinh))>=18 and (year(curdate())-year(ngay_sinh))<=53)
+where ((year(curdate())-year(ngay_sinh))>=18 and (year(curdate())-year(ngay_sinh))<=50)
  and (dia_chi like "da nang" or dia_chi like "quang tri");
 SET SQL_SAFE_UPDATES = 0;
 -- task 4
