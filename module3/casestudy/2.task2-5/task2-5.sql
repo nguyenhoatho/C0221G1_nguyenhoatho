@@ -13,8 +13,8 @@ SET SQL_SAFE_UPDATES = 0;
 select hop_dong.id_khach_hang, khach_hang.ho_ten,loai_khach.ten_loai_khach, count(hop_dong.id_dich_vu) as dem_sohd
 from hop_dong join khach_hang on hop_dong.id_khach_hang = khach_hang.id_khach_hang
 join loai_khach on khach_hang.id_loai_khach = loai_khach.id_loai_khach
-where hop_dong.id_khach_hang
-having loai_khach.ten_loai_khach = "Diamond"
+where loai_khach.ten_loai_khach = "Diamond"
+group by hop_dong.id_khach_hang
 order by dem_sohd;
 -- task 5
 select kh.id_khach_hang, kh.ho_ten,lk.ten_loai_khach,hd.id_hop_dong,dv.ten_dich_vu,
