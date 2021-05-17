@@ -3,7 +3,7 @@ use furama;
 -- do nhap du lieu sai nen em lam theo du lieu cua em
 select *from furama.nhan_vien
 where ho_ten like "h%" or ho_ten like "t%" or ho_ten like "k%"
-and length(ho_ten)<=18;
+and length(ho_ten)<=15;
 -- task3
 select *from furama.khach_hang
 where ((year(curdate())-year(ngay_sinh))>=18 and (year(curdate())-year(ngay_sinh))<=53)
