@@ -52,6 +52,6 @@ and kh.id_loai_khach=lk.id_loai_khach
 and hd.id_khach_hang=kh.id_khach_hang
 and dv.id_dich_vu=hd.id_dich_vu
 and year(hd.ngay_hop_dong) =2019
-group by hd.ngay_hop_dong;
+group by month(  hd.ngay_hop_dong);
 
 
