@@ -1,7 +1,7 @@
 -- 10.	Hiển thị thông tin tương ứng với từng Hợp đồng thì đã sử dụng bao nhiêu Dịch vụ đi kèm.
 --  Kết quả hiển thị bao gồm IDHopDong, NgayLamHopDong, NgayKetthuc, TienDatCoc, SoLuongDichVuDiKem 
 -- (được tính dựa trên việc count các IDHopDongChiTiet).
-select  hd.id_hop_dong,hd.ngay_hop_dong,hd.ngay_ket_thuc,hd.tien_dat_coc,hdct.so_luong,count(hdct.id_hop_dong_chi_tiet)
+select  hd.id_hop_dong,hd.ngay_hop_dong,hd.ngay_ket_thuc,hd.tien_dat_coc,hdct.so_luong,count(hdct.id_hop_dong_chi_tiet) as so_luong_dich_vu_di_kem
 from hop_dong as hd,hop_dong_chi_tiet as hdct,dich_vu_di_kem as dvdk
 where hd.id_hop_dong=hdct.id_hop_dong
 and dvdk.id_dich_vu_di_kem=hdct.id_dich_vu_di_kem
@@ -28,6 +28,10 @@ join nhan_vien as nv on hd.id_nhan_vien=nv.id_nhan_vien
 join khach_hang as kh on hd.id_khach_hang=kh.id_khach_hang
 join dich_vu as dv on hd.id_dich_vu=dv.id_dich_vu
 join hop_dong_chi_tiet as hdct on hd.id_hop_dong=hdct.id_hop_dong
-where year(hd.ngay_hop_dong)=2019 and
-month(hd.ngay_hop_dong) in (10,11,12)
-group by hd.id_hop_dong;
+where ((month(hd.ngay_hop_dong) in (10,11,12)) and year(hd.ngay_hop_dong)=2019 )
+	  and hd.id_dich_vu not in
+	  (select hd.id_dich_vu 
+      from hop_dong hd
+      where (month(hd.ngay_hop_dong) in(1,2,3,4,5,6)) and year(hd.ngay_hop_dong)=2019 )
+group by hdct.id_hop_dong_chi_tiet
+;
