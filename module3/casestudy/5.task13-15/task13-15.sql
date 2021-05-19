@@ -33,5 +33,6 @@ join trinh_do as td on nv.id_trinh_do=td.id_trinh_do
 join bo_phan as bp on nv.id_bo_phan=bp.id_bo_phan
 join hop_dong as hd on nv.id_nhan_vien=hd.id_nhan_vien
 where  year(hd.ngay_hop_dong) in (2018,2019)
-limit 3;
+group by nv.id_nhan_vien
+having count(hd.id_nhan_vien)<=3;
 
