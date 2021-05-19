@@ -32,5 +32,6 @@ where kh.id_khach_hang in (
       from hop_dong as hd
 	  where year(hd.ngay_hop_dong)<2016)
 ;
+
  
  
