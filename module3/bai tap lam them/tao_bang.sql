@@ -25,7 +25,8 @@ foreign key (faculty_id) references faculty(faculty_id)
 create table project(
 project_id varchar(10) not null primary key,
 project_name varchar(30),
-expense int
+expense int,
+place_of_intern varchar(55)
 );
 create table instructor_student(
 student_id int,
