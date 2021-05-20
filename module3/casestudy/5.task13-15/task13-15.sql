@@ -19,11 +19,8 @@ from hop_dong as hd
 join dich_vu as dv on hd.id_dich_vu=dv.id_dich_vu
 join hop_dong_chi_tiet as hdct on hd.id_hop_dong=hdct.id_hop_dong
 join dich_vu_di_kem as dvdk on hdct.id_dich_vu_di_kem=dvdk.id_dich_vu_di_kem
-where hdct.so_luong in
-(select hdct.so_luong
-from hop_dong_chi_tiet as hdct
-where hdct.so_luong=1);
-
+where  so_luong=1
+group by dvdk.id_dich_vu_di_kem;
 -- 15.	Hiển thi thông tin của tất cả nhân viên bao gồm IDNhanVien, HoTen, TrinhDo, TenBoPhan, SoDienThoai, DiaChi
 --  mới chỉ lập được tối đa 3 hợp đồng từ năm 2018 đến 2019.
 
