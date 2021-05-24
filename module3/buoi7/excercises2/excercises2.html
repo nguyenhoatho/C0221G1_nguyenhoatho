@@ -7,54 +7,102 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="excercises2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand logo" href="#"><img src="images/1200px-Facebook_Logo_(2019).png" alt=""></a>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-md-center">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a class="navbar-brand logo" href="#"><i class="fa fa-facebook" aria-hidden="true"><img  src="images/1200px-Facebook_Logo_(2019).png" alt=""></i></a>
-                        </div>
-                        <div class="col-md-8">
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="text" placeholder="tìm kiếm trên facebook">
-
-                            </form>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 rounded-pill" type="text" placeholder="Search">
+        </form>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menugiua">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#"><i class="material-icons">home</i></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"><i class="material-icons">tv</i></a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">store</i></a>
                 </li>
-            </ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">group</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">casino</i></a>
+                </li>
 
-        </div>
+            </ul>
+            <ul class="navbar-nav  float-xs-right menuphai">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">account_circle</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">menu</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">messenger</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">notifications</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="material-icons">keyboard_arrow_down</i></a>
+                </li>
+
         </div>
     </nav>
+    <!-- hết thanh menu -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 menuphai">
+                <ul class="list-unstyled">
+                    <li><a class="nav-link" href="#"><i class="material-icons">account_circle</i><a><p>Thọ Nguyễn</p></a></a>
+                    </li>
+                    <li><a class="nav-link" href="#"><i class="material-icons">group</i><p>group</p></a></li>
+                    <li><a class="nav-link" href="#"><i class="material-icons">bookmark</i><p>đã lưu</p></a></li>
+                    <li><a class="nav-link" href="#"><i class="material-icons">alarm</i><p>kỷ niệm</p></a></li>
+                    <li><a class="nav-link" href="#"><i class="material-icons">pageview</i><p>trang</p></a></li>
+                    <li><a class="nav-link" href="#"><i class="material-icons">pageview</i><p>trang</p></a></li>
+                    <a class="nav-link" href="#"><i class="material-icons">keyboard_arrow_down <p>more</p></i></a>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <a class="nav-link face" href="#"><i class="material-icons">account_circle</i></a>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">nhậu éo biết say :V</p>
+                    </div>
+                    <img src="images/49393509_376366742920117_3273736850262458368_n.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-sm-3 bg-dark">
+                <ul class="list-group bg-dark">
+                    <li class="list-group-item bg-dark text-center  ">tho nguyen</li>
+                    <li class="list-group-item bg-dark text-center  ">Bảo Trang</li>
+                    <li class="list-group-item bg-dark text-center  ">Diệu Linh</li>
+                    <li class="list-group-item bg-dark text-center  ">tho nguyen</li>
+                    <li class="list-group-item bg-dark text-center  ">Bảo Trang</li>
+                    <li class="list-group-item bg-dark text-center  ">Diệu Linh</li>
+                    <li class="list-group-item bg-dark text-center  ">tho nguyen</li>
+                    <li class="list-group-item  bg-dark text-center ">Bảo Trang</li>
+                    <li class="list-group-item bg-dark text-center ">Diệu Linh</li>
+                    <li class="list-group-item bg-dark text-center  ">tho nguyen</li>
+                    <li class="list-group-item bg-dark text-center  ">Bảo Trang</li>
+                    <li class="list-group-item bg-dark text-center  ">Diệu Linh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- Optional JavaScript -->

@@ -1,8 +1,31 @@
-* {
-    margin: 0;
-    padding: 0
+a.navbar-brand.logo img {
+    width: 43px;
 }
 
-a.navbar-brand.logo img {
-    width: 64px;
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.menugiua {
+    padding: 0px 184px;
+}
+
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0.menugiua li {
+    padding: 0px 35px;
+}
+
+i.material-icons {
+    font-size: 36px;
+}
+
+i.material-icons:hover {
+    color: rgb(30, 99, 155);
+}
+
+.col-sm-3.menuphai {
+    background: #3c3636;
+}
+
+dark.menutrai ul li {
+    background: #3c3636;
+}
+
+.col-sm-6 {
+    background: #464040;
 }
