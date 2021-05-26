@@ -4,7 +4,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet("/ProductDiscountCalculator")
-public class ProductDiscountCalculator extends HttpServlet {
+public class ProductDiscountCalculatorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
