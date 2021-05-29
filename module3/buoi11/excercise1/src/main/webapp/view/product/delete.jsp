@@ -40,7 +40,7 @@
             </tr>
             <tr>
                 <td> origin: </td>
-                <td>${product. origin}</td>
+                <td>${product.origin}</td>
             </tr>
             <tr>
                 <td><input type="submit" value="Delete product"></td>

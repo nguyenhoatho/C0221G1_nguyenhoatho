@@ -62,6 +62,7 @@ public class ProductServlet extends HttpServlet {
             productService.update(id,product);
             request.setAttribute("product",product);
             request.setAttribute("message","update success");
+            requestDispatcher = request.getRequestDispatcher("/view/product/edit.jsp");
 
         }
         try {
@@ -106,7 +107,7 @@ public class ProductServlet extends HttpServlet {
         else {
             this.productService.remove(product.getId());
             try {
-                response.sendRedirect("view");
+                response.sendRedirect("/product");
             } catch (IOException e) {
                 e.printStackTrace();
             }
