@@ -23,16 +23,16 @@ public class ProductServlet extends HttpServlet {
             action="";
         }
         switch (action){
-            case "create":
+            case"create":
                 creatProduct(request,response);
                 break;
-            case "edit":
+            case"edit":
                 updateProduct(request,response);
                 break;
-            case "delete":
+            case"delete":
                 deleteProduct(request,response);
                 break;
-            case "search":
+            case"search":
                 searchProduct(request,response);
             default:
                 break;
@@ -145,16 +145,16 @@ public class ProductServlet extends HttpServlet {
             case "create":
                 showCreate(request,response);
                 break;
-            case "delete":
+            case"delete":
                 showDelete(request,response);
                 break;
-            case "view":
+            case"view":
                 showView(request,response);
                 break;
-            case "search":
+            case"search":
                 showSearch(request,response);
                 break;
-            case "edit":
+            case"edit":
                 showEdit(request,response);
             default:
                 productList(request,response);
@@ -168,10 +168,10 @@ public class ProductServlet extends HttpServlet {
         Product product = this.productService.findById(id);
         RequestDispatcher dispatcher;
         if(product == null){
-            dispatcher = request.getRequestDispatcher("/view//product/error.jsp");
+            dispatcher = request.getRequestDispatcher("/view/product/error.jsp");
         } else {
             request.setAttribute("product", product);
-            dispatcher = request.getRequestDispatcher("/view//product/edit.jsp");
+            dispatcher = request.getRequestDispatcher("/view/product/edit.jsp");
         }
         try {
             dispatcher.forward(request, response);

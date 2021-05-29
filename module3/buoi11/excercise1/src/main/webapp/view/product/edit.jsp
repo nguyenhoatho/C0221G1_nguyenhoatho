@@ -1,3 +1,4 @@
+<%--@elvariable id="product" type="com.sun.corba.se.impl.ior.GenericIdentifiable"--%>
 <%--
   Created by IntelliJ IDEA.
   User: Admin

@@ -43,7 +43,7 @@
                 <td><input type="text" name="expiryDate" id="expiryDate" value="${product.expiryDate}"></td>
             </tr>
             <tr>
-                <td>Manufactures: </td>
+                <td>origin: </td>
                 <td><input type="text" name="origin" id="origin" value="${product.origin}"></td>
             </tr>
             <tr>
