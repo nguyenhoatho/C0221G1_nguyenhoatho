@@ -1,12 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Admin
-  Date: 29/5/2021
-  Time: 2:31 PM
-  To change this template use File | Settings | File Templates.
---%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Product List</title>
@@ -15,19 +9,19 @@
 <h1>Product</h1>
 <p>
     <a href="/product?action=create">Create new Product ||   </a>
-    <a href="/product?action=search" style="color: red">Search  Product</a>
+    <a href="/product?action=search"style="color: red">Search  Product</a>
 </p>
 <table border="1">
     <tr>
         <td>ID</td>
         <td>Name</td>
-        <td>Price</td>
-        <td>Description</td>
-        <td>Manufacturers</td>
+        <td>dateOfManufacture</td>
+        <td>expiryDate</td>
+        <td>origin</td>
         <td>Edit</td>
         <td>Delete</td>
     </tr>
-    <c:forEach items='${productList}' var="product">
+    <c:forEach items='${products}' var="product">
         <tr>
             <td>${product.id}</td>
             <td><a href="/product?action=view&id=${product.id}">${product.name}</a></td>

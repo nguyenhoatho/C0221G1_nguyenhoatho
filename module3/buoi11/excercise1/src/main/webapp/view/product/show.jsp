@@ -1,12 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: Admin
-  Date: 29/5/2021
-  Time: 2:32 PM
+  User: ADMIN
+  Date: 5/27/2021
+  Time: 10:14 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Search</title>
@@ -24,11 +24,11 @@
 <table border="1">
     <tr>
         <th>Name </th>
-        <th>Price </th>
-        <th>Product Description </th>
-        <th>Manufacture</th>
+        <th>dateOfManufacture </th>
+        <th>expiryDate </th>
+        <th>origin</th>
     </tr>
-    <c:forEach var="product" items="${productList}">
+    <c:forEach var="product" items="${products}">
         <tr>
             <td>${product.name}</td>
             <td>${product.dateOfManufacture}</td>
@@ -39,4 +39,3 @@
 </table>
 </body>
 </html>
-

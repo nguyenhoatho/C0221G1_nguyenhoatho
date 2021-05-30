@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Admin
-  Date: 29/5/2021
-  Time: 2:30 PM
+  User: ADMIN
+  Date: 5/27/2021
+  Time: 6:45 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -39,15 +39,15 @@
                 <td><input type="text" name="name" id="name"></td>
             </tr>
             <tr>
-                <td>Price: </td>
+                <td>dateOfManufacture: </td>
                 <td><input type="text" name="dateOfManufacture" id="dateOfManufacture"></td>
             </tr>
             <tr>
-                <td>Product Description: </td>
+                <td>expiryDate </td>
                 <td><input type="text" name="expiryDate" id="expiryDate"></td>
             </tr>
             <tr>
-                <td>Manufacturers: </td>
+                <td>origin </td>
                 <td><input type="text" name="origin" id="origin"></td>
             </tr>
             <tr>

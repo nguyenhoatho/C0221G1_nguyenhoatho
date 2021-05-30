@@ -1,13 +1,12 @@
-<%--@elvariable id="product" type="com.sun.corba.se.impl.ior.GenericIdentifiable"--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: Admin
-  Date: 29/5/2021
-  Time: 2:31 PM
+  User: ADMIN
+  Date: 5/27/2021
+  Time: 6:58 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Edit product</title>
@@ -35,16 +34,16 @@
                 <td><input type="text" name="name" id="name" value="${product.name}"></td>
             </tr>
             <tr>
-                <td>Price: </td>
+                <td>dateOfManufacture </td>
                 <td><input type="text" name="dateOfManufacture" id="dateOfManufacture" value="${product.dateOfManufacture}"></td>
             </tr>
             <tr>
-                <td>Product Description: </td>
-                <td><input type="text" name="des" id="des" value="${product.description}"></td>
+                <td>expiryDate: </td>
+                <td><input type="text" name="expiryDate" id="expiryDate" value="${product.expiryDate}"></td>
             </tr>
             <tr>
-                <td>Manufactures: </td>
-                <td><input type="text" name="expiryDate" id="expiryDate" value="${product.expiryDate}"></td>
+                <td>origin: </td>
+                <td><input type="text" name="manu" id="manu" value="${product.origin}"></td>
             </tr>
             <tr>
                 <td></td>
