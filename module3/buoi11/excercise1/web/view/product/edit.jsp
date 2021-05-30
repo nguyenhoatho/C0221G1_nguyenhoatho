@@ -26,10 +26,6 @@
         <legend>Product information</legend>
         <table>
             <tr>
-                <td>ID: </td>
-                <td><input type="text" name="id" id="id" value="${product.id}" disabled></td>
-            </tr>
-            <tr>
                 <td>Name: </td>
                 <td><input type="text" name="name" id="name" value="${product.name}"></td>
             </tr>
