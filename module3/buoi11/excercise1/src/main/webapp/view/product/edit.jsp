@@ -43,7 +43,7 @@
             </tr>
             <tr>
                 <td>origin: </td>
-                <td><input type="text" name="manu" id="manu" value="${product.origin}"></td>
+                <td><input type="text" name="origin" id="origin" value="${product.origin}"></td>
             </tr>
             <tr>
                 <td></td>
