@@ -34,6 +34,8 @@
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/search.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/show.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../buoi8/excercise2/excercise2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../buoi8/excercise2/excercise2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -168,7 +170,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f40c3f8e-1c8e-4fe7-914a-c26b4ca6afdc" name="Default Changelist" comment="" />
+      <changelist id="b2085395-4a22-4b49-925b-a94331a28045" name="Default Changelist" comment="" />
       <created>1622103673379</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -178,6 +180,7 @@
       <workItem from="1622193295096" duration="4638000" />
       <workItem from="1622278627797" duration="1004000" />
       <workItem from="1622290763709" duration="2282000" />
+      <workItem from="1622422806716" duration="59000" />
     </task>
     <servers />
   </component>
@@ -205,10 +208,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622186993700" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1622279421698">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1622422861556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622279421698" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622422861556" />
     <state width="1024" height="224" key="GridCell.Tab.0.bottom" timestamp="1622384451096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -277,9 +280,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1622163693234" />
-    <state x="209" y="0" key="new project wizard" timestamp="1622191458829">
+    <state x="209" y="0" key="new project wizard" timestamp="1622422865175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1622191458829" />
+    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1622422865175" />
   </component>
 </project>
