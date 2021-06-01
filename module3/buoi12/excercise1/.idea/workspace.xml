@@ -20,8 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="158ed7f6-0a0d-42af-bd92-a2fd616ebd6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/java/model/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/java/model/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/java/model/services/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/java/model/services/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/webapp/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/webapp/view/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/webapp/view/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../buoi13/practice/practice2/src/main/webapp/view/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/untitled.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/create.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/delete.jsp" afterDir="false" />
@@ -32,10 +43,8 @@
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/show.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../codegym/untitled/web/view/product/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai tap lam them/tao_bang.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai tap lam them/tao_bang.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../buoi11/excercise1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../buoi11/excercise1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../buoi11/excercise1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../buoi11/excercise1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../buoi8/excercise2/excercise2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../buoi8/excercise2/excercise2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +96,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../buoi13/practice/practice1" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -188,6 +202,9 @@
       <workItem from="1622446815814" duration="32000" />
       <workItem from="1622446898314" duration="10637000" />
       <workItem from="1622459519810" duration="232000" />
+      <workItem from="1622473331103" duration="789000" />
+      <workItem from="1622474202676" duration="79000" />
+      <workItem from="1622508492894" duration="5635000" />
     </task>
     <servers />
   </component>
@@ -215,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622457668082" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622459686197">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622531028421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622459686197" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622531028421" />
     <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1622459753505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -283,10 +300,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="210" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1622458753906" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1622474109338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622474109338" />
     <state x="499" y="173" key="extract.method.dialog" timestamp="1622459276284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1622459276284" />
+    <state x="209" y="0" key="new project wizard" timestamp="1622530862055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1622530862055" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
