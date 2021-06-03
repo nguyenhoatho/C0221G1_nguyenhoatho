@@ -17,11 +17,11 @@ public class CustomerRepo {
             " VALUES (?,?,?,?,?,?,?,?,?)";
     private static final String DELETE_CUSTOMER ="delete from customer where customer_id = ?";
     private  static final  String   SELECT_CUSTOMER_ID="select * from customer where customer_id = ?";
-    private static  final  String UPDATE_CUSTOMER="UPDATE `furama_jstl_jsp`.`customer` SET customer_id = ?, customer_type_id= ?,customer_name= ?,customer.customer_birthday=?,\n" +
-            "customer.customer_gender=?,customer.customer_id_card= ?,customer.customer_phone=?,customer.customer_phone=?,customer.customer_email=?,\n" +
+    private static  final  String UPDATE_CUSTOMER="UPDATE `furama_jstl_jsp`.`customer` SET  customer_type_id= ?,customer_name= ?,customer.customer_birthday=?,\n" +
+            "customer.customer_gender=?,customer.customer_id_card= ?,customer.customer_phone=?,customer.customer_email=?,\n" +
             "customer.customer_address=?" +
             "where customer.customer_id= ?;";
-    private static final  String SEARCH_CUSTOMER="select * from customer where customer.customer_name=' ? '";
+    private static final  String SEARCH_CUSTOMER="select * from customer where customer.customer_name like ?";
 
 
     public CustomerRepo() {
@@ -106,16 +106,17 @@ public class CustomerRepo {
         boolean updateCustomer=false;
         try {
             preparedStatement=connection.prepareStatement(UPDATE_CUSTOMER);
-            preparedStatement.setInt(1,customer.getCustomerId());
-            preparedStatement.setInt(2,customer.getCustomerTypeId());
-            preparedStatement.setString(3,customer.getCustomerName());
-            preparedStatement.setString(4,customer.getCustomerBirthday());
-            preparedStatement.setInt(5,customer.getCustomerGender());
-            preparedStatement.setString(6,customer.getCustomerIdCard());
-            preparedStatement.setString(7,customer.getCustomerPhone());
-            preparedStatement.setString(8,customer.getCustomerEmail());
-            preparedStatement.setString(9,customer.getCustomerAddress());
-            System.out.println(preparedStatement.toString());
+            preparedStatement.setInt(1,customer.getCustomerTypeId());
+            preparedStatement.setString(2,customer.getCustomerName());
+            preparedStatement.setString(3,customer.getCustomerBirthday());
+            preparedStatement.setInt(4,customer.getCustomerGender());
+            preparedStatement.setString(5,customer.getCustomerIdCard());
+            preparedStatement.setString(6,customer.getCustomerPhone());
+            preparedStatement.setString(7,customer.getCustomerEmail());
+            preparedStatement.setString(8,customer.getCustomerAddress());
+            preparedStatement.setInt(9,customer.getCustomerId());
+
+
             updateCustomer=preparedStatement.executeUpdate()>0;
 
             preparedStatement.close();
@@ -165,7 +166,7 @@ public class CustomerRepo {
         Customer customer=null;
         try {
             preparedStatement=connection.prepareStatement(SEARCH_CUSTOMER);
-            preparedStatement.setString(3,customerName);
+            preparedStatement.setString(1,"%"+customerName+"%");
             ResultSet resultSet=preparedStatement.executeQuery();
             while (resultSet.next()){
                 int customerId=resultSet.getInt("customer_id");

@@ -96,8 +96,8 @@
                     </div>
                 </li>
             </ul>
-            <form class="d-flex pt-3">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex pt-3" method="post" action="/customer?action=search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="nameSearch">
                 <button class="btn btn-outline-success " type="submit">Search</button>
             </form>
         </div>
@@ -113,6 +113,7 @@
             <table class="table table-striped">
                 <tr class="text-center">
                     <th>STT</th>
+                    <th>id</th>
                     <th>Name</th>
                     <th>Birthday</th>
                     <th>Gender</th>
@@ -127,6 +128,7 @@
                 <c:forEach items="${customers}" var="customer" varStatus="status">
                     <tr class="text-center">
                         <td>${status.count}</td>
+                        <td>${customer.customerId}</td>
                         <td>${customer.customerName}</td>
                         <td>${customer.customerBirthday}</td>
                         <td>${customer.customerGender}</td>
@@ -134,11 +136,11 @@
                         <td>${customer.customerPhone}</td>
                         <td>${customer.customerEmail}</td>
                         <td>${customer.customerAddress}</td>
-                        <td><a class="btn btn-info" href="customer?action=view&customerId=${customer.customerId}">View</a>
+                        <td><a class="btn btn-info" href="customer?action=view&CustomerId=${customer.customerId}">View</a>
                         </td>
-                        <td><a class="btn btn-warning " href="customer?action=edit&customerId=${customer.customerId}">Edit</a>
+                        <td><a class="btn btn-warning " href="customer?action=edit&CustomerId=${customer.customerId}">Edit</a>
                         </td>
-                        <td><a class="btn btn-danger" href="customer?action=delete&customerId=${customer.customerId}">Delete</a>
+                        <td><a class="btn btn-danger" href="customer?action=delete&CustomerId=${customer.customerId}">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>

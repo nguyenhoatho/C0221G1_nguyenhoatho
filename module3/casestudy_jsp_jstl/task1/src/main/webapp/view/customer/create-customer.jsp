@@ -135,10 +135,16 @@
                 </div>
                 <div class="row p-2">
                     <div class="col-lg-3">
+                        <label class="font-weight-bold">Customer ID</label>
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" name="customerId">
+                    </div>
+                    <div class="col-lg-3">
                         <label class="font-weight-bold">Customer Type ID</label>
                     </div>
                     <div class="col-lg-9">
-                        <input type="text" name="customerTypeID">
+                        <input type="text" name="customerTypeId">
                     </div>
                 </div>
                 <div class="row p-2">
@@ -170,7 +176,7 @@
                         <label class="font-weight-bold">Customer ID Card</label>
                     </div>
                     <div class="col-lg-9">
-                        <input type="text" name="customerIDCard">
+                        <input type="text" name="customerIdCard">
                     </div>
                 </div>
                 <div class="row p-2">

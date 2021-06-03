@@ -110,6 +110,7 @@
         </div>
     </nav>
 </div>
+<a href="/customer">back home</a>
 <div class="container">
     <form method="post">
         <div class=" row">
@@ -118,14 +119,14 @@
                 <div class="row p-3 bg-light">
                     <div class="col-lg-12 text-center">
                         <h1>Edit Customer</h1>
-                        <h3>
-                        <c:if test="${message=='Edit successful'}">
-                            <p class="text-success">${message}</p>
-                        </c:if>
-                        <c:if test="${message=='Edit unsuccessful'}">
-                            <p class="text-danger">${message}</p>
-                        </c:if>
-                        </h3>
+<%--                        <h3>--%>
+<%--                        <c:if test="${message=='Edit successful'}">--%>
+<%--                            <p class="text-success">${message}</p>--%>
+<%--                        </c:if>--%>
+<%--                        <c:if test="${message=='Edit unsuccessful'}">--%>
+<%--                            <p class="text-danger">${message}</p>--%>
+<%--                        </c:if>--%>
+<%--                        </h3>--%>
                     </div>
                 </div>
                 <div class="row p-2 pt-5">
@@ -133,7 +134,7 @@
                         <label class="font-weight-bold">Customer ID</label>
                     </div>
                     <div class="col-lg-9">
-                        <input readonly type="text" name="customerID" value="${customer.customerID}">
+                        <input  type="text" name="customerId" value="${customer.customerId}">
                     </div>
                 </div>
                 <div class="row p-2">
@@ -141,7 +142,7 @@
                         <label class="font-weight-bold">Customer Type ID</label>
                     </div>
                     <div class="col-lg-9">
-                        <input readonly type="text" name="customerTypeID" value="${customer.customerTypeId}">
+                        <input  type="text" name="customerTypeId" value="${customer.customerTypeId}">
                     </div>
                 </div>
                 <div class="row p-2">
@@ -173,7 +174,7 @@
                         <label class="font-weight-bold">Customer ID Card</label>
                     </div>
                     <div class="col-lg-9">
-                        <input type="text" name="customerIDCard" value="${customer.customerIdCard}">
+                        <input type="text" name="customerIdCard" value="${customer.customerIdCard}">
                     </div>
                 </div>
                 <div class="row p-2">
