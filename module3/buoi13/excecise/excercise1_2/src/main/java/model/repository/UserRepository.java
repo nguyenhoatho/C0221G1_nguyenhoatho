@@ -358,68 +358,28 @@ public class UserRepository {
 
     }
 //    viet ra mot bug
-public void addUserTransaction(User user, int[] permisions) {
-    Connection conn = null;
-    PreparedStatement pstmt = null;
-    PreparedStatement pstmtAssignment = null;
+    public boolean updateUsere(User user){
+        Connection connection = baseRepository.getConnection();
+        String query = "{CALL update_user(?,?,?)}";
+        PreparedStatement statement = null;
+        boolean rowUpdated = false;
+        try (
+                CallableStatement callableStatement = connection.prepareCall(query);) {
+            statement.setString(1,"id");
+            statement.setString(1, user.getName());
+            statement.setString(2, user.getEmail());
+            statement.setString(3, user.getCountry());
+            statement.setInt(4, user.getId());
+
+            rowUpdated = statement.executeUpdate() > 0;
 
 
-    ResultSet rs = null;
-
-    try {
-
-        conn = baseRepository.getConnection();
-
-        conn.setAutoCommit(false);
-
-        pstmt = conn.prepareStatement(INSERT_USERS_SQL, Statement.RETURN_GENERATED_KEYS);
-
-        pstmt.setString(1, user.getName());
-
-        pstmt.setString(2, user.getEmail());
-
-        pstmt.setString(3, user.getCountry());
-
-        int rowAffected = pstmt.executeUpdate();
-
-        rs = pstmt.getGeneratedKeys();
-
-        int userId = 0;
-
-        if (rs.next())
-            userId = rs.getInt(1);
-        if (rowAffected == 1) {
-            String sqlPivot = "INSERT INTO user_permision(user_id,permision_id) "
-                    + "VALUES(?,?)";
-            pstmtAssignment = conn.prepareStatement(sqlPivot);
-            for (int permisionId : permisions) {
-                pstmtAssignment.setInt(1, userId);
-                pstmtAssignment.setInt(2, permisionId);
-                pstmtAssignment.executeUpdate();
-
-            }
-            conn.commit();
-        } else {
-
-            conn.rollback();
-        }
-    } catch (SQLException ex) {
-        try {
-            if (conn != null)
-                conn.rollback();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+
+            printSQLException(e);
+
         }
-        System.out.println(ex.getMessage());
-    } finally {
-        try {
-            if (rs != null) rs.close();
-            if (pstmt != null) pstmt.close();
-            if (pstmtAssignment != null) pstmtAssignment.close();
-            if (conn != null) conn.close();
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
+        return rowUpdated;
     }
 
 

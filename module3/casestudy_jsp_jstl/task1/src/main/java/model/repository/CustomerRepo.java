@@ -15,13 +15,13 @@ public class CustomerRepo {
     private static final String INSERT_CUSTOMER = "INSERT INTO `furama_jstl_jsp`.`customer` " +
             "(`customer_id`, `customer_type_id`, `customer_name`, `customer_birthday`, `customer_gender`, `customer_id_card`, `customer_phone`, `customer_email`, `customer_address`)" +
             " VALUES (?,?,?,?,?,?,?,?,?)";
-    private static final String DELETE_CUSTOMER ="delete form customer where customer_id = ?";
+    private static final String DELETE_CUSTOMER ="delete from customer where customer_id = ?";
     private  static final  String   SELECT_CUSTOMER_ID="select * from customer where customer_id = ?";
     private static  final  String UPDATE_CUSTOMER="UPDATE `furama_jstl_jsp`.`customer` SET customer_id = ?, customer_type_id= ?,customer_name= ?,customer.customer_birthday=?,\n" +
             "customer.customer_gender=?,customer.customer_id_card= ?,customer.customer_phone=?,customer.customer_phone=?,customer.customer_email=?,\n" +
             "customer.customer_address=?" +
             "where customer.customer_id= ?;";
-    private static final  String SEARCH_CUSTOMER="select * from customer where customer.customer_name like %?%";
+    private static final  String SEARCH_CUSTOMER="select * from customer where customer.customer_name=' ? '";
 
 
     public CustomerRepo() {
@@ -68,7 +68,7 @@ public class CustomerRepo {
                 String customerPhone =resultSet.getString("customer_phone");
                 String customerEmail=resultSet.getString("customer_email");
                 String customerAddress=resultSet.getString("customer_address");
-                customer=new Customer(customerTypeId,customerName,customerBirthday,customerGender,
+                customer=new Customer(id,customerName,customerBirthday,customerGender,
                         customerIdCard,customerPhone,customerEmail,customerTypeId,customerAddress);
 
 
@@ -78,20 +78,27 @@ public class CustomerRepo {
         }
         return customer;
     }
-    public boolean deleteCustomer(int id){
-        Connection connection=baseRepository.getConnection();
-        PreparedStatement preparedStatement=null;
-        boolean deleteCustomer=false;
+    public boolean deleteCustomer(int id) {
+        Connection connection = baseRepository.getConnection();
+        PreparedStatement preparedStatement = null;
+        boolean deleteCustomerCheck = false;
         try {
-            preparedStatement=connection.prepareStatement(DELETE_CUSTOMER);
-            preparedStatement.setInt(1,id);
-            deleteCustomer=preparedStatement.executeUpdate()>0;
-            preparedStatement.close();
-            connection.close();
+            preparedStatement = connection.prepareStatement(DELETE_CUSTOMER);
+            preparedStatement.setInt(1, id);
+            deleteCustomerCheck = preparedStatement.executeUpdate() > 0;
+
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            return deleteCustomerCheck;
         }
-        return deleteCustomer;
     }
     public boolean updateCustomer(Customer customer){
         Connection connection=baseRepository.getConnection();
@@ -108,6 +115,7 @@ public class CustomerRepo {
             preparedStatement.setString(7,customer.getCustomerPhone());
             preparedStatement.setString(8,customer.getCustomerEmail());
             preparedStatement.setString(9,customer.getCustomerAddress());
+            System.out.println(preparedStatement.toString());
             updateCustomer=preparedStatement.executeUpdate()>0;
 
             preparedStatement.close();
@@ -128,6 +136,7 @@ public class CustomerRepo {
             preparedStatement=connection.prepareStatement(CUSTOMER_SELECT_ALL);
             ResultSet resultSet=preparedStatement.executeQuery();
             while (resultSet.next()){
+                int customerId=resultSet.getInt("customer_id");
                 int customerTypeId=resultSet.getInt("customer_type_id");
                 String customerName=resultSet.getString("customer_name");
                 String customerBirthday=resultSet.getString("customer_birthday");
@@ -136,8 +145,11 @@ public class CustomerRepo {
                 String customerPhone =resultSet.getString("customer_phone");
                 String customerEmail=resultSet.getString("customer_email");
                 String customerAddress=resultSet.getString("customer_address");
-                customerList.add(new Customer(customerTypeId,customerName,customerBirthday,customerGender,customerIdCard,customerPhone
-                ,customerEmail,customerTypeId,customerAddress));
+//                public Customer(int customerId, String customerName, String customerBirthday, int customerGender,
+//                String customerIdCard, String customerPhone, String customerEmail, int customerTypeId,
+//                String customerAddress)
+                customerList.add(new Customer(customerId,customerName,customerBirthday,customerGender,customerIdCard,
+                        customerPhone,customerEmail,customerTypeId,customerAddress));
 
 
             }
@@ -146,24 +158,29 @@ public class CustomerRepo {
         }
         return customerList;
     }
-    public List<Customer> searchCustomerName(String CustomerName){
+    public List<Customer> searchCustomerName(String customerName){
         Connection connection=baseRepository.getConnection();
         PreparedStatement preparedStatement=null;
         List<Customer> customerList=new ArrayList<>();
         Customer customer=null;
         try {
             preparedStatement=connection.prepareStatement(SEARCH_CUSTOMER);
+            preparedStatement.setString(3,customerName);
             ResultSet resultSet=preparedStatement.executeQuery();
             while (resultSet.next()){
+                int customerId=resultSet.getInt("customer_id");
                 int customerTypeId=resultSet.getInt("customer_type_id");
-                String customerName=resultSet.getString("customer_name");
+                String customerName1=resultSet.getString("customer_name");
                 String customerBirthday=resultSet.getString("customer_birthday");
                 int customerGender =resultSet.getInt("customer_gender");
                 String customerIdCard=resultSet.getString("customer_id_card");
                 String customerPhone =resultSet.getString("customer_phone");
                 String customerEmail=resultSet.getString("customer_email");
                 String customerAddress=resultSet.getString("customer_address");
-                customerList.add(new Customer(customerTypeId,customerName,customerBirthday,customerGender,customerIdCard,customerPhone
+//                 public Customer(int customerId, String customerName, String customerBirthday, int customerGender,
+//                String customerIdCard, String customerPhone, String customerEmail, int customerTypeId,
+//                String customerAddress)
+                customerList.add(new Customer(customerId,customerName1,customerBirthday,customerGender,customerIdCard,customerPhone
                         ,customerEmail,customerTypeId,customerAddress));
 
             }
