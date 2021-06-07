@@ -74,6 +74,7 @@
                 <div class="col-lg-8">
                     <div class="form-group">
                         <select class="form-select w-auto" aria-label="Default select example" name="attachServiceID">
+                            <option value="">No choose</option>
                             <c:forEach items="${attachServiceList}" var="attachService">
                                 <option value="${attachService.attachServiceID}">${attachService.attachServiceID}</option>
                             </c:forEach>
@@ -87,7 +88,7 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="form-group">
-                            <input type="text" name="quantity">
+                            <input type="text" name="quantity" value="0" id="ipQuantity">
                         </div>
                     </div>
                 </div>

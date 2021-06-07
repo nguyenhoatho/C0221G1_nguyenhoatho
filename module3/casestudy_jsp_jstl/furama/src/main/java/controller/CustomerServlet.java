@@ -2,10 +2,10 @@ package controller;
 
 import model.bean.Customer;
 import model.bean.CustomerType;
-import model.service.customer.ICustomer;
-import model.service.customer.impl.CustomerImpl;
-import model.service.customer_type.ICustomerType;
-import model.service.customer_type.impl.CustomerTypeImpl;
+import model.service.ICustomer;
+import model.service.impl.CustomerImpl;
+import model.service.ICustomerType;
+import model.service.impl.CustomerTypeImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,30 +41,9 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        if (action == null) {
-            action = "";
-        }
-        switch (action) {
-            case "create":
-                showFormCreate(request, response);
-                break;
-            case "edit":
-                showFormEdit(request, response);
-                break;
-            case "search":
-                searchCustomer(request, response);
-                break;
-            default:
-                showCustomerList(request, response);
-                break;
-        }
-    }
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
         List<CustomerType> customerTypeList = iCustomerType.getAllCustomerType();
+        String customerID = request.getParameter("customerID");
         int customerTypeID = Integer.parseInt(request.getParameter("customerTypeID"));
         String customerName = request.getParameter("customerName");
         String customerBirthday = request.getParameter("customerBirthday");
@@ -74,7 +53,7 @@ public class CustomerServlet extends HttpServlet {
         String customerEmail = request.getParameter("customerEmail");
         String customerAddress = request.getParameter("customerAddress");
         CustomerType customerType = iCustomerType.findCustomerTypeByID(customerTypeID);
-        Customer customer = new Customer(customerType, customerName, customerBirthday, customerGender, customerIDCard, customerPhone, customerEmail, customerAddress);
+        Customer customer = new Customer(customerID,customerType, customerName, customerBirthday, customerGender, customerIDCard, customerPhone, customerEmail, customerAddress);
         boolean check = iCustomer.createCustomer(customer);
         if (check) {
             request.setAttribute("message", "Create successful");
@@ -96,7 +75,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("customerID"));
+        String id = request.getParameter("customerID");
         iCustomer.deleteCustomer(id);
         try {
             response.sendRedirect("/customer");
@@ -106,7 +85,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void editCustomer(HttpServletRequest request, HttpServletResponse response) {
-        int customerID = Integer.parseInt(request.getParameter("customerID"));
+        String customerID = request.getParameter("customerID");
         int customerTypeID = Integer.parseInt(request.getParameter("customerTypeID"));
         String customerName = request.getParameter("customerName");
         String customerBirthday = request.getParameter("customerBirthday");
@@ -135,7 +114,28 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    private void searchCustomer(HttpServletRequest request, HttpServletResponse response) {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+        if (action == null) {
+            action = "";
+        }
+        switch (action) {
+            case "create":
+                showFormCreateCustomer(request, response);
+                break;
+            case "edit":
+                showFormEditCustomer(request, response);
+                break;
+            case "search":
+                searchCustomerByName(request, response);
+                break;
+            default:
+                showCustomerList(request, response);
+                break;
+        }
+    }
+
+    private void searchCustomerByName(HttpServletRequest request, HttpServletResponse response) {
         String search = request.getParameter("search");
         List<Customer> customerList = iCustomer.searchCustomerByName(search);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/list-customer.jsp");
@@ -149,7 +149,7 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    private void showFormCreate(HttpServletRequest request, HttpServletResponse response) {
+    private void showFormCreateCustomer(HttpServletRequest request, HttpServletResponse response) {
         List<CustomerType> customerTypeList = iCustomerType.getAllCustomerType();
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create-customer.jsp");
         request.setAttribute("customerTypeList",customerTypeList);
@@ -163,9 +163,9 @@ public class CustomerServlet extends HttpServlet {
     }
 
 
-    private void showFormEdit(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("customerID"));
-        Customer customer = iCustomer.findCustomerByID(id);
+    private void showFormEditCustomer(HttpServletRequest request, HttpServletResponse response) {
+        String customerID = request.getParameter("customerID");
+        Customer customer = iCustomer.findCustomerByID(customerID);
         RequestDispatcher requestDispatcher;
         List<CustomerType> customerTypeList = iCustomerType.getAllCustomerType();
         request.setAttribute("customerTypeList",customerTypeList);

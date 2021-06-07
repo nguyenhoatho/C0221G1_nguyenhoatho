@@ -55,6 +55,14 @@
                 </div>
                 <div class="row p-2 pt-5">
                     <div class="col-lg-4 text-right">
+                        <label class="font-weight-bold">Customer ID</label>
+                    </div>
+                    <div class="col-lg-8 ">
+                        <input type="text" name="customerID">
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-lg-4 text-right">
                         <label class="font-weight-bold">Customer Name</label>
                     </div>
                     <div class="col-lg-8 ">

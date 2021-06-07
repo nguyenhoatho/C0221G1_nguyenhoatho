@@ -39,6 +39,7 @@
                     <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/customer">List Customer</a>
                         <a class="dropdown-item" href="/customer?action=create">Create Customer</a>
+                        <a class="dropdown-item" href="/customer-using-service">Customer Using Service</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown px-4">
@@ -59,9 +60,7 @@
                         Service
                     </a>
                     <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/services?action=villa">Create Villa</a>
-                        <a class="dropdown-item" href="/services?action=house">Create House</a>
-                        <a class="dropdown-item" href="/services?action=room">Create Room</a>
+                        <a class="dropdown-item" href="/services?action=create">Create Service</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown px-4">

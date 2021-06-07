@@ -82,7 +82,7 @@
                         <label class="font-weight-bold">Employee Salary</label>
                     </div>
                     <div class="col-lg-8">
-                        <input type="text" name="employeeSalary">
+                        <input type="text" name="employeeSalary" value="0">
                     </div>
                 </div>
                 <div class="row p-2">

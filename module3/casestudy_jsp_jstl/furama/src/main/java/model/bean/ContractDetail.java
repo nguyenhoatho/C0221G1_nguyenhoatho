@@ -3,22 +3,22 @@ package model.bean;
 public class ContractDetail {
     private int contractDetailID;
     private Contract contract;
-    private AttachService attachService;
+    private String attachServiceID;
     private int quantity;
 
     public ContractDetail() {
     }
 
-    public ContractDetail(int contractDetailID, Contract contract, AttachService attachService, int quantity) {
+    public ContractDetail(int contractDetailID, Contract contract, String attachServiceID, int quantity) {
         this.contractDetailID = contractDetailID;
         this.contract = contract;
-        this.attachService = attachService;
+        this.attachServiceID = attachServiceID;
         this.quantity = quantity;
     }
 
-    public ContractDetail(Contract contract, AttachService attachService, int quantity) {
+    public ContractDetail(Contract contract, String attachServiceID, int quantity) {
         this.contract = contract;
-        this.attachService = attachService;
+        this.attachServiceID = attachServiceID;
         this.quantity = quantity;
     }
 
@@ -38,12 +38,12 @@ public class ContractDetail {
         this.contract = contract;
     }
 
-    public AttachService getAttachService() {
-        return attachService;
+    public String getAttachServiceID() {
+        return attachServiceID;
     }
 
-    public void setAttachService(AttachService attachService) {
-        this.attachService = attachService;
+    public void setAttachServiceID(String attachServiceID) {
+        this.attachServiceID = attachServiceID;
     }
 
     public int getQuantity() {

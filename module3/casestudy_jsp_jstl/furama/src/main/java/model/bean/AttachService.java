@@ -25,6 +25,12 @@ public class AttachService {
         this.attachServiceStatus = attachServiceStatus;
     }
 
+    public AttachService(int attachServiceID, String attachServiceName, int attachServiceUnit) {
+        this.attachServiceID = attachServiceID;
+        this.attachServiceName = attachServiceName;
+        this.attachServiceUnit = attachServiceUnit;
+    }
+
     public int getAttachServiceID() {
         return attachServiceID;
     }

@@ -1,5 +1,6 @@
 package model.repository.devision;
 
+import model.bean.CustomerType;
 import model.bean.Division;
 import model.repository.BaseRepository;
 
@@ -12,35 +13,16 @@ import java.util.List;
 
 public class DivisionRepository {
     BaseRepository baseRepository = new BaseRepository();
-    final String FIND_BY_ID ="select *from division where division_id=?;";
-    final String SELECT_ALL_DIVISION ="select *from division ;";
+    final String FIND_DIVISION_BY_ID="select *from division where division_id=?;";
+    final String GET_ALL_DIVISION ="select *from division ;";
 
-    public Division findDivisionByID(int id) {
-        Connection connection = baseRepository.connectDatabase();
-        Division division = null;
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(FIND_BY_ID);
-            preparedStatement.setInt(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                int divisionId = resultSet.getInt("division_id");
-                String divisionName = resultSet.getString("division_name");
-                division = new Division(divisionId,divisionName);
-            }
-            preparedStatement.close();
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return division;
-    }
 
 
     public List<Division> getAllDivision() {
         Connection connection = baseRepository.connectDatabase();
         List<Division> divisionList = new ArrayList<>();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_DIVISION);
+            PreparedStatement preparedStatement = connection.prepareStatement(GET_ALL_DIVISION);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int divisionId = resultSet.getInt("division_id");
@@ -56,4 +38,24 @@ public class DivisionRepository {
         return divisionList;
 
     }
+    public Division findDivisionByID(int id) {
+        Connection connection = baseRepository.connectDatabase();
+        Division division = null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(FIND_DIVISION_BY_ID);
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int divisionId = resultSet.getInt("division_id");
+                String divisionName = resultSet.getString("division_name");
+                division = new Division(divisionId,divisionName);
+            }
+            preparedStatement.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return division;
+    }
+
 }

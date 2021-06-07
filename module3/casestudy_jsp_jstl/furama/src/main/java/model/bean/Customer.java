@@ -1,7 +1,7 @@
 package model.bean;
 
 public class Customer {
-    private int customerID;
+    private String customerID;
     private CustomerType customerType;
     private String customerName;
     private String customerBirthday;
@@ -25,7 +25,7 @@ public class Customer {
         this.customerAddress = customerAddress;
     }
 
-    public Customer(int customerID, CustomerType customerType, String customerName, String customerBirthday, String customerGender, String customerIDCard, String customerPhone, String customerEmail, String customerAddress) {
+    public Customer(String customerID, CustomerType customerType, String customerName, String customerBirthday, String customerGender, String customerIDCard, String customerPhone, String customerEmail, String customerAddress) {
         this.customerID = customerID;
         this.customerType = customerType;
         this.customerName = customerName;
@@ -37,11 +37,11 @@ public class Customer {
         this.customerAddress = customerAddress;
     }
 
-    public int getCustomerID() {
+    public String getCustomerID() {
         return customerID;
     }
 
-    public void setCustomerID(int customerID) {
+    public void setCustomerID(String customerID) {
         this.customerID = customerID;
     }
 

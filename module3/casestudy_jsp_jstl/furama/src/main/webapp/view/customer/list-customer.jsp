@@ -10,9 +10,7 @@
 <html>
 <head>
     <title>Furama Resort</title>
-    <script src="../../lib/bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../../lib/bootstrap-4.6.0-dist/css/bootstrap.css">
-    <script src="../../lib/bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
     <style>
         img {
             width: 20%;
@@ -49,13 +47,15 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6 m-0">
                     <form class="d-flex m-0 p-0" method="get" action="/customer">
                         <input name="action" value="search" hidden>
-                        <input class="form-control me-2" type="text" name="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="text" name="search" placeholder="Search"
+                               aria-label="Search">
                         <button class="btn btn-outline-success ml-2" type="submit">Search</button>
                     </form>
                 </div>
             </div>
 
-            <table class="table table-striped">
+            <table class="table table-striped table-bordered" id="tableCustomer">
+                <thead>
                 <tr class="text-center">
                     <th>STT</th>
                     <th>Name</th>
@@ -67,6 +67,8 @@
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
+                </thead>
+                <tbody>
                 <c:forEach items="${customer}" var="customer" varStatus="status">
                     <tr class="text-center">
                         <td>${status.count}</td>
@@ -89,7 +91,8 @@
                                 View
                             </button>
                         </td>
-                        <td><a class="btn btn-warning " href="customer?action=edit&customerID=${customer.customerID}">Edit</a>
+                        <td><a class="btn btn-warning "
+                               href="customer?action=edit&customerID=${customer.customerID}">Edit</a>
                         </td>
                         <td>
                             <button type="button" class="btn btn-danger"
@@ -100,6 +103,7 @@
                         </td>
                     </tr>
                 </c:forEach>
+                </tbody>
             </table>
         </div>
     </div>
@@ -239,21 +243,21 @@
     function sendDataToModalView(id, name, typeID, birthday, gender, idCard, phone, email, address) {
         document.getElementById("idCustomerView").innerText = id;
         document.getElementById("nameCustomerView").innerText = name;
-        if(typeID == 1){
+        if (typeID == 1) {
             document.getElementById("typeIDCustomerView").innerText = "Diamond";
-        }else if(typeID == 2){
+        } else if (typeID == 2) {
             document.getElementById("typeIDCustomerView").innerText = "Platinum";
-        }else if(typeID ==3 ){
+        } else if (typeID == 3) {
             document.getElementById("typeIDCustomerView").innerText = "Gold";
-        }else if(typeID == 4){
+        } else if (typeID == 4) {
             document.getElementById("typeIDCustomerView").innerText = "Silver";
-        }else {
+        } else {
             document.getElementById("typeIDCustomerView").innerText = "Member";
         }
         document.getElementById("birthdayCustomerView").innerText = birthday;
-        if(gender==0){
+        if (gender == 0) {
             document.getElementById("genderCustomerView").innerText = "Male";
-        }else {
+        } else {
             document.getElementById("genderCustomerView").innerText = "Female";
         }
         document.getElementById("idCardCustomerView").innerText = idCard;
@@ -261,6 +265,22 @@
         document.getElementById("emailCustomerView").innerText = email;
         document.getElementById("addressCustomerView").innerText = address;
     }
+</script>
+
+<%--Phân trang--%>
+
+<script src="../../lib/bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js"></script>
+<script src="../../lib/bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+<script src="../../lib/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../../lib/datatables/js/dataTables.bootstrap4.min.js"></script>>
+<script>
+    $(document).ready(function () {
+        $('#tableCustomer').dataTable({
+            "dom": 'lrtip',
+            "lengthChange": false,
+            "pageLength": 5,
+        });
+    });
 </script>
 </body>
 </html>

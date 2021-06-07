@@ -1,12 +1,12 @@
 package controller;
 
 import model.bean.*;
-import model.service.attach_service.IAttachService;
-import model.service.attach_service.impl.AttachServiceImpl;
-import model.service.contract_detail.IContractDetail;
-import model.service.contract_detail.impl.ContractDetailImpl;
-import model.service.contract.IContract;
-import model.service.contract.impl.ContractImpl;
+import model.service.IAttachService;
+import model.service.impl.AttachServiceImpl;
+import model.service.IContractDetail;
+import model.service.impl.ContractDetailImpl;
+import model.service.IContract;
+import model.service.impl.ContractImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -38,11 +38,13 @@ public class ContractDetailServlet extends HttpServlet {
 
     private void createContractDetail(HttpServletRequest request, HttpServletResponse response) {
         int contractID = Integer.parseInt(request.getParameter("contractID"));
-        int attachServiceID = Integer.parseInt(request.getParameter("attachServiceID"));
+        String attachServiceID = (request.getParameter("attachServiceID"));
         int quantity = Integer.parseInt(request.getParameter("quantity"));
         Contract contract = iContract.findContractByID(contractID);
-        AttachService attachService = iAttachService.findAttachServiceByID(attachServiceID);
-        ContractDetail contractDetail = new ContractDetail(contract,attachService,quantity);
+        if(attachServiceID ==""){
+            attachServiceID=null;
+        }
+        ContractDetail contractDetail = new ContractDetail(contract,attachServiceID,quantity);
         List<Contract> contractList = iContract.getAllContract();
         List<AttachService> attachServiceList = iAttachService.getAllAttachService();
         request.setAttribute("contractList", contractList);

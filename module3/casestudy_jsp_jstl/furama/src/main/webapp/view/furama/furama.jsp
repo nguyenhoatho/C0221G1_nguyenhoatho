@@ -10,9 +10,10 @@
 <html>
 <head>
     <title>Furama Resort</title>
-    <script src="../../lib/bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="../../lib/bootstrap-4.6.0-dist/css/bootstrap.css">
-    <script src="../../lib/bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+
+
     <style>
         img {
             width: 20%;
@@ -43,6 +44,7 @@
                     <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/customer">List Customer</a>
                         <a class="dropdown-item" href="/customer?action=create">Create Customer</a>
+                        <a class="dropdown-item" href="/customer-using-service">Customer Using Service</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown px-4">
@@ -63,9 +65,7 @@
                         Service
                     </a>
                     <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/services?action=villa">Create Villa</a>
-                        <a class="dropdown-item" href="/services?action=house">Create House</a>
-                        <a class="dropdown-item" href="/services?action=room">Create Room</a>
+                        <a class="dropdown-item" href="/services?action=create">Create Service</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown px-4">
@@ -106,5 +106,7 @@
         </div>
     </div>
 </div>
+<script src="../../lib/bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js"></script>
+<script src="../../lib/bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
