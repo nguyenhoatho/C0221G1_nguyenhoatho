@@ -60,7 +60,7 @@ customer_type_name varchar(45) not null
 );
 
 create table customer(
-customer_id int not null primary key auto_increment,
+customer_id varchar(45) not null primary key,
 customer_type_id int not null ,
 foreign key (customer_type_id) references customer_type(customer_type_id) ON DELETE CASCADE,
 customer_name varchar(45) not null,
@@ -84,7 +84,7 @@ service_type_name varchar(45) not null
 );
 
 create table service(
-service_id int not null primary key auto_increment,
+service_id varchar(45) not null primary key,
 service_name varchar(45) not null,
 service_area int,
 service_cost double,
@@ -107,9 +107,9 @@ contract_deposit double default 0,
 contract_total_money double default 0,
 employee_id int not null,
 foreign key (employee_id) references employee(employee_id) ON DELETE CASCADE, 
-customer_id int not null,
+customer_id nvarchar(45) not null,
 foreign key (customer_id) references customer(customer_id) ON DELETE CASCADE,
-service_id int not null,
+service_id nvarchar(45) not null,
 foreign key (service_id) references service(service_id) ON DELETE CASCADE
 );
 
@@ -210,7 +210,7 @@ values("Massage","200000","1","Available"),
 create view customer_using_service as
 select cus.customer_id,cus.customer_name,
 ctr.contract_id,ctr.contract_start_date,ctr.contract_end_date,
-ser.service_name,att.attach_service_name,cd.quantity
+ser.service_name,att.attach_service_id,att.attach_service_name,cd.quantity
 from contract ctr
 left join customer cus on ctr.customer_id = cus.customer_id
 left join contract_detail cd on ctr.contract_id = cd.contract_id
@@ -219,8 +219,11 @@ left join attach_service att on cd.attach_service_id = att.attach_service_id
 where (now() between ctr.contract_start_date and ctr.contract_end_date)
 group by ctr.customer_id;
 
+select *from customer_using_service;
 
-select att.attach_service_id,att.attach_service_name,ctr.contract_id,cd.quantity
+create view attach_service_using as
+select ct.contract_id,att.attach_service_id,att.attach_service_name,sum(cd.quantity)
 from attach_service att 
 join contract_detail cd on att.attach_service_id = cd.attach_service_id
-join contract ctr on cd.contract_id = ctr.contract_id;
+join contract ct on cd.contract_id = ct.contract_id
+group by att.attach_service_id , ct.contract_id;
