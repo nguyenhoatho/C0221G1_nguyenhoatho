@@ -9,9 +9,9 @@ public class TranslateRepo {
    static Map<String,String> translate;
     static {
         translate=new HashMap<>();
-        translate.put("go","di");
-        translate.put("name","ten");
-        translate.put("class","lop");
+        translate.put("go","đi");
+        translate.put("name","tên");
+        translate.put("class","lớp");
     }
     public String translateWord(String word){
         return translate.get(word);
