@@ -17,45 +17,45 @@ public class ProductController {
     @Autowired
     IProductService productService;
     @GetMapping("")
-    public String index(Model model) {
+    public String indexShow(Model model) {
         List<Product> customerList = productService.findAll();
         model.addAttribute("product", customerList);
         return "/index";
     }
     @GetMapping("/create")
-    public String create(Model model) {
+    public String createShowForm(Model model) {
             model.addAttribute("product", new Product());
             return "/create";
     }
     @PostMapping("/save")
-    public String save(Product product) {
+    public String saveProdduct(Product product) {
         product.setIdProduct((int) (Math.random() * 10000));
         productService.save(product);
         return "redirect:/product";
     }
     @GetMapping("/{id}/edit")
-    public String edit(@PathVariable int id, Model model) {
+    public String editShowForm(@PathVariable int id, Model model) {
         model.addAttribute("product", productService.findById(id));
         return "/edit";
     }
     @PostMapping("/update")
-    public String update(Product product) {
+    public String updateProduct(Product product) {
         productService.update(product.getIdProduct(), product);
         return "redirect:/product";
     }
     @GetMapping("/{id}/delete")
-    public String delete(@PathVariable int id, Model model) {
+    public String deleteShowForm(@PathVariable int id, Model model) {
         model.addAttribute("product",productService.findById(id));
         return "/delete";
     }
     @PostMapping("/delete")
-    public String delete(Product product, RedirectAttributes redirect) {
+    public String deleteProduct(Product product, RedirectAttributes redirect) {
         productService.remove(product.getIdProduct());
         redirect.addFlashAttribute("success", "Removed customer successfully!");
         return "redirect:/customer";
     }
     @GetMapping("/{id}/view")
-    public String view(@PathVariable int id, Model model) {
+    public String viewShowForm(@PathVariable int id, Model model) {
         model.addAttribute("product", productService.findById(id));
         return "/view";
     }
