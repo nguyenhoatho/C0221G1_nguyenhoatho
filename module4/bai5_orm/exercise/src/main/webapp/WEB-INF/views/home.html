@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Buc Anh Cua Ngay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5"><p id="nasa"></p></div>
+                <div class="col-md-7">
+                    <form th:action="@{/home}" th:object="${commend}" method="post">
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-2" th:for="*{rating}">Rating</label>
+                            <div class="col-md-10">
+                                <select class="form-control" th:field="*{rating}">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-2" th:for="*{author}">Author</label>
+                            <div class="col-md-10">
+                                <input type="text" th:field="*{author}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-2" th:for="*{message}">Feedback</label>
+                            <div class="col-md-10">
+                                <textarea th:field="*{message}" rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Commend</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- /.col-md-7 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul th:each="c: ${commends}">
+                        <li>
+                            <div th:switch="*{c.rating}" class="d-inline">
+                                <span th:case="1" th:text="*{c.rating}" class="badge bg-light text-dark"></span>
+                                <span th:case="2" th:text="*{c.rating}" class="badge bg-info text-dark"></span>
+                                <span th:case="3" th:text="*{c.rating}" class="badge bg-warning text-dark"></span>
+                                <span th:case="4" th:text="*{c.rating}" class="badge bg-danger"></span>
+                                <span th:case="5" th:text="*{c.rating}" class="badge bg-success"></span>
+                            </div>
+                            <span th:text="*{c.getAuthor()}"></span>:
+                            <span th:text="*{c.message}"></span>
+                            <a class="btn btn-primary btn-sm" th:onclick="'likeBtn(this, '+*{c.id}+')'"
+                                    th:text="*{c.likeCount} ? *{c.likeCount} + ' likes' : '0 like'"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Like"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Enable tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    let apiURL = 'https://api.nasa.gov/planetary/apod?api_key=hM7ZsJIkwQ0ddFdSYCTjfb4gBRkJnEYWPIXiwVbh';
+    let request = new XMLHttpRequest();
+    request.open('GET', apiURL);
+    request.onload = function () {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            if (response.media_type == 'image') {
+                document.getElementById("nasa").innerHTML = '<img class="img-fluid" src="' + response.url + '" alt="' + response.title + '">';
+            } else {
+                document.getElementById("nasa").innerHTML = '<iframe width="420" height="345" src="' + response.url + '">\n' +
+                    '</iframe>';
+            }
+        }
+    }
+    request.send();
+
+    function likeBtn(element, id) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                let response = JSON.parse(this.responseText);
+                element.classList.toggle("btn-primary");
+                element.innerHTML = response.likeCount + " likes";
+            }
+        };
+        xhttp.open("POST", "/home/like/" + id, true);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>
