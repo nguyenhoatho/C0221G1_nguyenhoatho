@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IBlogService {
-    Page<Blog> findAll(Pageable pageable,String keywork);
+    Page<Blog> findAllByTittle(Pageable pageable,String keywork);
     Optional<Blog> findId(Integer id);
     Blog findByNameAuthor(String NameAuthor);
     Blog findByNameTittle(String tittle);

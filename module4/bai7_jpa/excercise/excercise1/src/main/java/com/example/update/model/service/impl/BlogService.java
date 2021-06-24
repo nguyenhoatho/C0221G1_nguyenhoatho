@@ -15,9 +15,14 @@ public class BlogService implements IBlogService {
     @Autowired
     private BlogRepository blogRepository;
 
+//    @Override
+//    public Page<Blog> findAll(Pageable pageable,String keywork) {
+//        return blogRepository.getBlogSearch(pageable,"%"+keywork+"%");
+//    }
+
     @Override
-    public Page<Blog> findAll(Pageable pageable,String keywork) {
-        return blogRepository.findAllByTittleContaining(pageable,keywork);
+    public Page<Blog> findAllByTittle(Pageable pageable, String keywork) {
+        return blogRepository.findAllByTittleContainingOrderByDayOfCreate(pageable, keywork);
     }
 
     @Override

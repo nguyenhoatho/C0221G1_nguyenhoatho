@@ -33,7 +33,7 @@ public class BlogController {
         if (keywork.isPresent()){
             keyworkValue=keywork.get();
         }
-        Page<Blog> blogs=blogService.findAll(pageable,keyworkValue);
+        Page<Blog> blogs=blogService.findAllByTittle(pageable,keyworkValue);
 
         model.addAttribute("keyworkvalue",keyworkValue);
         model.addAttribute("blog",blogs);
