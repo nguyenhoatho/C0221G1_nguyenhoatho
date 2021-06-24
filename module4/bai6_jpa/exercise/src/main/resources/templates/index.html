@@ -29,15 +29,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr th:each="blog,loop : ${listBlog}">
+                    <tr th:each="blog : ${listBlog}">
                         <th scope="row" th:text="${blog.idBlog}"></th>
                         <td th:text="${blog.author}"></td>
-                        <td th:each="${blog.title}"></td>
-                        <td th:each="${blog.content}"></td>
-                        <td><a th:href="@{/blog/view(id=${blog.idBlog})}"><button type="button" class="btn btn-primary"></a>view</button>
+                        <td th:text="${blog.title}"></td>
+                        <td th:text="${blog.content}"></td>
+                        <td><a th:href="@{/view(id=${blog.idBlog})}"><button type="button" class="btn btn-primary"></a>view</button>
                         </td>
-                        <td><a th:href="@{/blog/edit(id=${blog.idBlog})}"><button type="button" class="btn btn-success">edit</button></a></td>
-                        <td><a th:href="@{/blog/delete(id=${blog.idBlog})}"><button type="button" class="btn btn-danger">edit</button></a></td>
+                        <td><a th:href="@{/edit(id=${blog.idBlog})}"><button type="button" class="btn btn-success">edit</button></a></td>
+                        <td><a th:href="@{/delete(id=${blog.idBlog})}"><button type="button" class="btn btn-danger">edit</button></a></td>
                     </tr>
 
             </table>

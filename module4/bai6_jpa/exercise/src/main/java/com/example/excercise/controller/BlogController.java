@@ -6,22 +6,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
+
 @Controller
-@RequestMapping(value = {""})
+
 public class BlogController {
     @Autowired
     IBlogService blogService;
-    @GetMapping(value = {"/"})
-    public String homeBlog(Model model){
+    @RequestMapping("/")
+    public String showIndex(Model model){
         model.addAttribute("listBlog",blogService.findAll());
-        return "index";
+        return "/index";
     }
     @GetMapping(value = {"/create-blog"})
     public String showCreateForm(Model model){
         model.addAttribute("blog",new Blog());
-        return "create";
+        return "/create";
     }
     @PostMapping(value = {"/creat"})
     public String createNewBlog(@ModelAttribute Blog blog, RedirectAttributes redirect){
@@ -29,15 +32,15 @@ public class BlogController {
         redirect.addFlashAttribute("message","tao thanh cong");
         return "redirect:/";
     }
-    @GetMapping(value = "/blog/view")
-    public String showViewBlog(@RequestParam int id, Model model){
+    @GetMapping(value = "/view/{idBlog}")
+    public String showViewBlog(@RequestParam Integer id, Model model){
         model.addAttribute("blog",blogService.findId(id));
-        return "view";
+        return "/view";
     }
-    @GetMapping(value = "/blog/edit")
-    public String showEditBlog(@RequestParam int id, Model model){
+    @GetMapping(value = "/edit")
+    public String showEditBlog(@RequestParam Integer id, Model model){
         model.addAttribute("blog",blogService.findId(id));
-        return "edit";
+        return "/edit";
     }
     @PostMapping(value = "/edit")
     public String editBlog(@ModelAttribute Blog blog,RedirectAttributes redirect){
@@ -47,7 +50,7 @@ public class BlogController {
         return "redirect:/";
     }
 
-    @GetMapping(value = "/blog/delete")
+    @GetMapping(value = "/delete")
     public String deleteBlog(@RequestParam Integer id, RedirectAttributes redirect){
         blogService.deleteBlog(id);
         redirect.addFlashAttribute("message","Delete xoa thanh cong");
