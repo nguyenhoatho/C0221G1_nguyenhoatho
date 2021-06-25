@@ -1,0 +1,40 @@
+<!DOCTYPE html  >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registation Form * Form Tutorial</title>
+    <!-- Latest compiled and minified CSS -->
+</head>
+<body>
+            <p th:text="${msg}"></p>
+            <form action="creatUser" method="post" th:object="${userDto}" >
+            <div>
+                <p style="color: red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></p>
+                <label >first name:</label>
+                <input required="true" th:field="*{firstName}" type="text">
+            </div>
+            <div >
+                <p style="color: red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p>
+                <label >last name</label>
+                <input required="true" th:field="*{lastName}" type="text">
+            </div>
+            <div >
+                <p style="color: red" th:if="${#fields.hasErrors('yearOfBirth')}" th:errors="*{yearOfBirth}"></p>
+                <p style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
+                <label>Birthday:</label>
+                <input type="date" th:field="*{yearOfBirth}" name="birthDay" >
+            </div>
+            <div>
+                <p style="color: red" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></p>
+
+                <label>phone number</label>
+                <input  th:field="*{phoneNumber}" type="number">
+            </div>
+                <div>
+                    <p style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+                    <label>email</label>
+                    <input  th:field="*{email}" type="email" >
+                </div>
+            <button type="submit">Register</button>
+            </form>
+</body>
+</html>
