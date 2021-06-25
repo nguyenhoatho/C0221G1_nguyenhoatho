@@ -10,7 +10,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String categoryName;
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", cascade =CascadeType.ALL)
     private List<Blog> blogList;
 
     public Category(Integer id, String categoryName) {
