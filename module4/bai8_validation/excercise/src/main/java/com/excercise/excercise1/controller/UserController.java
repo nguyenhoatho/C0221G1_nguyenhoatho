@@ -30,28 +30,48 @@ public class UserController {
     IUserService userService;
     @GetMapping("/")
     public String showIndex(Model model){
-        model.addAttribute("userDto",new UserDto());
+
+        model.addAttribute("userController",userService.findAll());
         return "index";
     }
-    @PostMapping(value = {"creatUser"})
-    public String creatUser(@ModelAttribute @Valid UserDto userDto, BindingResult bindingResult,
-                            RedirectAttributes redirectAttributes, @RequestParam String birthDay) throws ParseException {
-
-        new UserDto().validate(userDto,bindingResult);
-
-        if (bindingResult.hasErrors()){
-            return "index";
-        }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Calendar dob = Calendar.getInstance();
-        dob.setTime(sdf.parse(birthDay));
-        int year = Calendar.getInstance().get(Calendar.YEAR);
-        userDto.setAge(year);
-        User user=new User();
-        BeanUtils.copyProperties(userDto,user);
-        userService.saveUser(user);
-        
-        redirectAttributes.addFlashAttribute("msg","ban da dang ki thanh cong");
-        return "redirect:/";
+    @GetMapping(value = {"/creatUser"})
+    public String showFormCreateUser(Model model){
+        model.addAttribute("userDto", new UserDto());
+        return "addUser";
     }
-}
+    @PostMapping(value = {"createUser/createUser"})
+    public String createUser(@ModelAttribute @Valid UserDto userDto, BindingResult bindingResult,
+                             RedirectAttributes redirectAttributes){
+            new UserDto().validate(userDto,bindingResult);
+            if (bindingResult.hasErrors()){
+                return "/addUser";
+            }
+            User user=new User();
+            BeanUtils.copyProperties(userDto,user);
+            redirectAttributes.addFlashAttribute("msg","tao thanh cong");
+            userService.saveUser(user);
+            return "redirect:/";
+
+    }}
+
+//            (@ModelAttribute @Valid UserDto userDto, BindingResult bindingResult,
+//                            RedirectAttributes redirectAttributes, @RequestParam String birthDay) throws ParseException {
+//
+//        new UserDto().validate(userDto,bindingResult);
+//
+//        if (bindingResult.hasErrors()){
+//            return "index";
+//        }
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        Calendar dob = Calendar.getInstance();
+//        dob.setTime(sdf.parse(birthDay));
+//        int year = Calendar.getInstance().get(Calendar.YEAR);
+//        userDto.setAge(year);
+//        User user=new User();
+//        BeanUtils.copyProperties(userDto,user);
+//        userService.saveUser(user);
+//
+//        redirectAttributes.addFlashAttribute("msg","ban da dang ki thanh cong");
+//        return "redirect:/";
+//    }
+
