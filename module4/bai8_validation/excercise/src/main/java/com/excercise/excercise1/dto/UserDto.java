@@ -16,7 +16,6 @@ import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import java.io.IOException;
 import java.util.Date;
-
 public class UserDto implements Validator {
 
     private Integer id;

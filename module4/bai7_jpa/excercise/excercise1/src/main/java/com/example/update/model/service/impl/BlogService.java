@@ -22,7 +22,7 @@ public class BlogService implements IBlogService {
 
     @Override
     public Page<Blog> findAllByTittle(Pageable pageable, String keywork) {
-        return blogRepository.findAllByTittleContainingOrderByDayOfCreate(pageable, keywork);
+        return blogRepository.findAllByTittleContainingOrderByDayOfCreate(pageable,keywork);
     }
 
     @Override

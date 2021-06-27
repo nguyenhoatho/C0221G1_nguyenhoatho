@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Product</title>
+</head>
+<body>
+        <h1>Edit Product</h1>
+        <form th:action="@{/product/update}" method="post" th:object="${products}">
+            <input type="hidden" th:field="*{id}">
+            <table>
+
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td><input type="text" th:field="*{nameProduct}"></td>
+                    <td th:if="${#fields.hasErrors('nameProduct')}" th:errors="*{nameProduct}">Name Error</td>
+                </tr>
+                <tr>
+                <td>
+                    Price:
+                </td>
+                <td><input type="text" th:field="*{price}"></td>
+            </tr>
+                <tr>
+                    <td>
+                        Description:
+                    </td>
+                    <td><input type="text" th:field="*{description}"></td>
+                    <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Name Error</td>
+                </tr>
+                <tr>
+                <td>
+                    Manufacture:
+                </td>
+                <td><input type="text" th:field="*{manufacture}"></td>
+                    <td th:if="${#fields.hasErrors('manufacture')}" th:errors="*{manufacture}"> Name Error</td>
+            </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="SAVE">
+                    </td>
+                    <td>
+                        <input type="button" th:href="@{/}" value="CANCLE">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+</body>
+</html>

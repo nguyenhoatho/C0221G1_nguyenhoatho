@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -74,7 +75,7 @@ public class BlogController {
     }
     @GetMapping(value = {"/listCategory"})
     public String showCategory(Model model){
-        Iterable<Category> categories=categoryService.findAll();
+        List<Category> categories=categoryService.findAll();
         model.addAttribute("category",categories);
         return "listcategory";
     }

@@ -11,7 +11,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BlogRepository extends PagingAndSortingRepository<Blog,Integer> {
 //    Page<Blog> findAllByTittleContaining(Pageable pageable, String keywork );
-//    @Query(value="SELECT * FROM blog where tittle like :keywork order by day_of_create;", nativeQuery=true)
+//    @Query(value="SELECT * FROM blog where tittle like :keywork order by day_of_create;", )
 //    Page<Blog> getBlogSearch(Pageable pageable, @Param("keywork") String keywork);
-        Page<Blog>findAllByTittleContainingOrderByDayOfCreate(Pageable pageable, String keywork);
+//        @Query()
+//       @Query(value="select c from Blog c join Category on Category .id=c.idBlog where c.tittle like %?1% and " +
+//               "Category .flag=1 order by c.dayOfCreate",nativeQuery=false)
+        Page<Blog>findAllByTittleContainingOrderByDayOfCreate (Pageable pageable,String keywork);
 }
