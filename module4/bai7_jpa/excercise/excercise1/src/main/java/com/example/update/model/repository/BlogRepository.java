@@ -16,5 +16,7 @@ public interface BlogRepository extends PagingAndSortingRepository<Blog,Integer>
 //        @Query()
 //       @Query(value="select c from Blog c join Category on Category .id=c.idBlog where c.tittle like %?1% and " +
 //               "Category .flag=1 order by c.dayOfCreate",nativeQuery=false)
-        Page<Blog>findAllByTittleContainingOrderByDayOfCreate (Pageable pageable,String keywork);
+        @Query(value="select c from Blog c join Category  a on a.id=c.category.id where c.tittle like %?1% and a.flag=?2" +
+                " order by c.dayOfCreate ")
+        Page<Blog> searchName (String keywork,Integer id,Pageable pageable);
 }
