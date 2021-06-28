@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Borrow Book</title>
+</head>
+<body>
+  <h1>List Borrow Book</h1>
+  <h2><a th:href="@{/list-book}">Back To List Book</a></h2>
+  <table>
+    <tr>
+        <td>No #</td>
+        <td>ID Book</td>
+        <td>Name Book</td>
+        <td>Give Book</td>
+    </tr>
+      <tr th:each="listBorrowObj ,loop : ${listBorrow}">
+          <td th:text="${loop.count}"></td>
+          <td th:text="${listBorrowObj.id}"></td>
+          <td th:text="${listBorrowObj.book.name}"></td>
+          <td><a th:href="@{/give-book(id=${listBorrowObj.id})}">Give Book</a></td>
+      </tr>
+  </table>
+</body>
+</html>

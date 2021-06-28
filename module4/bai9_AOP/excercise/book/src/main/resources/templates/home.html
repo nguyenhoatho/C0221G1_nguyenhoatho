@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Book</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <h2 th:text = "${idcode}"> </h2>
+    <h2 th:text="${message}" style="color: red"></h2>
+    <h2><a th:href="@{/list-book}">List Book</a></h2>
+    <h2><a th:href="@{/give-book}">Give Book</a></h2>
+</body>
+</html>

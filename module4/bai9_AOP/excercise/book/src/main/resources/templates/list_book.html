@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Book</title>
+</head>
+<body>
+  <h1>List Book</h1>
+  <h2><a th:href="@{/create-book}">Create Book</a></h2>
+  <h3 th:text="${message}"></h3>
+  <table border="1">
+    <tr>
+      <td>No#</td>
+      <td>ID</td>
+      <td>Name :</td>
+      <td>Quantity :</td>
+      <td>Borrow Book :</td>
+    </tr>
+    <tr th:each="bookObj,loop : ${listBook}">
+      <td th:text="${loop.count}"></td>
+      <td th:text="${bookObj.id}"></td>
+      <td th:text="${bookObj.name}"></td>
+      <td th:text="${bookObj.quantity}"></td>
+      <td><a th:href="@{/borrow-book(id=${bookObj.id})}">Borrow book</a></td>
+    </tr>
+  </table>
+</body>
+</html>
