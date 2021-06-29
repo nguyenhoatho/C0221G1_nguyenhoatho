@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{layout :: head}"></head>
+<body>
+<div th:insert="~{layout :: main-header}"></div>
+
+
+<div class="container-fluid" style="background-color: lightblue">
+  <div style="height: 60px; padding-top: 10px">
+    <a th:href="@{/cart/}">
+      <button class="btn btn-success btn-lg float-right m-3"
+              th:title="${size}+' products'">
+        <i class="fas fa-cart-plus"></i>
+        <strong style="color: white" th:if="${size}">
+          <sup th:text="${size}"></sup>
+        </strong>
+      </button>
+    </a>
+  </div>
+  <div class="row media-container-row justify-content-center"
+       style="margin-top: 30px">
+    <th:block th:each="product, iterStat : ${listProduct}">
+      <div style="background-color: white"
+           class="plan col-12 mx-2 my-2 justify-content-center col-lg-3 rounded">
+        <div class="plan-header text-center pt-3">
+          <h3 class="plan-title mbr-fonts-style display-6" th:text="${product.getName()}">
+          </h3>
+        </div>
+        <div class="plan-body">
+          <div class="plan-list align-center">
+            <ul class="list-group list-group-flush mbr-fonts-style display-7">
+              <li class="list-group-item">
+                <a style="text-decoration: none; color: black"
+                   th:href="@{/product/view(id=${product.id})}">
+                  <img class="rounded" th:src="@{'/img/'+${product.image}+'.jpg'}" alt="">
+                </a>
+
+              </li>
+              <li class="list-group-item" th:text="${product.description}">
+              </li>
+              <div class="plan-price justify-content-center text-center">
+                <span class="price-figure mbr-fonts-style display-4" th:text="${product.price}"></span>
+                <span class="price-value mbr-fonts-style display-5">VND</span>
+              </div>
+            </ul>
+          </div>
+          <div class="mbr-section-btn text-center py-4 pb-1">
+            <a style="text-decoration: none; color: black"
+               th:href="@{/product/view(id=${product.id})}"
+               class="btn btn-info display-4">VIEW DETAILS
+            </a>
+          </div>
+        </div>
+      </div>
+    </th:block>
+
+  </div>
+</div>
+
+
+<div th:replace="/layout :: script"></div>
+<div th:insert="~{layout :: footer}"></div>
+</body>
+</html>

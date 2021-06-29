@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{layout :: head}"></head>
+<body>
+<div th:insert="~{layout :: main-header}"></div>
+
+<div class="px-4 px-lg-0">
+  <div class="pb-5" style="display: inline">
+    <a class="text-decoration-none" th:href="@{/}" title="Back">
+      <button class="btn btn-info m-3">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+    </a>
+    <a th:href="@{/cart}">
+      <button class="btn btn-success btn-lg float-right m-3"
+              th:title="${size}+' products'">
+        <i class="fas fa-cart-plus"></i>
+        <strong style="color: white" th:if="${size}">
+          <sup th:text="${size}"></sup>
+        </strong>
+      </button>
+    </a>
+    <div th:if="${message}">
+      <div class="alert alert-success alert-dismissible fade show font-weight-bold">
+        <button type="button" class="close float-right" data-dismiss="alert">&times;</button>
+        <span th:text="${message}"></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+          <div class="row py-5 p-4 bg-white rounded shadow-sm">
+            <div class="col-lg-6">
+              <img style="width: 100%;height: 100%" class="img-fluid rounded shadow-sm"
+                   th:src="@{'/img/'+${product.image}+'.jpg'}" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-light rounded-pill px-4 py-3
+                                        text-uppercase font-weight-bold"
+                   style="color: teal; font-size: 20px"
+                   th:text="${product.name}">
+              </div>
+              <div class="p-4">
+                <p class="font-italic mb-4" th:text="${product.description}">
+                </p>
+                <form th:action="@{/cart/add}" method="post">
+                  <input type="hidden" name="id" th:value="${product.id}">
+                  <ul class="list-unstyled mb-4">
+                    <li class="d-flex justify-content-between py-3 border-bottom">
+                      <strong class="text-muted">Price</strong>
+                      <h3><strong th:text="${product.price}"></strong></h3>
+                    </li>
+                    <li class="d-flex justify-content-between py-3 border-bottom">
+                      <strong class="text-muted">Amount</strong>
+                      <h5 class="font-weight-bold">
+                        <select class="form-control" name="amount" id="amount">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </h5>
+                    </li>
+                  </ul>
+                  <button type="submit" class="btn btn-success rounded-pill py-2 btn-block">
+                    <strong>BUY NOW</strong></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div th:replace="/layout :: script"></div>
+<div th:insert="~{layout :: footer}"></div>
+
+</body>
+</html>
