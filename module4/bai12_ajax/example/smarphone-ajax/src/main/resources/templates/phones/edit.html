@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit SmarthPhone</title>
+</head>
+<body>
+    <h1>Edit SmarthPhone</h1>
+    <form th:object="${smartPhone}" >
+        <input class="idEdit" type="hidden" th:field="*{id}">
+      <table>
+        <tr>
+          <td>Producer</td>
+          <td><input id="idProduct" type="text" th:field="*{producer}"></td>
+        </tr>
+          <tr>
+              <td>Model</td>
+              <td><input id="idModel" type="text" th:field="*{model}"></td>
+          </tr>
+          <tr>
+              <td>Price</td>
+              <td><input id="idPrice" type="text" th:field="*{price}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><button type="button" id="btn-edit" > Edit</td>
+          </tr>
+      </table>
+    </form>
+    <div id="idContentEdit"></div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (){
+        $('#btn-edit').click(function (){
+            var producer =$('#idProduct').val();
+            var model =$('#idModel').val();
+            var price =$('#idPrice').val();
+            // var id =$('.idEdit').val();
+            var json = {
+                producer : producer,
+                model : model,
+                price : price,
+            }
+            console.log(json)
+            // console.log(id)
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type : "PUT",
+                url: "/smartphones/edit/" + $('.idEdit').val(),
+                data :JSON.stringify(json),
+                success : function (data){
+                    var respContent = "";
+                    respContent +="<span class='success'> Sau Khi Chỉnh Sửa : [";
+                    respContent += data.producer + " : ";
+                    respContent += data.model+ " : ";
+                    respContent += data.price+ " ] </span>";
+                    $('#idContentEdit').html(respContent);
+                }
+
+            })
+
+        })
+    })
+</script>
+</body>
+</html>

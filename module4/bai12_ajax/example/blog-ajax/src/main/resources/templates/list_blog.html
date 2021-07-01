@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog List</title>
+</head>
+<body class="body">
+<div>
+    <input type="text" name="keyword" id="keyword">
+    <button type="submit" id="search">Search</button>
+</div>
+
+<table border="1">
+    <thead>
+    <tr>
+        <td>No#</td>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Content</td>
+        <td>Category</td>
+    </tr>
+    </thead>
+    <tbody id="tableBlog">
+
+    </tbody>
+</table>
+<button class="load">Load More</button>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin':  'http://localhost:8080/blog/list',
+            },
+            type: "GET",
+            url: "http://localhost:8080/blog/list",
+            success: function (data) {
+                console.log(data)
+                let result = "";
+                for(let i = 0; i<data.length;i++){
+                    result += "<tr>";
+                    result += "<th scope='row'>" + (i + 1) + "</th>";
+                    result += "<td>" + data[i].id + "</td>";
+                    result += "<td>" + data[i].name + "</td>";
+                    result += "<td>" + data[i].content + "</td>";
+                    result += "<td>" + data[i].category.typeCategory + "</td>";
+                    result += "</tr>";
+                }
+                $("#tableBlog").html(result);
+            },
+            error: function(resultError) {
+                console.log("Error: ");
+                console.log(resultError);
+            }
+
+        });
+
+    $('.load').click(function (){
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin':  'http://localhost:8080/blog/load',
+            },
+            type: "GET",
+            url: "http://localhost:8080/blog/load",
+            success: function (data) {
+                console.log(data)
+                let result = "";
+                for(let i = 0; i<data.length;i++){
+                    result += "<tr>";
+                    result += "<th scope='row'>" + (i + 1) + "</th>";
+                    result += "<td>" + data[i].id + "</td>";
+                    result += "<td>" + data[i].name + "</td>";
+                    result += "<td>" + data[i].content + "</td>";
+                    result += "<td>" + data[i].category.typeCategory + "</td>";
+                    result += "</tr>";
+                }
+                $("#tableBlog").html(result);
+            },
+        });
+    });
+
+
+
+    $("#search").click(function () {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin':  'http://localhost:8080/blog/load',
+            },
+            type: "GET",
+            url: "http://localhost:8080/blog/search/" + $('#keyword').val(),
+            success: function (data) {
+                console.log(data);
+                let result = "";
+                for(let i = 0; i<data.length;i++){
+                    result += "<tr>";
+                    result += "<th scope='row'>" + (i + 1) + "</th>";
+                    result += "<td>" + data[i].id + "</td>";
+                    result += "<td>" + data[i].name + "</td>";
+                    result += "<td>" + data[i].content + "</td>";
+                    result += "<td>" + data[i].category.typeCategory + "</td>";
+                    result += "</tr>";
+                }
+                $("#tableBlog").html(result);
+            }
+        })
+    });
+</script>
+</body>
+</html>
