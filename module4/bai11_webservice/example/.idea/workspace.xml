@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a380d98-6387-440a-88df-a3c6439f3ca2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai13_i18n/practice/src/main/resources/msg/i18n_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai13_i18n/practice/src/main/resources/msg/i18n_hawaii.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai13_i18n/practice/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/BlogApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/controller/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/entity/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/entity/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/repository/BlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/service/IBlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/service/ICategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/service/impl/BlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/blog/model/service/impl/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/blog/BlogApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/BlogAjaxApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/controller/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/entity/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/entity/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/repository/IBlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/repository/ICateloryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/service/IBlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/service/ICategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/service/Impl/BlogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/java/com/example/blogajax/model/service/Impl/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/main/resources/templates/list_blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/blog-ajax/src/test/java/com/example/blogajax/BlogAjaxApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/java/com/example/smarphoneajax/SmarphoneAjaxApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/java/com/example/smarphoneajax/controller/RestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/java/com/example/smarphoneajax/model/entiry/SmartPhone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/java/com/example/smarphoneajax/model/repository/ISmartPhoneRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/java/com/example/smarphoneajax/model/service/ISmartPhoneService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/java/com/example/smarphoneajax/model/service/Impl/SmartPhoneServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/resources/templates/phones/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/main/resources/templates/phones/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai12_ajax/example/smarphone-ajax/src/test/java/com/example/smarphoneajax/SmarphoneAjaxApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1ueprKgBCYScMGqNUuH0ZQMSRiy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bai7_jpa/excercise/excercise1" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0221G1_nguyenhoatho\module4\bai11_webservice\example\src\main\java\com\example\blog" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a380d98-6387-440a-88df-a3c6439f3ca2" name="Default Changelist" comment="" />
+      <created>1625036106807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625036106807</updated>
+      <workItem from="1625036114720" duration="4049000" />
+      <workItem from="1625040347067" duration="3408000" />
+      <workItem from="1625048327731" duration="3345000" />
+      <workItem from="1625124433986" duration="1857000" />
+      <workItem from="1625189125557" duration="1997000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1625042735857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1625042735857" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1625194997750">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1625194997750" />
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom" timestamp="1625066254056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625066254056" />
+    <state width="1493" height="212" key="GridCell.Tab.0.center" timestamp="1625066254055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625066254055" />
+    <state width="1493" height="212" key="GridCell.Tab.0.left" timestamp="1625066254055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625066254055" />
+    <state width="1493" height="212" key="GridCell.Tab.0.right" timestamp="1625066254055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625066254055" />
+    <state width="1493" height="212" key="GridCell.Tab.1.bottom" timestamp="1625066254056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625066254056" />
+    <state width="1493" height="212" key="GridCell.Tab.1.center" timestamp="1625066254056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1625066254056" />
+    <state width="1493" height="212" key="GridCell.Tab.1.left" timestamp="1625066254056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1625066254056" />
+    <state width="1493" height="212" key="GridCell.Tab.1.right" timestamp="1625066254056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1625066254056" />
+    <state x="209" y="73" key="new project wizard" timestamp="1625195000341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1625195000341" />
+  </component>
+</project>

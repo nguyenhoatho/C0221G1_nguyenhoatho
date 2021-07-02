@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{product.list}"></title>
+</head>
+<body>
+    <h1 th:text="#{product.list}"></h1>
+    Language: <a href="?lang=en">English</a> | <a href="?lang=vi">Việt Nam</a>
+    <h2><a th:href="@{/create}" th:text="#{product.header-create}"></a></h2>
+    <div th:if="${message}">
+        <h3><span style="color: red" th:text="#{product.success}"></span></h3>
+    </div>
+
+    <table border="1">
+        <tr>
+            <td th:text="#{product.No}"></td>
+            <td th:text="#{product.id}"></td>
+            <td th:text="#{product.name}"></td>
+            <td th:text="#{product.price}"></td>
+            <td th:text="#{product.manufacture}"></td>
+            <td th:text="#{product.edit}"></td>
+        </tr>
+        <tr th:each="productObj,loop : ${productList}">
+            <td th:text="${loop.count}"></td>
+            <td th:text="${productObj.id}"></td>
+            <td th:text="${productObj.name}"></td>
+            <td th:text="${productObj.price}"></td>
+            <td th:text="${productObj.manufacture}"></td>
+            <td><a th:href="@{/edit(id=${productObj.id})}" th:text="#{product.edit}"></a></td>
+        </tr>
+    </table>
+</body>
+</html>
