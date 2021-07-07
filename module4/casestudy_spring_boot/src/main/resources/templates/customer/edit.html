@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{homePage :: homeHeader}">
+  <style>
+    body{
+      font-size: 20px;
+    }
+    select,input{
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+<div th:insert="~{homePage :: bodyHeadder}">
+</div>
+<div th:insert="~{homePage :: headerLink}"></div>
+<div class="container mt-5" style="text-align: center">
+  <div class="col-xl-12">
+    <h1>
+      Edit Customers
+    </h1>
+  </div>
+  <form method="post" th:object="${customer}" th:action="@{/customer/edit-customer}" style="text-align: center">
+    <input type="hidden" th:field="*{customerId}">
+    <table style="margin: 0 auto">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <h3 style="font-size: 2rem;height: 40px;color: red">Customers Details</h3>
+      </div>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Customer Type</label></td>
+        <td><select th:field="*{customerType}" style="font-size: 2rem;height: 40px;width: 300px">
+          <option th:each="type : ${customerType}"
+                  th:value="${type.customerTypeId}"
+                  th:text="${type.customerTypeName}"
+                  th:selected="(${customer.customerType}) and (${type.customerTypeId}==*{customerType.customerTypeId})"></option>
+        </select></td>
+      </tr>
+
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Customer Code</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px"  th:field="*{customerCode}"></td>
+
+        <!--                                    <p style="font-size: 20px" class="text-danger">${msgCode}</p>-->
+
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Name</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px" th:field="*{customerName}"></td>
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Day Of Birth</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px" type="date" th:field="*{customerBirthday}"></td>
+
+        <!--                                    <p style="font-size: 20px" class="text-danger">${msgBirthday}</p>-->
+      </tr>
+
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Gender</label></td>
+        <td><select  th:field="*{customerGender}" style="font-size: 2rem;height: 40px;width: 300px">
+          <option value="1">Male</option>
+          <option value="0">Famale</option>
+        </select>
+        </td>
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">ID Card</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px" th:field="*{customerIdCard}"></td>
+        <!--                                    <p  style="font-size: 20px" class="text-danger">${msgIdcard}</p>-->
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Phone</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px" th:field="*{customerPhone}"></td>
+        <!--                                    <p style="font-size: 20px" class="text-danger">${msgPhone}</p>-->
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Email</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px" th:field="*{customerEmail}"></td>
+        <!--                                    <p style="font-size: 20px" class="text-danger">${msgEmail}</p>-->
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Address</label></td>
+        <td><input style="font-size: 2rem;height: 40px;width: 300px" th:field="*{customerAddress}"></td>
+      </tr>
+      <tr>
+        <td><a type="button" href="customer?action=customers"
+               class="btn btn-outline-secondary">Close</a></td>
+        <td><input type="submit" value="Save" class="btn btn-outline-success"/>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

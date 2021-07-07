@@ -1,0 +1,140 @@
+.row{
+    display: flex;
+    text-align: center
+}
+.header{
+    background-image: linear-gradient(0,#00dc64, #fff);
+}
+.form-login{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.header-link{
+    height: 80px;
+}
+.navbar{
+    line-height: 80px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.link-left{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.nav__link{
+    display: flex;
+    list-style: none;
+}
+
+.nav__link >li{
+    padding-left: 40px;
+    font-size: 35px;
+}
+.link-control{
+    text-decoration: none;
+    color: black;
+}
+
+.header-link{
+    display: flex;
+    height: 66px;
+    background-color: #F5F5F5;
+}
+.link-search{
+    width: 40%;
+    display: block;
+    margin: auto 0px;
+
+}
+.my-lg-1{
+    margin-right: 200px;
+    display: flex;
+    height: 35px;
+}
+.form-inline{
+    margin-top: 20px;
+}
+.list-group{
+    height: 800px;
+}
+.list-group-item-action{
+    height: 65px;
+    font-size: 20px;
+    line-height: 70px;
+}
+.container-fluid{
+    margin-top: 20px;
+}
+.row-2{
+    margin-top: 20px;
+    align-items: center;
+    border: solid #F5F5F5;
+    background-image: linear-gradient(0,#00dc64, #fff);
+    box-shadow:
+            0 0 10px 4px #F5F5F5,
+            0 0 10px 10px #FFDAB9,
+            10px 0 20px 30px #B0E0E6;
+}
+.col-in-row{
+    display: flex;
+    width: 700px;
+
+}
+.picture-service{
+    flex: 1;
+
+}
+.content-picture{
+    flex: 2;
+    min-width: 800px;
+    align-items: center;
+    font-size: 20px;
+
+}
+.comment{
+    flex: 1;
+    font-size: 20px;
+    color: blue;
+    padding-left: 50px;
+}
+.text{
+    text-decoration: none;
+}
+.modal .modal-dialog {
+    max-width: 400px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+}
+.modal .modal-content {
+    border-radius: 3px;
+    font-size: 14px;
+}
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 3px 3px;
+}
+.modal .modal-title {
+    display: inline-block;
+}
+.modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+.modal textarea.form-control {
+    resize: vertical;
+}
+.modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+}
+.modal form label {
+    font-weight: normal;
+}
+.mr-sm-2{
+    height: 100px;
+}
+

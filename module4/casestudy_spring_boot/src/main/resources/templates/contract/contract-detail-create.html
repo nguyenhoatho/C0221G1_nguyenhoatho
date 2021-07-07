@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{homePage :: homeHeader}">
+  <style>
+    body{
+      font-size: 20px;
+    }
+    select,input{
+      width: 200px;
+    }
+  </style>
+</head>
+<body id="body">
+<div th:insert="~{homePage :: bodyHeadder}">
+</div>
+<div th:insert="~{homePage :: headerLink}"></div>
+<div class="container mt-5" style="text-align: center">
+  <div class="col-xl-12">
+    <h1>
+      Create Contract Details
+    </h1>
+  </div>
+  <span th:text="${message}" style="color: red"></span>
+  <form method="post" th:object="${contractDetail}" th:action="@{/contract-detail/create}" style="text-align: center">
+    <table style="margin: 0 auto">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <h3 style="font-size: 2rem;height: 40px;color: red">Contract Details</h3>
+      </div>
+    <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Employee</label></td>
+        <td><select  th:field="*{contract}" style="font-size: 2rem;height: 40px;width: 300px">
+          <option th:each="contractObj : ${contractList}"
+                  th:value="${contractObj.contractId}"
+                  th:text="'Hợp Đồng số ' + ${contractObj.contractId}"></option>
+        </select>
+        </td>
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Service</label></td>
+        <td><select th:field="*{attachService}" style="font-size: 2rem;height: 40px;width: 300px">
+          <option th:each="attObj : ${attachServiceList}"
+                  th:value="${attObj.attachServiceId}"
+                  th:text="${attObj.attachServiceName}"></option>
+        </select></td>
+      </tr>
+      <tr class="form-group">
+        <td><label style="font-size: 2rem;height: 40px;width: 300px">Quantity</label></td>
+        <td><input id="standardRoom" style="font-size: 2rem;height: 40px;width: 300px" th:field="*{quantity}"></td>
+        <!--                                    <p  style="font-size: 20px" class="text-danger">${msgIdcard}</p>-->
+      </tr>
+      <tr>
+        <td><a type="button" href="customer?action=customers"
+               class="btn btn-outline-secondary">Close</a></td>
+        <td><input type="submit" value="Save" class="btn btn-outline-success"/>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</div>
+</div>
