@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script-->
+    <!--            type="text/javascript"-->
+    <!--            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"-->
+    <!--    ></script>-->
+    <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">-->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <style>
+        header {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<header th:fragment="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="/">
+                <img
+                        src="https://www.furama.com/images/LOGOFurama_4C_Normal.png"
+                        height="25px"
+                        width="150px"
+                        alt=""
+                        loading="lazy"
+                        style="margin-top: -1px;"
+                />
+            </a>
+
+            <!-- Toggle button -->
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarButtonsExample"
+                    aria-controls="navbarButtonsExample"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/customer/list">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service/list">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/employee/list">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contract/list">Contract</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contract-detail/list">Contract Detail</a>
+                    </li>
+                </ul>
+
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-link px-3 me-2">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-primary me-3">
+                        Sign up for free
+                    </button>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+</header>
+</body>
+</html>

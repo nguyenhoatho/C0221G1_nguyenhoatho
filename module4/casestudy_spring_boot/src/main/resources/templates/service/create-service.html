@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header th:replace="header"></header>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1 class="text-center">Create Service</h1>
+        <form th:action="@{/service/create}" th:object="${service}" method="post" >
+            <div class="form-group row">
+                <label  class="col-3 col-form-label">Service Type:</label>
+                <div class="col-9">
+                    <select th:field="*{serviceType} " class="form-select" aria-label="Default select example"
+                            onchange="changeServiceType(this.value)">
+                        <option th:each="serviceType,index : ${serviceTypeList}"
+                                th:text="${serviceType.serviceTypeName}"
+                                th:value="${serviceType.serviceTypeId}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row" >
+                <label for="text" class="col-3 col-form-label">Service Id:</label>
+                <div class="col-9">
+                    <input th:field="*{serviceId}"  name="text" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('serviceId')}" th:errors="*{serviceId}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Service Name:</label>
+                <div class="col-9">
+                    <input th:field="*{serviceName}"  name="text" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('serviceName')}" th:errors="*{serviceName}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Service Area:</label>
+                <div class="col-9">
+                    <input th:field="*{serviceArea}"  id="text" name="text" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('serviceArea')}" th:errors="*{serviceArea}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text1" class="col-3 col-form-label">Service Cost:</label>
+                <div class="col-9">
+                    <input th:field="*{serviceCost}"  id="text1" name="text1" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('serviceArea')}" th:errors="*{serviceCost}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text7" class="col-3 col-form-label">Service MaxPeople:</label>
+                <div class="col-9">
+                    <input th:field="*{serviceMaxPeople}"  id="text7" name="text1" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('serviceMaxPeople')}" th:errors="*{serviceMaxPeople}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label  class="col-3 col-form-label">Rent Type:</label>
+                <div class="col-9">
+                    <select th:field="*{rentType} " class="form-select" aria-label="Default select example">
+                        <option th:each="rentType,index : ${rentTypeList}"
+                                th:text="${rentType.rentTypeName}"
+                                th:value="${rentType.rentTypeId}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="labStandardRoom"  class="col-3 col-form-label">Standard Room:</label>
+                <div class="col-9">
+                    <input th:field="*{standardRoom}" id="ipStandardRoom" name="text4" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="labDescription" class="col-3 col-form-label">Description:</label>
+                <div class="col-9">
+                    <input th:field="*{descriptionOtherConvenience}"  id="ipDescription" name="text5" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="labPoolArea" class="col-3 col-form-label">Pool Area:</label>
+                <div class="col-9">
+                    <input th:field="*{poolArea}"  id="ipPoolArea" name="text5" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label id="labNumberFloor" class="col-3 col-form-label">Number Of Floor:</label>
+                <div class="col-9">
+                    <input th:field="*{numberOfFloors}"  id="ipNumberFloor" name="text5" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-9">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<footer th:replace="footer"></footer>
+<script>
+    function changeServiceType(value) {
+        document.getElementById("labStandardRoom").style.display = "block";
+        document.getElementById("ipStandardRoom").style.display = "block";
+        document.getElementById("labDescription").style.display = "block";
+        document.getElementById("ipDescription").style.display = "block";
+        document.getElementById("labPoolArea").style.display = "block";
+        document.getElementById("ipPoolArea").style.display = "block";
+        document.getElementById("labNumberFloor").style.display = "block";
+        document.getElementById("ipNumberFloor").style.display = "block";
+        if(value==2){
+            document.getElementById("labPoolArea").style.display = "none";
+            document.getElementById("ipPoolArea").style.display = "none";    }
+        if(value==3){
+            document.getElementById("labStandardRoom").style.display = "none";
+            document.getElementById("ipStandardRoom").style.display = "none";
+            document.getElementById("labDescription").style.display = "none";
+            document.getElementById("ipDescription").style.display = "none";
+            document.getElementById("labPoolArea").style.display = "none";
+            document.getElementById("ipPoolArea").style.display = "none";
+            document.getElementById("labNumberFloor").style.display = "none";
+            document.getElementById("ipNumberFloor").style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

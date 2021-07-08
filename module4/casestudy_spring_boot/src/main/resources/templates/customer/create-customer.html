@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header th:replace="header"></header>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1 class="text-center">Create Customer</h1>
+        <form th:action="@{/customer/create}" th:object="${customer}" method="post">
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Customer Id:</label>
+                <div class="col-9">
+                    <input th:field="*{customerId}"  name="text" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerId')}" th:errors="*{customerId}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text2" class="col-3 col-form-label">Customer Type:</label>
+                <div class="col-9">
+                    <select th:field="*{customerType} " class="form-select" aria-label="Default select example">
+                        <option th:each="typeCustomer,index : ${customerTypeList}"
+                                th:text="${typeCustomer.customerTypeName}"
+                                th:value="${typeCustomer.customerTypeId}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Customer name:</label>
+                <div class="col-9">
+                    <input th:field="*{customerName}" id="text" name="text" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text1" class="col-3 col-form-label">Customer birthday:</label>
+                <div class="col-9">
+                    <input th:field="*{customerBirthday}" id="text1" name="text1" type="date" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerBirthday')}" th:errors="*{customerBirthday}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text2" class="col-3 col-form-label">Customer Gender:</label>
+                <div class="col-9">
+                    <select th:field="*{customerGender} " class="form-select" aria-label="Default select example">
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text2" class="col-3 col-form-label">Customer ID card:</label>
+                <div class="col-9">
+                    <input th:field="*{customerIdCard}" id="text2" name="text2" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerIdCard')}" th:errors="*{customerIdCard}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text3" class="col-3 col-form-label">Customer phone:</label>
+                <div class="col-9">
+                    <input th:field="*{customerPhone}" id="text3" name="text3" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerPhone')}" th:errors="*{customerPhone}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text4" class="col-3 col-form-label">Customer email:</label>
+                <div class="col-9">
+                    <input th:field="*{customerEmail}" id="text4" name="text4" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerEmail')}" th:errors="*{customerEmail}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text5" class="col-3 col-form-label">Customer address:</label>
+                <div class="col-9">
+                    <input th:field="*{customerAddress}" id="text5" name="text5" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('customerAddress')}" th:errors="*{customerAddress}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-9">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<footer th:replace="footer"></footer>
+</body>
+</html>

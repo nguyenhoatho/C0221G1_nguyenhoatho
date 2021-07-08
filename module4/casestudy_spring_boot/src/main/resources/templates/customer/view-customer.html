@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<header th:replace="header"></header>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1 class="text-center">View Customer</h1>
+        <form  th:object="${customer}" >
+            <div class="form-group row" >
+                <label for="text" class="col-3 col-form-label">Customer Id:</label>
+                <div class="col-9">
+                    <input th:field="*{customerId}" readonly name="text" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Customer type:</label>
+                <div class="col-9">
+                    <input th:field="*{customerType.customerTypeName}" readonly name="text" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Customer name:</label>
+                <div class="col-9">
+                    <input th:field="*{customerName}" readonly id="text" name="text" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text1" class="col-3 col-form-label">Customer birthday:</label>
+                <div class="col-9">
+                    <input th:field="*{customerBirthday}" readonly id="text1" name="text1" type="date" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text7" class="col-3 col-form-label">Customer Gender:</label>
+                <div class="col-9">
+                    <input th:value="${customer.customerGender} ? 'Male' : 'Female'" readonly id="text7" name="text1" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text2" class="col-3 col-form-label">Customer ID card:</label>
+                <div class="col-9">
+                    <input th:field="*{customerIdCard}" readonly id="text2" name="text2" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text3" class="col-3 col-form-label">Customer phone:</label>
+                <div class="col-9">
+                    <input th:field="*{customerPhone}" readonly id="text3" name="text3" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text4" class="col-3 col-form-label">Customer email:</label>
+                <div class="col-9">
+                    <input th:field="*{customerEmail}" readonly id="text4" name="text4" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text5" class="col-3 col-form-label">Customer address:</label>
+                <div class="col-9">
+                    <input th:field="*{customerAddress}" readonly id="text5" name="text5" type="text" class="form-control">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<footer th:replace="footer"></footer>
+</body>
+</html>

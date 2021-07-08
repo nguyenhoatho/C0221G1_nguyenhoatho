@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+    <script>
+        type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="header"></div>
+<h1 class="col-lg-12 text-center"> List Employee</h1>
+<div class="row">
+    <div class="col-3">
+    <a class="btn btn-info" href="/employee/createForm">Create</a>
+    </div>
+    <div class="col-6"></div>
+    <div class="col-3">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<table class="table  table-hover">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Employee ID Card</th>
+        <th scope="col">Employee Phone</th>
+        <th scope="col">Employee Position</th>
+        <th scope="col">Employee Education</th>
+        <th scope="col">Employee Division</th>
+        <th scope="col">View</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee,employeeIndex : ${listEmployee}">
+        <th scope="row" th:text="${employeeIndex.count}">1</th>
+        <th scope="col" th:text="${employee.employeeName}"></th>
+        <th scope="col" th:text="${employee.employeeIdCard}"></th>
+        <th scope="col" th:text="${employee.employeePhone}"></th>
+        <th scope="col" th:text="${employee.position.getPositionName()}"></th>
+        <th scope="col" th:text="${employee.educationDegree.educationDegreeName}"></th>
+        <th scope="col" th:text="${employee.division.divisionName}"></th>
+        <th><a th:href="@{/employee/view/__${employee.employeeId}__ }" class="btn btn-info">View</a></th>
+        <th><a th:href="@{/employee/edit/__${employee.employeeId}__ }" class="btn btn-warning">Edit</a></th>
+        <th>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"
+                    th:dataId="${employee.employeeId}" th:dataName="${employee.employeeName}"
+                    onclick="sendMoDalDelete(this.getAttribute('dataId'),this.getAttribute('dataName'))">
+                Delete
+            </button>
+        </th>
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/employee/list(page=${listEmployee.number - 1},name=${name})}" th:if="${listEmployee.hasPrevious()}">Previous</a>
+<span th:text="${listEmployee.number + 1}"></span>/<span th:text="${listEmployee.totalPages}"></span>
+<a th:href="@{/employee/list(page=${listEmployee.number + 1},name=${name})}" th:if="${listEmployee.hasNext()}">Next</a>
+<div th:replace="footer"></div>
+<!-- Modal Delete-->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form th:action="@{/employee/delete}" method="get">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Delete Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Do you want to delete: <h5 id="employeeName">???</h5>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-danger btn-ok" id="delete" value="Delete">
+                    <input type="hidden" id="employeeID" name="id">
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<!--modal delete-->
+<script>
+    function sendMoDalDelete(id, name) {
+        document.getElementById("employeeID").value = id;
+        document.getElementById("employeeName").innerText = name;
+    }
+</script>
+</body>
+</html>

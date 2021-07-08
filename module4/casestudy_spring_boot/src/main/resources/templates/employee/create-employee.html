@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header th:replace="header"></header>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1 class="text-center">Create Employee</h1>
+        <form th:action="@{/employee/create}" th:object="${employee}" method="post">
+            <div class="form-group row">
+                <label class="col-3 col-form-label">Employee Name:</label>
+                <div class="col-9">
+                    <input th:field="*{employeeName}"  name="text" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeeName')}" th:errors="*{employeeName}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text1" class="col-3 col-form-label">Employee Birthday:</label>
+                <div class="col-9">
+                    <input th:field="*{employeeBirthday}" id="text1" name="text1" type="date" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeeBirthday')}" th:errors="*{employeeBirthday}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text2" class="col-3 col-form-label">Employee ID card:</label>
+                <div class="col-9">
+                    <input th:field="*{employeeIdCard}" id="text2" name="text2" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeeIdCard')}" th:errors="*{employeeIdCard}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label  class="col-3 col-form-label">Employee Salary:</label>
+                <div class="col-9">
+                    <input th:field="*{employeeSalary}"  name="text2" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeeSalary')}" th:errors="*{employeeSalary}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text3" class="col-3 col-form-label">Employee phone:</label>
+                <div class="col-9">
+                    <input th:field="*{employeePhone}" id="text3" name="text3" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeePhone')}" th:errors="*{employeePhone}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text4" class="col-3 col-form-label">Employee email:</label>
+                <div class="col-9">
+                    <input th:field="*{employeeEmail}" id="text4" name="text4" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeeEmail')}" th:errors="*{employeeEmail}"></small>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text5" class="col-3 col-form-label">Employee address:</label>
+                <div class="col-9">
+                    <input th:field="*{employeeAddress}" id="text5" name="text5" type="text" class="form-control">
+                    <small th:if="${#fields.hasErrors('employeeAddress')}" th:errors="*{employeeAddress}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3 col-form-label">Employee Position:</label>
+                <div class="col-9">
+                    <select th:field="*{position} " class="form-select" aria-label="Default select example">
+                        <option th:each="position,index : ${positionList}"
+                                th:text="${position.positionName}"
+                                th:value="${position.positionId}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3 col-form-label">Employee Education Degree:</label>
+                <div class="col-9">
+                    <select th:field="*{educationDegree} " class="form-select" aria-label="Default select example">
+                        <option th:each="education,index : ${educationList}"
+                                th:text="${education.educationDegreeName}"
+                                th:value="${education.educationDegreeId}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3 col-form-label">Employee Division:</label>
+                <div class="col-9">
+                    <select th:field="*{division} " class="form-select" aria-label="Default select example">
+                        <option th:each="division,index : ${divisionList}"
+                                th:text="${division.divisionName}"
+                                th:value="${division.divisionId}"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="offset-4 col-9">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<footer th:replace="footer"></footer>
+</body>
+</html>
