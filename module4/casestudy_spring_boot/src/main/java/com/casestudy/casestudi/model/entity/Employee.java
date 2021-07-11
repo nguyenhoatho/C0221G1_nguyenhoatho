@@ -1,5 +1,7 @@
 package com.casestudy.casestudi.model.entity;
 
+
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -26,7 +28,6 @@ public class Employee {
     @Column(name = "employee_address")
     private String employeeAddress;
 
-
     @ManyToOne
     @JoinColumn(name = "position_id",nullable = false)
     private Position position;
@@ -45,12 +46,26 @@ public class Employee {
 
     @OneToMany(mappedBy = "employee")
     private Set<Contract>contractSet;
-
+    @OneToOne
+    @JoinColumn(name = "User_Id", referencedColumnName = "User_Id")
+    private AppUser appUser;
 
     public Employee() {
     }
 
-
+    public Employee(String employeeName, String employeeBirthday, String employeeIdCard, double employeeSalary, String employeePhone, String employeeEmail, String employeeAddress, Position position, EducationDegree educationDegree, Division division, boolean employeeFlag) {
+        this.employeeName = employeeName;
+        this.employeeBirthday = employeeBirthday;
+        this.employeeIdCard = employeeIdCard;
+        this.employeeSalary = employeeSalary;
+        this.employeePhone = employeePhone;
+        this.employeeEmail = employeeEmail;
+        this.employeeAddress = employeeAddress;
+        this.position = position;
+        this.educationDegree = educationDegree;
+        this.division = division;
+        this.employeeFlag = employeeFlag;
+    }
 
     public Employee(Integer employeeId, String employeeName, String employeeBirthday, String employeeIdCard, double employeeSalary, String employeePhone, String employeeEmail, String employeeAddress, Position position, EducationDegree educationDegree, Division division) {
         this.employeeId = employeeId;
@@ -77,6 +92,14 @@ public class Employee {
         this.position = position;
         this.educationDegree = educationDegree;
         this.division = division;
+    }
+
+    public AppUser getAppUser() {
+        return appUser;
+    }
+
+    public void setAppUser(AppUser appUser) {
+        this.appUser = appUser;
     }
 
     public Integer getEmployeeId() {

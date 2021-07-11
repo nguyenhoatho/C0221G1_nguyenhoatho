@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/createUser}"  th:object="${appUser}">
+    <label th:text="userNamne"></label>
+    <input th:field="*{userName}">
+    <label th:text="password"></label>
+    <input th:field="*{encrytedPassword}">
+    <select th:object="${appRole}" name="roleID">
+        <option th:each="item,stt :${appRole}" th:value="${item.getRoleId()}" th:text="${item.getRoleName()}">
+        </option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -72,12 +72,21 @@
                 <!-- Left links -->
 
                 <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-link px-3 me-2">
-                        Login
-                    </button>
-                    <button type="button" class="btn btn-primary me-3">
-                        Sign up for free
-                    </button>
+                    <a href="/login" th:if="${#request.userPrincipal == null}">
+                        <button type="button" class="btn btn-link px-3 me-2">
+                            Login
+                        </button>
+                    </a>
+                    <a th:if="${#request.userPrincipal != null}" th:href="@{/logout}">
+                        <button th:text="${#request.userPrincipal.name}" type="button" class="btn btn-link px-3 me-2">
+                            Logout
+                        </button>
+                    </a>
+                    <a href="/create">
+                        <button type="button" class="btn btn-primary me-3">
+                            Sign up for free
+                        </button>
+                    </a>
                 </div>
             </div>
             <!-- Collapsible wrapper -->

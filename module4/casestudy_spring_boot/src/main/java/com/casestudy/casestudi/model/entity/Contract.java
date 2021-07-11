@@ -1,7 +1,11 @@
 package com.casestudy.casestudi.model.entity;
 
 import javax.persistence.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Set;
 
 @Entity
@@ -107,5 +111,26 @@ public class Contract {
     public void setContractDetailSet(Set<ContractDetail> contractDetailSet) {
         this.contractDetailSet = contractDetailSet;
     }
-
+    public  int countDay(Date d1, Date d2){
+        return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24));
+    }
+    public  int daysBetweens(String d1, String d2){
+        Date date1 = null;
+        Date date2 = null;
+        Calendar cal1 = new GregorianCalendar();
+        Calendar cal2 = new GregorianCalendar();
+        try {
+            date1 = new SimpleDateFormat("yyyy-MM-dd").parse(d1);
+            date2 = new SimpleDateFormat("yyyy-MM-dd").parse(d2);
+            cal1.setTime(date1);
+            cal2.setTime(date2);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return   countDay(cal1.getTime(),cal2.getTime());
+    }
+    public double totalMoney(){
+        double total = daysBetweens(getContractStartDate(),getContractEndDate())* service.getServiceCost();
+        return total;
+    }
 }

@@ -36,7 +36,7 @@ public class ContractController {
     @Autowired
     IServiceService iServiceService;
     @RequestMapping(value = "/list")
-    public String showListContract( @PageableDefault(size = 2) Pageable pageable, Model model) {
+    public String showListContract( @PageableDefault(size = 5) Pageable pageable, Model model) {
         Page<Contract> contract = iContractService.findContractByAll(pageable);
         model.addAttribute("listContract", contract);
         return "/contract/list-contract";
@@ -52,6 +52,7 @@ public class ContractController {
 
     @PostMapping(value = "/create")
     public String saveContract(@Valid @ModelAttribute("contract") ContractDto contractDto, BindingResult bindingResult, Model model) {
+        new ContractDto().validate(contractDto,bindingResult);
         if(bindingResult.hasErrors()){
             model.addAttribute("customerList", iCustomerService.findCustomerByAll());
             model.addAttribute("employeeList", iEmployeeService.findEmployeeByAll());

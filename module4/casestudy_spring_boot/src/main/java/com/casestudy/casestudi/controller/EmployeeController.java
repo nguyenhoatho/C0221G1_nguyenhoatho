@@ -2,18 +2,17 @@ package com.casestudy.casestudi.controller;
 
 
 
-
 import com.casestudy.casestudi.dto.EmployeeDto;
+import com.casestudy.casestudi.model.entity.AppUser;
 import com.casestudy.casestudi.model.entity.Employee;
-import com.casestudy.casestudi.model.service.IDivisionService;
-import com.casestudy.casestudi.model.service.IEducationDegreeService;
-import com.casestudy.casestudi.model.service.IEmployeeService;
-import com.casestudy.casestudi.model.service.IPositionService;
+import com.casestudy.casestudi.model.entity.UserRole;
+import com.casestudy.casestudi.model.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -33,8 +32,15 @@ public class EmployeeController {
     IEducationDegreeService iEducationDegreeService;
     @Autowired
     IDivisionService iDivisionService;
+    @Autowired
+    IAppUserService iAppUserService;
+    @Autowired
+    IUserRoleService iUserRoleService;
+    @Autowired
+    IAppRoleService iAppRoleService;
+
     @RequestMapping(value = "/list")
-    public String showListEmployee(@RequestParam(name = "search") Optional<String> search , @PageableDefault(size = 2) Pageable pageable, Model model) {
+    public String showListEmployee(@RequestParam(name = "search") Optional<String> search , @PageableDefault(size = 5) Pageable pageable, Model model) {
         String name="";
         if(search.isPresent()){
             name = search.get();
@@ -55,7 +61,8 @@ public class EmployeeController {
     }
 
     @PostMapping(value = "/create")
-    public String saveEmployee(@Valid @ModelAttribute("employee") EmployeeDto employeeDto, BindingResult bindingResult, Model model) {
+    public String saveEmployee(@Valid @ModelAttribute("employee") EmployeeDto employeeDto,BindingResult bindingResult
+            , Model model) {
         if(bindingResult.hasErrors()){
             model.addAttribute("positionList", iPositionService.findPositionByAll());
             model.addAttribute("divisionList", iDivisionService.findDivisionByAll());
@@ -65,6 +72,17 @@ public class EmployeeController {
             Employee employee = new Employee();
             BeanUtils.copyProperties(employeeDto, employee);
             employee.setEmployeeFlag(true);
+            AppUser appUser = new AppUser();
+            BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+            appUser.setUserName(employee.getAppUser().getUserName());
+            String password = encoder.encode(employee.getAppUser().getEncrytedPassword());
+            appUser.setEncrytedPassword(password);
+            iAppUserService.save(appUser);
+            employee.setAppUser(appUser);
+            UserRole userRole = new UserRole();
+            userRole.setAppUser(appUser);
+            userRole.setAppRole(iAppRoleService.findByIdAppRole((long)2));
+            iUserRoleService.save(userRole);
             iEmployeeService.save(employee);
             model.addAttribute("message", "New customer created successfully");
             return "redirect:/employee/list";

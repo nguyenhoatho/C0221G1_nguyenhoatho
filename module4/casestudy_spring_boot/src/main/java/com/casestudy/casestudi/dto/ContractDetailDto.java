@@ -5,8 +5,6 @@ package com.casestudy.casestudi.dto;
 import com.casestudy.casestudi.model.entity.Attach_Service;
 import com.casestudy.casestudi.model.entity.Contract;
 
-import javax.persistence.*;
-
 public class ContractDetailDto {
     private Integer contractDetailId;
     private Contract contract;

@@ -51,6 +51,7 @@
         <th scope="col">Contract Employee</th>
         <th scope="col">Contract Customer</th>
         <th scope="col">Contract Service</th>
+        <th scope="col">Total Money</th>
     </tr>
     </thead>
     <tbody>
@@ -62,6 +63,7 @@
         <th scope="col" th:text="${contract.employee.employeeName}">Customer ID Card</th>
         <th scope="col" th:text="${contract.customer.customerName}">Customer Phone</th>
         <th scope="col" th:text="${contract.service.serviceName}">Customer Phone</th>
+        <th scope="col" th:text="${contract.totalMoney()}">Customer Phone</th>
 
     </tr>
     </tbody>
