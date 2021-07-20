@@ -20,7 +20,7 @@
 <body>
 <header th:fragment="header">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <!-- Container wrapper -->
         <div class="container">
             <!-- Navbar brand -->
@@ -73,18 +73,18 @@
 
                 <div class="d-flex align-items-center">
                     <a href="/login" th:if="${#request.userPrincipal == null}">
-                        <button type="button" class="btn btn-link px-3 me-2">
+                        <button type="button" class=" btn-info px-3 ">
                             Login
                         </button>
                     </a>
                     <a th:if="${#request.userPrincipal != null}" th:href="@{/logout}">
-                        <button th:text="${#request.userPrincipal.name}" type="button" class="btn btn-link px-3 me-2">
+                        <button th:text="${#request.userPrincipal.name}" type="button" class="btn btn-link btn-danger">
                             Logout
                         </button>
                     </a>
                     <a href="/create">
-                        <button type="button" class="btn btn-primary me-3">
-                            Sign up for free
+                        <button type="button" class="btn btn-danger">
+                            Sign up
                         </button>
                     </a>
                 </div>

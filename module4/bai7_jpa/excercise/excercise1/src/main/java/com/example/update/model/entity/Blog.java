@@ -17,9 +17,8 @@ public class Blog {
     @ManyToOne
     @JoinColumn(name = "blog_id",referencedColumnName = "id")
     private Category category;
-    @ManyToOne
-    @JoinColumn(name = "user_id",referencedColumnName = "idUser")
-    private User user;
+   
+
 
     public Blog(Integer idBlog, String nameBlog, String author, String tittle, String content, Date dayOfCreate) {
         this.idBlog = idBlog;

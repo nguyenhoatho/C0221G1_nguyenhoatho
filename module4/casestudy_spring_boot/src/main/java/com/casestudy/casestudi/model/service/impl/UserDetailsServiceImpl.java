@@ -59,6 +59,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     public void saveAppUser(AppUser appUser){
         appUserRepository.save(appUser);
+
     }
     public void saveUserRole(UserRole userRole){
         userRoleRepository.save(userRole);
