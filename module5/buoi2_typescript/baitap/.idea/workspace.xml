@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="376a8737-2c9b-47d2-a0aa-c19dd66cf9d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../project/src/main/java/com/example/product/model/entity/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../project/src/main/java/com/example/product/model/entity/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../project/src/main/java/com/example/product/model/entity/HelloMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../project/src/main/java/com/example/product/model/entity/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../project/src/main/resources/static/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../project/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/java/com/example/demo/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/java/com/example/demo/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/java/com/example/demo/controller/WebSocketEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/java/com/example/demo/model/entity/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh1/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh1/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh2/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh2/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh3/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh3/src/bai1.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuchanh3/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1vYy3mfZXO3gdATOsFqnJFglVCM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice/typescript-is-prime" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\C0221G1_nguyenhoatho\module5\buoi2_typescript\baitap\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\C0221G1-NguyenPhuongNam\module5\02_\exercise\typescript-is-fibonacci" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="376a8737-2c9b-47d2-a0aa-c19dd66cf9d6" name="Default Changelist" comment="" />
+      <created>1626753119485</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626753119485</updated>
+      <workItem from="1626753120676" duration="5775000" />
+      <workItem from="1626869100334" duration="3000" />
+      <workItem from="1626869128867" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1626766857700">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1626766857700" />
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1626753496608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
+    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1626753496608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
+    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1626753496608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1626753496608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
+  </component>
+</project>
