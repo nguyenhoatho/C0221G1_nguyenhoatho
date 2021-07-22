@@ -16,15 +16,7 @@
       <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/resources/static/js/main.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../socket/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/caseStudy/caseStudy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh1/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh1/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh1/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh2/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh2/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh3/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh3/src/bai1.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuchanh3/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +68,7 @@
       <workItem from="1626753120676" duration="5775000" />
       <workItem from="1626869100334" duration="3000" />
       <workItem from="1626869128867" duration="54000" />
+      <workItem from="1626881530054" duration="107000" />
     </task>
     <servers />
   </component>
@@ -86,27 +79,5 @@
         <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1626766857700">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1626766857700" />
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1626753496608">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1626753496608">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1626753496608">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1626753496608">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1626753496608" />
   </component>
 </project>

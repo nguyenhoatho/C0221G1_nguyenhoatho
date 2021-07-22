@@ -1,0 +1,78 @@
+<html>
+<head>
+  <style type="text/css">
+    .circle {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      padding: 50px;
+      color: #fff;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 100px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <h1 [style.fontSize.px]="font.value">Color Picker</h1>
+  <div class="container justify-content-center align-items-center">
+
+    <table class="table justify-content-center align-items-center text-center">
+      <tbody>
+      <tr>
+        <th style="color: red">
+          <label for="red">Font Size</label>
+        </th>
+        <td>
+          <input type="range" min="0" max="100" value="56" id="font"
+                 #font (change)="changeFont($event.target.value)"
+                 class="form-control rounded-pill">
+        </td>
+        <td class="number" style="color: red">{{font.value}}</td>
+      </tr>
+      <tr>
+        <th style="color: red">
+          <label for="red">RED</label>
+        </th>
+        <td>
+          <input type="range" min="0" max="255" value="56" id="red"
+                 #red (change) ="getColor(red.value,green.value,blue.value)"
+                 class="form-control rounded-pill">
+        </td>
+        <td class="number" style="color: red">{{red.value}}</td>
+      </tr>
+      <tr>
+        <th style="color: green">
+          <label for="green">GREEN</label>
+        </th>
+        <td>
+          <input type="range" min="0" max="255" value="124" id="green"
+                 #green (change) ="getColor(red.value,green.value,blue.value)"
+                 class="form-control rounded-pill">
+        </td>
+        <td class="number" style="color: green">{{green.value}}</td>
+      </tr>
+      <tr>
+        <th style="color: blue">
+          <label for="blue">BLUE</label>
+        </th>
+        <td>
+          <input type="range" min="0" max="255" value="115" id="blue"
+                 #blue (change) ="getColor(red.value,green.value,blue.value)"
+                 class="form-control rounded-pill">
+        </td>
+        <td class="number" style="color: blue">{{blue.value}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <div>
+      <div class="row">
+        <div [style.background]="colorCode" class="circle">Circle</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4"></div>
+</div>
+</body>
+</html>

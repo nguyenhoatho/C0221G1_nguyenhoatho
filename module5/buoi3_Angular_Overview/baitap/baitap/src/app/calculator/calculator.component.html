@@ -1,0 +1,39 @@
+<div class="wrapper">
+  <h1 class="title">{{title}}</h1>
+  <div class="container justify-content-center align-items-center">
+    <table class="table">
+      <thead>
+      <tr style="text-align: right">
+        <td>
+          <label>First</label>
+        </td>
+        <td>
+          <input type="number" class="form-control" #first required>
+        </td>
+        <td>
+          <label>Second</label>
+        </td>
+        <td>
+          <input type="number" class="form-control" #second required>
+        </td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <select #select >
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input type="button" class="btn btn-success" (click)="calculate(first.value,second.value,select.value)" value="Tính Toán">
+      </tr>
+      <tr>
+        <td colspan="4">
+          <p>{{result}}</p>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
