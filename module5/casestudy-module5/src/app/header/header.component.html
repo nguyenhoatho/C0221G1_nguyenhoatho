@@ -1,0 +1,77 @@
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand me-2" routerLink="">
+        <img
+          src="https://www.furama.com/images/LOGOFurama_4C_Normal.png"
+          height="25px"
+          width="150px"
+          alt=""
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a>
+
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/customer">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/employee">Employee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contract Detail</a>
+          </li>
+        </ul>
+
+        <!-- Left links -->
+
+        <div class="d-flex align-items-center">
+          <a href="/login">
+            <button type="button" class=" btn-info px-3 ">
+              Login
+            </button>
+          </a>
+          <a >
+            <button  type="button" class="btn btn-link btn-danger">
+              Logout
+            </button>
+          </a>
+          <a href="/create">
+            <button type="button" class="btn btn-danger">
+              Sign up
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</header>
