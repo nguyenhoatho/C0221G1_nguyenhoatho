@@ -82,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Components-Interaction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angular-form" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -95,6 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627282132133</updated>
       <workItem from="1627282134405" duration="685000" />
+      <workItem from="1627371509601" duration="455000" />
     </task>
     <servers />
   </component>

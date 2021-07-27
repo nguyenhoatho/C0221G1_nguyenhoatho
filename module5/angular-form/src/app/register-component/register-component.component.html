@@ -1,0 +1,71 @@
+<div class="container">
+  <form [formGroup]="contractForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="form-row">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" formControlName="email">
+        <div class="col alert alert-danger" role="alert"
+             *ngIf="!contractForm.controls.email?.valid && (contractForm.controls.email?.dirty
+                ||contractForm.controls.email?.touched)" >
+          Password is not valid
+        </div>
+      </div>
+      <div class="form-row" formGroupName="pw">
+        <div class="form-row col-md-6">
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password" formControlName="password">
+        </div>
+        <div class="form-row col-md-6">
+          <label for="configPassword">Confirm Password</label>
+          <input type="password" class="form-control" id="configPassword" placeholder="Password" formControlName="confirmpassword">
+        </div>
+        <div class="col alert alert-danger" role="alert"
+             *ngIf="contractForm.hasError('passwordnotmatch', ['pw']) &&
+              contractForm.get('pw').touched">
+          Password does not match!
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-lg-6">
+      <label for="inputAddress2">Age</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="AGE" formControlName="age">
+      <div class="col alert alert-danger" role="alert"
+           *ngIf="!contractForm.controls.age?.valid && (contractForm.controls.age?.dirty
+                ||contractForm.controls.age?.touched)" >
+        Age is not valid
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-row">
+        <label for="inputState">Country</label>
+        <select id="inputState" formControlName="country" class="form-control">
+          <option *ngFor="let country of countryList" [ngValue]="country">{{ country }}</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-row ">
+        <label for="inputZip">Phone</label>
+        <input type="text" class="form-control" id="inputZip" formControlName="phone">
+        <div class="col alert alert-danger" role="alert"
+             *ngIf="!contractForm.controls.phone?.valid && (contractForm.controls.phone?.dirty
+                ||contractForm.controls.phone?.touched)" >
+          Phone is not valid
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-check">
+        <label>Gender </label>
+        <input type="radio" value="male"  name="gender" formControlName="gender"> Male
+        <input type="radio" value="female"  name="gender" formControlName="gender"> Female
+        <div class="col alert alert-danger" role="alert"
+             *ngIf="!contractForm.controls.gender?.valid && (contractForm.controls.gender?.dirty
+                ||contractForm.controls.gender?.touched)" >
+          Gender is not valid
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+
+</div>
