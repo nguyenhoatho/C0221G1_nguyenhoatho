@@ -4,7 +4,7 @@
     <!-- Container wrapper -->
     <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand me-2" routerLink="">
+      <a class="navbar-brand me-2" href="#">
         <img
           src="https://www.furama.com/images/LOGOFurama_4C_Normal.png"
           height="25px"
@@ -33,10 +33,10 @@
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/customer">Customer</a>
+            <a class="nav-link" [routerLink]="['/customer']">Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/service">Service</a>
+            <a class="nav-link" [routerLink]="['/service']">Service</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/employee">Employee</a>
@@ -50,24 +50,6 @@
         </ul>
 
         <!-- Left links -->
-
-        <div class="d-flex align-items-center">
-          <a href="/login">
-            <button type="button" class=" btn-info px-3 ">
-              Login
-            </button>
-          </a>
-          <a >
-            <button  type="button" class="btn btn-link btn-danger">
-              Logout
-            </button>
-          </a>
-          <a href="/create">
-            <button type="button" class="btn btn-danger">
-              Sign up
-            </button>
-          </a>
-        </div>
       </div>
       <!-- Collapsible wrapper -->
     </div>

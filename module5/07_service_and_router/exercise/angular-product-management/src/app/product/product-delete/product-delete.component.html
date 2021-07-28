@@ -1,0 +1,31 @@
+<div class="container justify-content-center align-items-center">
+  <h3 class="text-center text-uppercase" style="color: red; font-size: 26px">are you sure?</h3>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>
+        <label for="id">ID</label>
+      </th>
+      <th>
+        <p id="id">{{product.id}}</p>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <label for="name">Name</label>
+      </th>
+      <th>
+        <p id="name">{{product.name}}</p>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <button class="btn btn-info" (click)="backToList()">Back</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteProduct()">Delete</button>
+      </td>
+    </tr>
+    </thead>
+  </table>
+</div>

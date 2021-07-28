@@ -1,0 +1,24 @@
+<div *ngIf="detailsWord" class="container">
+  <table class="table table-hover">
+    <tbody>
+    <tr>
+      <td>ID</td>
+      <td>{{detailsWord.id}}</td>
+    </tr>
+    <tr>
+      <td>Keyword</td>
+      <td>{{detailsWord.word}}</td>
+    </tr>
+    <tr>
+      <td>Means</td>
+      <td>{{detailsWord.means}}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button class="btn btn-outline-success" (click)="backToList()">Back</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
