@@ -1,0 +1,46 @@
+<h2 class="text-center">
+  Todo App
+</h2>
+<div class="col-md-8 offset-md-2">
+  <form [formGroup]="formTodo" (change)="change()">
+    <input type="text" class="form-control" formControlName="content">
+<!--    <button type="submit">Save</button>-->
+  </form>
+  <table border="1">
+    <tr>
+      <td>STT</td>
+      <td>ID</td>
+      <td>Content</td>
+      <td>DELETE</td>
+    </tr>
+    <tr *ngFor="let todo of todoList; index as i">
+        <td>{{i + 1}}</td>
+        <td>{{todo.id}}</td>
+        <td>{{todo.content}}</td>
+        <td><button (click)="delete(todo.id)">Delete</button></td>
+    </tr>
+  </table>
+</div>
+
+<!--<h1>Tạo danh mục mới</h1>-->
+<!--<form [formGroup]="categoryForm" (ngSubmit)="submit()">-->
+<!--  <table>-->
+<!--    <tr>-->
+<!--      <td>Tên danh mục:</td>-->
+<!--      <td><input type="text" formControlName="name"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td></td>-->
+<!--      <td>-->
+<!--        <button>Tạo mới</button>-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</form>-->
+<!--<table>-->
+<!--    <tr *ngFor="let todo of todoList; index as i">-->
+<!--        <td>{{i + 1}}</td>-->
+<!--        <td>{{todo.id}}</td>-->
+<!--        <td>{{todo.content}}</td>-->
+<!--    </tr>-->
+<!--  </table>-->

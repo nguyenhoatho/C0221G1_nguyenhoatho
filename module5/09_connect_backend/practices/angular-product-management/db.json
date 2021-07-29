@@ -1,0 +1,33 @@
+{
+  "catelogies": [
+    {
+      "id": 1,
+      "name": "IPhone"
+    },
+    {
+      "id": 2,
+      "name": "Samsung"
+    },
+    {
+      "name": "Hang Nguoi",
+      "id": 4
+    },
+    {
+      "name": "Hang Nong",
+      "id": 5
+    },
+    {
+      "name": "Hang Xen",
+      "id": 6
+    }
+  ],
+  "product": [
+    {
+      "name": "Iphone 11",
+      "price": 30000,
+      "description": "Còn Hàng",
+      "category": 2,
+      "id": 1
+    }
+  ]
+}
