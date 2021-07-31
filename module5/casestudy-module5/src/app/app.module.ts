@@ -9,6 +9,7 @@ import { ListCustomerComponent } from './customer/list-customer/list-customer.co
 import { ViewCustomerComponent } from './customer/view-customer/view-customer.component';
 import { HomeComponent } from './home/home.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import {NgxPaginationModule} from 'ngx-pagination';
     FooterComponent,
     ListCustomerComponent,
     ViewCustomerComponent,
-    HomeComponent
+    HomeComponent,
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgxPaginationModule
+        NgxPaginationModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,84 @@
+{
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "code": "KH-001",
+      "customerType": {
+        "id": 1,
+        "name": "Gold"
+      },
+      "name": "Lươn Gia Khánh",
+      "birthday": "1999-06-27",
+      "idCard": "123456789",
+      "phone": "0123456789",
+      "email": "",
+      "address": "Đà Nẵng"
+    },
+    {
+      "id": 2,
+      "code": "KH-002",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "name": "Hà bụng bự",
+      "birthday": "1999-06-27",
+      "idCard": "123456789",
+      "phone": "0123456789",
+      "email": "habungbu@gmail.com",
+      "address": "Đà Nẵng",
+      "gender": "1"
+    },
+    {
+      "id": 3,
+      "code": "KH-003",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "name": "Tín bụng siêu bự",
+      "birthday": "1999-06-27",
+      "idCard": "123456789",
+      "phone": "0123456789",
+      "email": "habungbu@gmail.com",
+      "address": "Đà Nẵng",
+      "gender": "1"
+    },
+    {
+      "code": "KH-1234",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "name": "Lươn Khánh",
+      "birthday": "2021-07-30",
+      "phone": 1234567890,
+      "email": "onlinvn113@gmail.com",
+      "address": "adasdasds",
+      "idCard": "1235678902",
+      "id": 4
+    }
+  ]
+}
